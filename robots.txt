@@ -1,0 +1,6 @@
+# Robots.txt para CreArte Cerámica Valladolid
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://crearteceramica.es/sitemap.xml
