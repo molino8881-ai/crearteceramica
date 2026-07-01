@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    Vales Regalo de Cerámica en Valladolid | CreArte
+  </title>
+  <meta content="Regala una experiencia única en nuestro taller de cerámica en Valladolid. Vales regalo personalizados para talleres puntuales, clases semanales y más." name="description"/>
+  <meta content="vales regalo cerámica, regalar taller cerámica Valladolid, bono regalo cerámica, experiencia cerámica" name="keywords"/>
+  <meta content="CreArte Cerámica" name="author"/>
+  <meta content="index, follow" name="robots"/>
+<meta name="description" content="Regala una experiencia de cerámica en Valladolid. Vales regalo para talleres puntuales o clases semanales. El regalo más original y diferente para cualquier ocasión."/>
+  <link href="https://crearteceramica.es/vales-regalo.html" rel="canonical"/>
+  <!-- Favicon -->
+  <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="#227768" name="theme-color"/>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root {
+      --green: #227768;
+      --green-dark: #1a5d51;
+      --green-light: #2d9a87;
+      --green-pale: #e9f2f0;
+      --terracota: #d97757;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --white: #ffffff;
+      --bg: #fcfcfc;
+      --shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img { 
+      height: 60px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .btn-nav {
+      background: var(--green);
+      color: white !important;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.85rem !important;
+    }
+
+    /* SECCIÓN HERO VALES */
+    .vales-hero {
+      padding: 9rem 0 3rem;
+      background: var(--green-pale);
+      text-align: center;
+    }
+
+    .vales-hero .section-header span {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      font-size: 0.75rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .vales-hero .section-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .vales-hero .section-header p {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* CÓMO FUNCIONA */
+    .como-funciona {
+      padding: 3rem 0;
+      background: white;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title span {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .pasos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .paso-card {
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      border: 1px solid #f0f0f0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .paso-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .paso-numero {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--green);
+      opacity: 0.3;
+      margin-bottom: 1rem;
+      display: block;
+      font-weight: 700;
+    }
+
+    .paso-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .paso-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    /* IMPORTES SUGERIDOS */
+    .importes-section {
+      padding: 3rem 0;
+      background: var(--bg);
+    }
+
+    .importes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .importe-card {
+      background: white;
+      padding: 2.5rem 1.5rem;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      border: 1px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 180px;
+    }
+
+    .importe-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--green);
+    }
+
+    .importe-valor {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--green);
+      display: block;
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+    }
+
+    .importe-valor.small-text {
+      font-size: 1.3rem;
+    }
+
+    .importe-nombre {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    /* FORMULARIO */
+    .formulario-section {
+      padding: 3rem 0;
+      background: white;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--green-pale);
+      padding: 3rem;
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .form-checkbox {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .form-checkbox input {
+      width: auto;
+      margin-top: 0.4rem;
+    }
+
+    .form-checkbox label {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--green);
+      color: white;
+      padding: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: var(--green-dark);
+      transform: translateY(-3px);
+    }
+
+    .whatsapp-contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .whatsapp-contact a {
+      color: var(--green);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .field-hint {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-top: 0.3rem;
+    }
+
+    .form-group input:invalid:not(:placeholder-shown),
+    .form-group select:invalid:not(:focus) {
+      border-color: #e74c3c;
+    }
+
+    .form-group input:valid,
+    .form-group select:valid {
+      border-color: var(--green);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 5rem 0;
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+    }
+
+    .footer-logo img { height: 66px; margin-bottom: 2rem; }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      color: white;
+      opacity: 0.6;
+    }
+
+    .footer-links a:hover { opacity: 1; }
+
+    /* MOBILE MENU */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 30px;
+      height: 3px;
+      background: var(--green);
+      border-radius: 3px;
+    }
+
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .dropdown-toggle:hover {
+      color: var(--green);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    @media (max-width: 992px) {
+      .menu-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+      .nav-links.active { display: flex; }
+      .nav-links a { font-size: 1.2rem; }
+      
+      .nav-item {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        background: rgba(34, 119, 104, 0.05);
+        width: 100%;
+        text-align: center;
+        min-width: auto;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .nav-item:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        margin-top: 0.5rem;
+        border-radius: 12px;
+      }
+
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+
+      .vales-hero h1 { font-size: 2.5rem; }
+      .form-container { padding: 1.5rem; }
+      .pasos-grid { gap: 1.5rem; }
+    }
+  </style>
+ </head>
+ <body>
+  <nav id="navbar">
+   <div class="container">
+    <a class="logo" href="index.html">
+     <img alt="Logo de CreArte" src="imagenes/logo.webp" width="1536" height="871"/>
+    </a>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres.html">Tipos de talleres</a>
+          <a href="calendario.html">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="vales-regalo.html">VALES REGALO</a>
+      <a href="regalos.html">TIENDA</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">BLOG</a>
+      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+     </div>
+   </div>
+  </nav>
+  <section class="vales-hero" id="vales-hero" style="padding-top: 150px;">
+      <div class="container">
+  <div class="section-header">
+     <span>
+      Regala una Experiencia Única
+     </span>
+        <h1>Vales Regalo de Cerámica en Valladolid</h1>
+        <p>¿Buscas un regalo original en Valladolid? Nuestros vales regalo para talleres de cerámica permiten regalar una experiencia creativa, relajante y diferente. La persona que lo reciba podrá aprender cerámica en nuestro taller, trabajar con barro y crear una pieza única hecha con sus propias manos.
+        </p>
+        <p>Un regalo perfecto para cumpleaños, aniversarios, Navidad, el Día de la Madre o cualquier ocasión especial. Regala creatividad, aprendizaje y una experiencia inolvidable en CreArte Cerámica Valladolid.
+        </p>
+      </div>
+    </section>
+
+    <section class="como-funciona">
+      <div class="container">
+        <div class="section-title">
+          <span>Tres pasos y listo</span>
+          <h2>Cómo funciona</h2>
+        </div>
+        <div class="pasos-grid">
+          <div class="paso-card">
+            <span class="paso-numero">1</span>
+            <h3>Eliges importe</h3>
+            <p>Selecciona un importe o un taller concreto. Si lo prefieres, lo personalizamos a tu medida tu nos dices las sesiones que quieres regalar.</p>
+          </div>
+          <div class="paso-card">
+            <span class="paso-numero">2</span>
+            <h3>Lo personalizamos</h3>
+            <p>Lo preparamos con la dedicatoria que nos digas y te lo enviamos en PDF para imprimir por email o por WhatsApp.</p>
+          </div>
+          <div class="paso-card">
+            <span class="paso-numero">3</span>
+            <h3>Se canjea cuando quieran</h3>
+            <p>El destinatario reserva su plaza cuando mejor le venga por WhatsApp. Validez: 6 meses desde la fecha de emisión.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="importes-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Elige el vale ideal</span>
+          <h2>Importes sugeridos</h2>
+          <p style="margin-top: 1rem; color: var(--text-light);">Estos son los importes más solicitados. También aceptamos importes a medida.</p>
+        </div>
+        <div class="importes-grid">
+
+          <div class="importe-card">
+            <span class="importe-valor">35€</span>
+            <span class="importe-nombre">Taller Puntual (1,5 h)</span>
+          </div>
+          <div class="importe-card">
+            <span class="importe-valor">45€</span>
+            <span class="importe-nombre">Taller Puntual (3 h)</span>
+          </div>
+          <div class="importe-card">
+            <span class="importe-valor">85€</span>
+            <span class="importe-nombre">Clases semanales · 4 sem.</span>
+          </div>
+          <div class="importe-card">
+            <span class="importe-valor">125€</span>
+            <span class="importe-nombre">Torno alfarero · 4 sem.</span>
+          </div>
+          <div class="importe-card">
+            <span class="importe-valor small-text">Personalizado</span>
+            <span class="importe-nombre">El importe que tú decidas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Pídelo en 30 segundos</span>
+          <h2>Solicita tu vale</h2>
+          <p style="margin-top: 1rem; color: var(--text-light);">Te respondemos en el día con instrucciones para el pago y la entrega.</p>
+        </div>
+        <div class="form-container">
+          <form action="https://formspree.io/f/mbdvlppn" class="vale-form" method="POST" id="vale-regalo-form" novalidate>
+            <!-- Configuración Formspree -->
+            <input type="hidden" name="_subject" value="Nueva solicitud de vale regalo - CreArte"/>
+            <input type="hidden" name="_next" value="https://crearteceramica.es/gracias.html"/>
+            <input type="hidden" name="_replyto" value="creartevalladolid@gmail.com"/>
+            <input name="_gotcha" style="display:none" type="text"/>
+
+            <div class="form-group">
+              <label for="nombre">Tu nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Tu email *</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email"/>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono móvil *</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="612 345 678" required autocomplete="tel"
+                pattern="[6-9][0-9]{8}"
+                title="Introduce un número de teléfono español válido de 9 dígitos"
+                maxlength="9"/>
+              <span class="field-hint">9 dígitos, comenzando por 6, 7, 8 o 9</span>
+            </div>
+            <div class="form-group">
+              <label for="importe">Importe del vale (taller) *</label>
+              <select id="importe" name="importe" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="35€ - Taller Puntual (1,5 h)">35€ · Taller Puntual (1,5 h)</option>
+                <option value="45€ - Taller Puntual (3 h)">45€ · Taller Puntual (3 h)</option>
+                <option value="85€ - Clases semanales (4 sem.)">85€ · Clases semanales (4 sem.)</option>
+                <option value="125€ - Torno alfarero (4 sem.)">125€ · Torno alfarero (4 sem.)</option>
+                <option value="Importe personalizado">Importe personalizado</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="destinatario">Nombre del destinatario <span style="font-weight:400; color: var(--text-light);">(opcional)</span></label>
+              <input type="text" id="destinatario" name="destinatario" placeholder="Nombre de quien recibe el vale"/>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="privacidad" name="privacidad" required/>
+              <label for="privacidad">Acepto la <a href="privacidad.html" target="_blank" style="text-decoration: underline;">política de privacidad</a> y el uso de mis datos para gestionar esta solicitud. *</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar solicitud</button>
+          </form>
+
+          <div class="whatsapp-contact">
+            <p>¿Prefieres pedirlo directamente?</p>
+            <a href="https://wa.me/34639096691" target="_blank">Escríbenos por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
+   <div class="footer-links">
+    <a href="index.html">Inicio</a>
+    <a href="talleres.html">Talleres</a>
+    <a href="vales-regalo.html">Vales regalo</a>
+    <a href="regalos.html">Tienda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacidad.html">Privacidad</a>
+   </div>
+  </footer>
+
+  <script>
+    // Menú móvil
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Lógica para el submenú en móvil
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navItem = document.querySelector('.nav-item');
+
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        navItem.classList.toggle('active');
+      }
+    });
+
+    // Cerrar menú al hacer click en un enlace
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (!link.closest('.dropdown-toggle')) {
+          mobileMenu.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+
+    // Validación del formulario de vale regalo
+    const valeForm = document.getElementById('vale-regalo-form');
+    if (valeForm) {
+      // Solo permitir dígitos en el campo teléfono
+      const telefonoInput = document.getElementById('telefono');
+      if (telefonoInput) {
+        telefonoInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^0-9]/g, '');
+        });
+      }
+
+      valeForm.addEventListener('submit', function(e) {
+        let valid = true;
+        const nombre = document.getElementById('nombre');
+        const email = document.getElementById('email');
+        const telefono = document.getElementById('telefono');
+        const importe = document.getElementById('importe');
+        const privacidad = document.getElementById('privacidad');
+
+        // Validar nombre
+        if (!nombre.value.trim()) {
+          nombre.style.borderColor = '#e74c3c';
+          valid = false;
+        } else {
+          nombre.style.borderColor = '';
+        }
+
+        // Validar email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.value.trim() || !emailRegex.test(email.value)) {
+          email.style.borderColor = '#e74c3c';
+          valid = false;
+        } else {
+          email.style.borderColor = '';
+        }
+
+        // Validar teléfono: exactamente 9 dígitos, empezando por 6, 7, 8 o 9
+        const telRegex = /^[6-9][0-9]{8}$/;
+        if (!telRegex.test(telefono.value.trim())) {
+          telefono.style.borderColor = '#e74c3c';
+          valid = false;
+          alert('El teléfono debe tener exactamente 9 dígitos y comenzar por 6, 7, 8 o 9.');
+        } else {
+          telefono.style.borderColor = '';
+        }
+
+        // Validar importe
+        if (!importe.value) {
+          importe.style.borderColor = '#e74c3c';
+          valid = false;
+        } else {
+          importe.style.borderColor = '';
+        }
+
+        // Validar privacidad
+        if (!privacidad.checked) {
+          valid = false;
+          alert('Debes aceptar la política de privacidad para continuar.');
+        }
+
+        if (!valid) {
+          e.preventDefault();
+        }
+      });
+    }
+  </script>
+ </body>
+</html>

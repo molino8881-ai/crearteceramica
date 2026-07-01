@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Técnicas de cerámica: ¿cuál es la tuya? | Blog | CreArte Cerámica Valladolid
+  </title>
+  <meta content="Tornear, pellizcar, rollos, planchas... Descubre las principales técnicas de cerámica y encuentra la que más va contigo. CreArte, taller de cerámica en Valladolid." name="description"/>
+  <meta content="técnicas cerámica, taller cerámica Valladolid, aprender cerámica, tornear, modelado mano, CreArte cerámica" name="keywords"/>
+  <link href="https://crearteceramica.es/blog.html" rel="canonical"/>
+  <!-- Open Graph / Facebook -->
+  <meta content="article" property="og:type"/>
+  <meta content="https://crearteceramica.es/blog.html" property="og:url"/>
+  <meta content="Técnicas de cerámica: ¿cuál es la tuya? | CreArte Valladolid" property="og:title"/>
+  <meta content="Tornear, pellizcar, rollos, planchas... Descubre las principales técnicas de cerámica y encuentra la que más va contigo." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/logo.webp" property="og:image"/>
+  <!-- Favicon -->
+  <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root {
+      --green: #227768;
+      --green-dark: #1a4d44;
+      --green-light: #2d9a87;
+      --green-pale: #f4f9f8;
+      --clay: #c4723a;
+      --clay-pale: #fdf4ee;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --white: #ffffff;
+      --bg: #fcfcfc;
+      --shadow: 0 10px 30px rgba(0,0,0,0.05);
+      --border: #e2ece7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: white;
+      padding: 1rem 0;
+      box-shadow: var(--shadow);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .btn-nav {
+      background: var(--green);
+      color: white !important;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+    }
+
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .dropdown-toggle:hover {
+      color: var(--green);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    /* BLOG CONTENT */
+    .blog-header {
+      padding: 180px 0 60px;
+      background: var(--green-pale);
+      text-align: center;
+    }
+
+    .blog-header span {
+      display: inline-block;
+      background: var(--green-light);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .blog-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--green);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .blog-header h1 em {
+      font-style: italic;
+      color: var(--clay);
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .article-body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .article-body > *:not(.toc) {
+      grid-column: 1;
+    }
+
+    .article-body .toc {
+      grid-column: 2;
+      grid-row: 1 / span 100;
+      position: sticky;
+      top: 100px;
+    }
+
+    .article-body p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--text-light);
+    }
+
+    .toc {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin: 0;
+      box-shadow: var(--shadow);
+    }
+
+    .toc-title {
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      letter-spacing: 0.8px;
+    }
+
+    .toc ol {
+      padding-left: 1rem;
+      display: grid;
+      gap: 0.3rem;
+    }
+
+    .toc li {
+      font-size: 0.85rem;
+    }
+
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-size: 0.85rem;
+    }
+
+    .toc a:hover { color: var(--green); }
+
+    .technique {
+      margin-bottom: 5rem;
+      scroll-margin-top: 120px;
+    }
+
+    .technique-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .technique-number {
+      width: 50px;
+      height: 50px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .technique h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--green);
+    }
+
+    .technique h2 span {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.8rem;
+      color: var(--clay);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.2rem;
+    }
+
+    .clay-card {
+      background: var(--clay-pale);
+      border-left: 4px solid var(--clay);
+      padding: 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+    }
+
+    .clay-card strong {
+      display: block;
+      color: var(--clay);
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--green);
+      text-align: center;
+      padding: 3rem;
+      margin: 4rem 0;
+      background: var(--green-pale);
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 4rem 0;
+    }
+
+    /* DECORATION CARDS */
+    .article-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .article-card-header { padding: 2rem; }
+    .article-tag {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green);
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .article-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+
+    .btn-expand {
+      background: none;
+      border: 2px solid var(--green);
+      color: var(--green);
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+    }
+
+    .btn-expand:hover {
+      background: var(--green);
+      color: white;
+    }
+
+    .article-full {
+      display: none;
+      padding: 0 2rem 2rem;
+      border-top: 1px solid var(--border);
+      background: #fafafa;
+    }
+
+    .article-full.open { display: block; }
+
+    .article-full h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    /* CTA FINAL */
+    .cta-block {
+      background: var(--green-dark);
+      color: white;
+      border-radius: 25px;
+      padding: 4rem 3rem;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .cta-block h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    .cta-block p {
+      color: white !important; /* Forzado a blanco puro para legibilidad */
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 1 !important;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary-cta {
+      background: var(--clay);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.3s;
+    }
+
+    .btn-secondary-cta {
+      background: transparent;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid white;
+      transition: all 0.3s;
+    }
+
+    .btn-secondary-cta:hover {
+      background: white;
+      color: var(--green-dark);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    footer p { font-size: 0.9rem; opacity: 0.8; }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+
+    .footer-links a:hover { opacity: 1; }
+
+    /* MOBILE MENU */
+    .menu-toggle { display: none; cursor: pointer; }
+    .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: var(--green);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 1200px) {
+      .article-body {
+        grid-template-columns: 1fr;
+      }
+
+      .article-body .toc {
+        grid-column: 1;
+        position: static;
+        margin: 3rem 0;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .menu-toggle { display: block; z-index: 1001; }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        align-items: center;
+      }
+      .nav-links.active { right: 0; }
+      .nav-item { flex-direction: column; width: 100%; }
+      .nav-item .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        background: rgba(34, 119, 104, 0.05);
+        width: 100%;
+        text-align: center;
+        min-width: auto;
+        box-shadow: none;
+        transform: none;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+      }
+
+      .nav-item.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        margin-top: 0.5rem;
+        border-radius: 12px;
+      }
+
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+
+      .nav-links a { font-size: 1.2rem; }
+    }
+
+    @media (max-width: 600px) {
+      .blog-header { padding: 140px 0 40px; }
+      .blog-meta { flex-direction: column; gap: 0.5rem; }
+      .cta-block { padding: 3rem 1.5rem; }
+      .cta-block h3 { font-size: 1.8rem; }
+      blockquote { font-size: 1.4rem; padding: 1.5rem; }
+    }
+  </style>
+ </head>
+ <body>
+  <nav id="navbar">
+   <div class="container">
+    <a class="logo" href="index.html">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    </a>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres.html">Tipos de talleres</a>
+          <a href="calendario.html">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="vales-regalo.html">VALES REGALO</a>
+      <a href="regalos.html">TIENDA</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">BLOG</a>
+      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+    </div>
+   </div>
+  </nav>
+
+  <header class="blog-header">
+    <div class="container">
+      <span>Aprende cerámica</span>
+      <h1>Técnicas de cerámica:<br /><em>¿cuál es la tuya?</em></h1>
+      <div class="blog-meta">
+        <p>✍️ CreArte Cerámica</p>
+        <p>📍 Valladolid</p>
+        <p>⏱ 8 min de lectura</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="article-body">
+      <p>Cuando la gente piensa en cerámica, lo primero que le viene a la cabeza es el torno: ese disco que gira, las manos llenas de barro, la escena de <em>Ghost</em>. Pero la cerámica es mucho más que eso. Existen varias técnicas, cada una con su carácter, su ritmo y sus posibilidades. Y no hay ninguna que sea mejor que otra: hay la que mejor encaja contigo.</p>
+      
+      <p>En CreArte llevamos años enseñando cerámica en Valladolid a personas de todos los niveles, y lo que más nos gusta de nuestro trabajo es ver cómo cada alumna encuentra <em>su</em> técnica. Aquí te explicamos las principales para que llegues al taller con una idea de lo que te vas a encontrar, o simplemente para saciar la curiosidad.</p>
+
+      <nav class="toc">
+        <p class="toc-title">En este artículo</p>
+        <ol>
+          <li><a href="#pellizco">Modelado a pellizco (pinching)</a></li>
+          <li><a href="#rollos">Técnica de rollos (coiling)</a></li>
+          <li><a href="#planchas">Técnica de planchas (slab building)</a></li>
+          <li><a href="#torno">Torno de alfarero</a></li>
+          <li><a href="#moldes">Modelado con moldes</a></li>
+          <li><a href="#escultura">Escultura libre</a></li>
+          <li><a href="#decoracion">Técnicas de decoración</a></li>
+        </ol>
+      </nav>
+
+      <!-- TÉCNICA 1 -->
+      <section class="technique" id="pellizco">
+        <div class="technique-header">
+          <div class="technique-number">1</div>
+          <h2><span>Lo más primario</span>Modelado a pellizco (pinching)</h2>
+        </div>
+        <p>También llamada <em>pinching</em>, es probablemente la técnica más antigua de todas. Coges una bola de barro, metes el pulgar en el centro y vas pellizcando hacia fuera con los dedos para darle forma. Así de sencillo. Así de directo.</p>
+        <p>No hace falta ninguna herramienta. Solo tus manos, el barro y paciencia. La textura que deja el pellizco en las paredes es parte del encanto: las piezas tienen una huella muy personal, casi orgánica, que hace que ninguna sea igual a otra.</p>
+        <div class="clay-card">
+          <strong>¿Para quién es ideal?</strong>
+          Perfecta para empezar desde cero. También es la técnica favorita de quienes quieren desconectar de verdad, porque exige concentración pero no precisión milimétrica. Se suele usar para cuencos pequeños, tazas, figuras y piezas de carácter artesanal.
+        </div>
+        <p>En nuestros talleres puntuales de CreArte empezamos casi siempre por aquí. En dos horas puedes tener tu primera pieza lista para cocer.</p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- TÉCNICA 2 -->
+      <section class="technique" id="rollos">
+        <div class="technique-header">
+          <div class="technique-number">2</div>
+          <h2><span>Meditar con las manos</span>Técnica de rollos (coiling)</h2>
+        </div>
+        <p>Se trata de hacer churros de barro —sí, churros, exacto— e ir apilándolos en espiral para construir las paredes de la pieza. Cada capa se funde con la anterior usando los dedos o una espátula, y poco a poco la forma va creciendo hacia arriba.</p>
+        <p>Es una técnica lenta, meditativa. No hay prisa. El barro decide en parte cómo va quedando la pieza, y eso requiere escucharle un poco. Permite crear piezas grandes, con formas curvas o asimétricas que serían difíciles de conseguir de otra manera.</p>
+        <div class="clay-card">
+          <strong>Lo que más nos gusta de esta técnica</strong>
+          Da mucho control sobre la forma final: puedes inclinar las paredes, crear curvas, hacer piezas altas y orgánicas. Las jarras, las vasijas altas y los cuencos grandes quedan espectaculares con rollos.</p>
+          <p>Civilizaciones como la griega, la africana o la precolombina construyeron toda su cerámica con esta técnica durante siglos, sin torno. Hay algo muy poderoso en conectar con eso.</p>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- TÉCNICA 3 -->
+      <section class="technique" id="planchas">
+        <div class="technique-header">
+          <div class="technique-number">3</div>
+          <h2><span>Precisión y geometría</span>Técnica de planchas (slab building)</h2>
+        </div>
+        <p>El barro se extiende en planchas —como si fuera masa de pizza— con un rodillo o una máquina laminadora. Esas planchas se cortan y se ensamblan como si construyeras con cartón, uniendo los bordes con barbotina (una especie de pegamento de arcilla) y reforzando las uniones desde dentro.</p>
+        <p>Esta técnica es muy versátil: sirve para piezas con geometría angular —cajas, bandejas, marcos, maceteros cuadrados— pero también para formas curvas si doblas las planchas sobre moldes o sobre la mano antes de que se sequen del todo.</p>
+        <div class="clay-card">
+          <strong>¿Qué tipo de piezas se hacen?</strong>
+          Tazas con asas perfectas, fuentes rectangulares, joyeros, portavelas, marcos de fotos en cerámica... Es la técnica ideal para proyectos con líneas limpias y cuando quieres repetir una forma con cierta consistencia.
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- TÉCNICA 4 -->
+      <section class="technique" id="torno">
+        <div class="technique-header">
+          <div class="technique-number">4</div>
+          <h2><span>La estrella del taller</span>Torno de alfarero</h2>
+        </div>
+        <p>El torno es el icono de la cerámica por algo: hay algo casi hipnótico en ver cómo una masa de barro informe se convierte en un cuenco perfectamente simétrico bajo las manos de alguien que sabe. Y esa persona puedes ser tú, aunque lleve más tiempo del que parece.</p>
+        <p>El proceso tiene nombre propio: <em>centrado</em> (conseguir que el barro gire sin tambalearse, que es lo más difícil), <em>apertura</em> (crear el hueco interior) y <em>levantado</em> (subir las paredes). Requiere práctica, coordinación de manos y un punto de entrega al proceso. El torno no se domina en un día, pero sí en unos meses de práctica constante.</p>
+        <div class="clay-card">
+          <strong>La curva de aprendizaje</strong>
+          Es la técnica más técnica de todas, y también la más gratificante cuando algo sale bien. En un taller puntual puedes tocar el torno y llevarte tu primera pieza, pero para dominarlo de verdad hace falta apuntarse a clases semanales y darle tiempo.</p>
+          <p>En CreArte trabajamos el torno en nuestras clases semanales. Tenemos tornos para todos los niveles y grupos pequeños para que no te pierdas entre el barro sin ayuda.</p>
+        </div>
+      </section>
+
+      <blockquote>
+        "La cerámica te enseña que no todo se puede controlar. Y que a veces lo que sale torcido es lo que más te gusta."
+      </blockquote>
+
+      <hr class="divider" />
+
+      <!-- TÉCNICA 5 -->
+      <section class="technique" id="moldes">
+        <div class="technique-header">
+          <div class="technique-number">5</div>
+          <h2><span>Repetición y detalle</span>Modelado con moldes</h2>
+        </div>
+        <p>Los moldes de escayola permiten reproducir formas con precisión y consistencia. Se usa mucho en la producción industrial, pero también en el trabajo artesanal cuando quieres crear una serie de piezas iguales o cuando necesitas una forma muy específica que sería difícil de conseguir a mano.</p>
+        <p>Hay dos sistemas principales: el <em>colado</em> (se vierte barbotina líquida en el molde y se espera a que las paredes se consoliden) y el <em>prensado</em> (se aplana barro sobre el molde). Es muy útil para bases de tazas, platos o figuras decorativas con mucho detalle.</p>
+        <div class="clay-card">
+          <strong>Un uso muy especial</strong>
+          En CreArte usamos moldes para los encargos de huellas de bebé, huellas de mascota y piezas personalizadas como conchas de bautismo. El molde nos permite capturar el detalle exacto de la huella.
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- TÉCNICA 6 -->
+      <section class="technique" id="escultura">
+        <div class="technique-header">
+          <div class="technique-number">6</div>
+          <h2><span>Sin reglas</span>Escultura libre</h2>
+        </div>
+        <p>La escultura cerámica no sigue un método concreto: combina todas las técnicas anteriores según lo que pida la pieza. Se modela, se pellizca, se añade, se quita, se texturiza. La única norma es que el barro tiene que estar bien construido por dentro para que no explote en el horno.</p>
+        <p>Es la técnica más libre y también la que más asusta al principio, porque no hay pasos fijos que seguir. Pero cuando pierdes el miedo es la que más cosas te permite hacer: desde figuras humanas o animales hasta instalaciones abstractas o piezas mixtas con otros materiales.</p>
+        <div class="clay-card">
+          <strong>Consejo para empezar</strong>
+          Antes de lanzarte a esculpir libremente, domina una o dos técnicas básicas. Así entiendes cómo se comporta el barro, cuándo está demasiado húmedo o demasiado seco, cómo unir partes sin que se despeguen al cocer.
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- DECORACIÓN -->
+      <section class="technique" id="decoracion">
+        <div class="technique-header">
+          <div class="technique-number">✦</div>
+          <h2><span>Dale vida a la pieza</span>Técnicas de decoración</h2>
+        </div>
+        <p>Dar forma al barro es solo la mitad del proceso. La otra mitad es la decoración: el momento en el que la pieza adquiere su carácter definitivo. Hay muchas maneras de decorar cerámica, y cada una produce un resultado muy distinto.</p>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Decoración</span>
+            <h3>Esgrafiado</h3>
+            <p class="article-preview">Se aplica una capa de engobe de color sobre la pieza en estado de cuero y después se raspa para crear dibujos. Al retirar el engobe aparece el color natural de la arcilla.</p>
+            <button class="btn-expand" onclick="toggleArticle('dec-esgrafiado', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="dec-esgrafiado">
+            <h4>¿Cuándo se hace?</h4>
+            <p>La pieza debe estar en estado de cuero: ni húmeda ni seca del todo. Si la trabajamos demasiado pronto el trazo se emborronará; si esperamos demasiado el barro se romperá en lugar de rascarse limpiamente.</p>
+            <h4>¿Qué herramientas se usan?</h4>
+            <p>Palillos de modelar, estecas de punta fina, bolígrafos vacíos, incluso un clavo. Cualquier cosa que permita retirar el engobe con precisión.</p>
+            <h4>Qué tipo de diseños funcionan mejor</h4>
+            <p>Motivos botánicos, geometrías, patrones repetitivos y trazos lineales. En CreArte lo practicamos habitualmente en las clases semanales.</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Decoración</span>
+            <h3>Engobe y slip trailing</h3>
+            <p class="article-preview">El engobe es arcilla líquida coloreada con óxidos. Se puede aplicar a pincel, por inmersión o vertido, o incluso dibujar con él como si fuera manga pastelera.</p>
+            <button class="btn-expand" onclick="toggleArticle('dec-engobe', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="dec-engobe">
+            <h4>Engobe a pincel</h4>
+            <p>Se aplica directamente sobre la pieza cruda o en estado de cuero. Permite pintar motivos, fondos de color sólido o degradados.</p>
+            <h4>Slip trailing</h4>
+            <p>El engobe se vierte en una pera o biberón de punta fina y se traza sobre la pieza como si se decorara un pastel. El resultado son líneas en relieve con un aspecto artesanal muy especial.</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Decoración</span>
+            <h3>Óxidos metálicos</h3>
+            <p class="article-preview">Los óxidos de cobalto, manganeso, hierro, cobre o cromo se mezclan con agua y se aplican a pincel directamente sobre la pieza.</p>
+            <button class="btn-expand" onclick="toggleArticle('dec-oxidos', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="dec-oxidos">
+            <h4>¿Cómo se usan?</h4>
+            <p>Se pueden aplicar sobre la pieza en crudo, sobre bizcocho o directamente sobre el esmalte antes de la cocción final.</p>
+            <h4>Efectos que se consiguen</h4>
+            <p>Colores intensos: azules profundos, marrones, negros, verdes. Conocer cómo se comportan en el horno es parte del aprendizaje.</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Decoración</span>
+            <h3>Esmaltes</h3>
+            <p class="article-preview">El esmalte es el vidriado que cubre la cerámica y la hace impermeable. Se aplica después de la primera cocción (bizcocho).</p>
+            <button class="btn-expand" onclick="toggleArticle('dec-esmaltes', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="dec-esmaltes">
+            <h4>Formas de aplicar el esmalte</h4>
+            <p>A pincel, por inmersión, vertido o por pulverización con aerógrafo.</p>
+            <h4>Esmalte transparente</h4>
+            <p>Deja ver el color de la arcilla y cualquier decoración pintada por debajo. Es el más usado en cerámica funcional.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- MÁS ARTÍCULOS -->
+      <section class="more-articles">
+        <h2 style="font-family: 'Playfair Display', serif; color: var(--green); margin-bottom: 2rem;">Más del blog</h2>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Técnicas</span>
+            <h3>Modelado a pellizco: la forma más honesta de entender el barro</h3>
+            <p class="article-preview">Hay algo especial en crear una pieza sin más herramientas que tus propias manos. El barro no necesita que seas experta para empezar a hablar contigo.</p>
+            <button class="btn-expand" onclick="toggleArticle('art-pellizco', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="art-pellizco">
+            <h4>Aprender a escuchar el barro</h4>
+            <p>Cuando trabajamos con herramientas complejas es fácil centrarse en el resultado. Con el modelado a pellizco ocurre justo lo contrario: la atención se desplaza hacia el proceso.</p>
+            <h4>La belleza de lo imperfecto</h4>
+            <p>Las pequeñas marcas de los dedos no son errores. Son parte de la historia de la pieza. Algunas de las cerámicas más interesantes conservan precisamente esas huellas.</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-card-header">
+            <span class="article-tag">Decoración</span>
+            <h3>El arte del esgrafiado: dibujar raspando el alma de la pieza</h3>
+            <p class="article-preview">Hay técnicas que construyen. Y otras que revelan. El esgrafiado consiste en descubrir lo que ya está ahí, escondido bajo una capa de color.</p>
+            <button class="btn-expand" onclick="toggleArticle('art-esgrafiado', this)">Seguir leyendo <span class="arrow">↓</span></button>
+          </div>
+          <div class="article-full" id="art-esgrafiado">
+            <h4>¿Qué es el esgrafiado?</h4>
+            <p>Consiste en aplicar una capa de engobe sobre una pieza de barro y posteriormente raspar esa superficie para crear dibujos, texturas o patrones.</p>
+            <h4>El momento más importante: el estado de cuero</h4>
+            <p>La pieza debe encontrarse en estado de cuero: ni húmeda ni completamente seca. Es una técnica que invita a parar y observar.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <div class="cta-block">
+        <h3>¿Quieres probar estas técnicas?</h3>
+        <p>Ven a nuestro taller en Valladolid y descubre el placer de crear con tus propias manos. Grupos pequeños, materiales incluidos y picoteo de por medio.</p>
+        <div class="cta-buttons">
+          <a href="talleres.html" class="btn-primary-cta">Ver talleres disponibles</a>
+          <a href="https://wa.me/34639096691" class="btn-secondary-cta">Preguntar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="vales-regalo.html">Vales regalo</a>
+        <a href="regalos.html">Tienda</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="blog.html">Blog</a>
+        <a href="privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+    });
+
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navItem = document.querySelector('.nav-item');
+
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        navItem.classList.toggle('active');
+      }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (!link.closest('.dropdown-toggle')) {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          body.style.overflow = 'auto';
+        }
+      });
+    });
+
+    function toggleArticle(id, btn) {
+      const el = document.getElementById(id);
+      const isOpen = el.classList.contains('open');
+      el.classList.toggle('open', !isOpen);
+      btn.classList.toggle('active', !isOpen);
+      const arrow = btn.querySelector('.arrow');
+      const label = btn.childNodes[0];
+      if (!isOpen) {
+        label.textContent = 'Ocultar ';
+        arrow.textContent = '↑';
+      } else {
+        label.textContent = 'Seguir leyendo ';
+        arrow.textContent = '↓';
+      }
+    }
+  </script>
+ </body>
+</html>

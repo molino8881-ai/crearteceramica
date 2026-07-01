@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Contacto y Reservas | CreArte 
+   Talleres de Cerámica en Valladolid — Tipos y Precios | CreArte 
   </title>
-  <meta content="Contacta con CreArte Cerámica en Valladolid para reservar tu plaza en talleres, clases semanales o solicitar información sobre regalos y encargos personalizados." name="description"/>
-  <meta content="talleres cerámica Valladolid, clases cerámica, regalos personalizados, conchas bautismo, detalles boda, huellas mascotas, marcos cerámica, vajillas artesanales, decoración hogar, taller artesanal" name="keywords"/>
+  <meta content="Explora nuestros talleres de cerámica en Valladolid: clases semanales, talleres de prueba, puntuales y privados. Aprende modelado, torno y decoración sin experiencia previa." name="description"/>
+  <meta content="Talleres cerámica Valladolid, clases cerámica, regalos personalizados, conchas bautismo, detalles boda, huellas mascotas, marcos cerámica, vajillas artesanales, decoración hogar, taller artesanal" name="keywords"/>
   <meta content="CreArte Cerámica" name="author"/>
-  <meta content="index, follow" name="robots"/>
-<meta name="description" content="Reserva tu plaza en un taller de cerámica en Valladolid o encarga un regalo personalizado. Contacta con CreArte por WhatsApp o formulario. Respondemos en 24h."/>
-    <link href="https://crearteceramica.es/contacto.html" rel="canonical"/>
+ <meta content="index, follow" name="robots"/>
+<meta name="description" content="Talleres de cerámica en Valladolid para todos los niveles. Clases semanales, torno alfarero, talleres puntuales y privados. Materiales y cocción incluidos."/>
+    <link href="https://crearteceramica.es/calendario.html" rel="canonical"/>
     <!-- Favicon -->
     <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
     <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -21,10 +21,10 @@
     <meta content="#227768" name="msapplication-TileColor"/>
     <!-- Open Graph / Facebook -->
     <meta content="website" property="og:type"/>
-    <meta content="https://crearteceramica.es/contacto.html" property="og:url"/>
-  <meta content="Contacto y Reservas | CreArte Cerámica" property="og:title"/>
-  <meta content="Reserva tu plaza o haz tu consulta sobre nuestros talleres y regalos personalizados." property="og:description"/>
-  <meta content="https://crearteceramica.es/imagenes/logo.webp" property="og:image"/>
+    <meta content="https://crearteceramica.es/talleres.html" property="og:url"/>
+  <meta content="Talleres de Cerámica en Valladolid | CreArte" property="og:title"/>
+  <meta content="Clases semanales, talleres de prueba y eventos privados. Aprende modelado y torno en un ambiente relajado." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/grupo.webp" property="og:image"/>
   <!-- Twitter Card -->
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="CreArte: Talleres de Cerámica en Valladolid" name="twitter:title"/>
@@ -49,7 +49,7 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.6163356,
+       "latitude": 41.6163356,
       "longitude": -4.7508584
     },
     "openingHoursSpecification": [
@@ -69,6 +69,29 @@
     "sameAs": [
       "https://www.instagram.com/crearteceramicavalladolid"
     ]
+  }
+  </script>
+  <!-- Course Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Talleres de Cerámica en Valladolid",
+    "description": "Aprende cerámica desde cero en nuestros talleres en Valladolid. Clases semanales, talleres puntuales y clases de torno alfarero para todos los niveles.",
+    "provider": {
+      "@type": "Organization",
+      "name": "CreArte",
+      "sameAs": "https://crearteceramica.es"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "CreArte Cerámica"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "150"
+    }
   }
   </script>
   <!-- Fuentes -->
@@ -293,8 +316,17 @@
 
     .hero-image {
       height: 100vh;
-      background: url('imagenes/hero.webp') center/cover no-repeat;
       position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      max-width: none;
     }
 
     .hero-image::before {
@@ -305,6 +337,13 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(to right, white, transparent 20%);
+      z-index: 1;
+    }
+
+    @media (max-width: 992px) {
+      .hero-image::before {
+        background: linear-gradient(to bottom, white, transparent 20%);
+      }
     }
 
     /* NOSOTROS / FILOSOFÍA */
@@ -344,25 +383,37 @@
 
     /* TALLERES */
     .talleres {
-      padding: 10rem 0;
+      padding: 10rem 0 4rem 0;
     }
 
     .section-header {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
 
     .section-header span {
+      display: block;
       color: var(--green);
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-weight: 700;
       font-size: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     .section-header h2 {
       font-size: 3rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .section-header p {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.7;
     }
 
     .talleres-grid {
@@ -673,9 +724,9 @@
       text-align: center;
     }
 
-    .footer-logo img {
-      height: 66px;
-      margin-bottom: 2rem;
+    .footer-logo img { 
+      height: 72px;
+      margin-bottom: 1.5rem;
     }
 
     .footer-links {
@@ -694,81 +745,13 @@
       opacity: 1;
     }
 
-    /* DROPDOWN MENU */
-    .nav-item {
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-
-    .dropdown-toggle {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      white-space: nowrap;
-      letter-spacing: 0.02em;
-    }
-
-    .dropdown-toggle:hover {
-      color: var(--green);
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      min-width: 200px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: all 0.3s ease;
-      z-index: 999;
-      margin-top: 0.5rem;
-    }
-
-    .nav-item:hover .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .dropdown-menu a {
-      display: block;
-      padding: 0.6rem 1rem;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      transition: 0.3s;
-      white-space: nowrap;
-    }
-
-    .dropdown-menu a:first-child {
-      border-radius: 12px 12px 0 0;
-    }
-
-    .dropdown-menu a:last-child {
-      border-radius: 0 0 12px 12px;
-    }
-
-    .dropdown-menu a:hover {
-      background: var(--green-pale);
-      color: var(--green);
-    }
-
     /* RESPONSIVE */
     /* TABLET Y PANTALLAS MEDIANAS */
     @media (max-width: 992px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
+      .hero-image { display: block; height: 400px; order: -1; }
+      .hero-content { padding: 3rem 1.5rem; text-align: center; }
+      .hero-btns { justify-content: center; }
       .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
       .menu-toggle { display: flex; }
       .nav-links {
@@ -788,49 +771,6 @@
       }
       .nav-links.active { display: flex; }
       .nav-links a { font-size: 1.2rem; }
-      
-      .nav-item {
-        flex-direction: column;
-        width: 100%;
-      }
-      
-      .dropdown-toggle {
-        font-size: 1.2rem;
-        padding: 0.5rem 0;
-        width: 100%;
-        justify-content: center;
-      }
-
-      .dropdown-menu {
-        position: static;
-        opacity: 0;
-        visibility: hidden;
-        max-height: 0;
-        overflow: hidden;
-        background: rgba(34, 119, 104, 0.05);
-        width: 100%;
-        text-align: center;
-        min-width: auto;
-        box-shadow: none;
-        transform: none;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
-      }
-
-      .nav-item.active .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        max-height: 300px;
-        margin-top: 0.5rem;
-        border-radius: 12px;
-      }
-
-      .dropdown-menu a {
-        padding: 0.8rem 1rem;
-        font-size: 1rem;
-        text-align: center;
-        width: 100%;
-      }
-
       /* Mostrar enlaces móviles en tablet */
       .mobile-only-link { display: block !important; }
       /* Mostrar texto móvil en tablet */
@@ -934,7 +874,7 @@
       iframe { height: 200px; }
       
       footer { padding: 2rem 0; }
-      .footer-logo img {  height: 55px; }
+      .footer-logo img {  height: 60px; }
       .footer-links { gap: 1rem; flex-wrap: wrap; }
       /* Mostrar enlaces móviles en pantallas pequeñas */
       .mobile-only-link { display: block !important; }
@@ -944,12 +884,10 @@
     }
     /* Nuevos estilos para la sección de Próximos Talleres */
     .proximos-talleres {
-      padding: 8rem 0;
+      padding: 8rem 0 2rem 0;
       background: var(--green-pale);
     }
-    .proximos-talleres .section-header h2 {
-      color: var(--green);
-    }
+
     .mes-block {
       margin-bottom: 4rem;
     }
@@ -1052,11 +990,12 @@
     }
     .cta-agenda-personalizada {
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       padding: 3rem;
       background: var(--green);
       color: white;
       border-radius: 2rem;
+      margin-bottom: 2rem;
     }
     .cta-agenda-personalizada h4 {
       font-size: 1.8rem;
@@ -1509,7 +1448,123 @@
     }
   }
   
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
 
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .dropdown-toggle:hover {
+      color: var(--green);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    /* Responsive - Dropdown en móvil */
+    @media (max-width: 992px) {
+      .nav-item {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        width: 100%;
+        text-align: center;
+        min-width: auto;
+      }
+
+      .nav-item.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        background: rgba(34, 119, 104, 0.05);
+        border-radius: 12px;
+        margin-top: 0.5rem;
+      }
+
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        border-radius: 0 !important;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
 
     </style>
   <link as="image" href="imagenes/hero.webp" rel="preload"/>
@@ -1543,152 +1598,200 @@
      </div>
    </div>
   </nav>
-  <section class="contacto" id="contacto" style="padding-top: 150px; ">
+  
+     
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="proximos-talleres" id="proximos-talleres">
    <div class="container">
     <div class="section-header">
-     <span>
-      Contacto y Reservas
-     </span>
-     <h1>
-      Contacta con CreArte Cerámica Valladolid
-     </h1>
-     <p>
-      Escríbenos para reservar tu plaza en un taller de cerámica en Valladolid, pedir presupuesto para un encargo personalizado, organizar una despedida de soltera o resolver cualquier duda. Respondemos rápido por WhatsApp.
-     </p>
+     <span>Reserva tu plaza</span>
+     <h2>Próximos Talleres de Cerámica en Valladolid</h2>
+     <p>Consulta las próximas fechas de nuestros talleres de cerámica en Valladolid. Talleres puntuales de fin de semana para crear tus propias piezas de cerámica con picoteo incluido.</p>
+     <p>Las plazas son limitadas y se llenan rápido. Echa un vistazo a las próximas fechas y reserva la tuya antes de que se vayan. Si buscas un plan diferente en Valladolid, una tarde creativa o una actividad en grupo, este es tu sitio.</p>
     </div>
-    <div class="contacto-grid">
-     <div class="contact-info">
-      <div class="contact-details">
-       <h2>
-        Hablemos sin rodeos
-       </h2>
-       <p>
-        Si tienes dudas sobre los talleres, quieres organizar un evento o simplemente quieres saber más, escríbenos. Respondemos rápido y sin formalismos.
-       </p>
-       <div>
-        <strong>
-         📍 Ubicación
-        </strong>
-        C/ Vinos de rueda, 18 · 47008 Valladolid
+
+    <div class="mes-block">
+     <div class="mes-header">
+      <span class="mes-badge">
+       Julio
+      </span>
+      <h3>
+       Talleres de Julio
+      </h3>
+     </div>
+     <div class="talleres-agenda-grid">
+      <!-- Taller Julio 1 -->
+      <div class="taller-agenda-card" data-fecha="2026-07-04">
+       <div class="fecha">
+        Sábado 04 de Julio
        </div>
-       <div>
-        <strong>
-         📱 Teléfono
-        </strong>
-        <a href="tel:+34639096691">
-         +34 639 096 691
-        </a>
+       <div class="tipo-taller">
+        Taller Puntual
        </div>
-       <div>
-        <strong>
-         💬 WhatsApp
-        </strong>
-        <a href="https://wa.me/34639096691" target="_blank">
-         +34 639 096 691
-        </a>
+       <div class="hora">
+        12:00 a 13:30h
        </div>
-       <div>
-        <strong>
-         📸 Instagram
-        </strong>
-        <a href="https://www.instagram.com/crearteceramicavalladolid">
-         @crearteceramicavalladolid
-        </a>
+       <div class="precio">
+        35€
        </div>
-       <div>
-        <strong>
-         ✉️ Email
-        </strong>
-        <a href="mailto:creartevalladolid@gmail.com">
-         creartevalladolid@gmail.com
-        </a>
-       </div>
-       <div>
-        <strong>
-         🕐 Horarios
-        </strong>
-        Lunes 17-19h | Mié y Jue 17-19h o 19-21h
-        <br/>
-        Sábados y Domingos: Consultar
-       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2004%20de%20Julio" target="_blank">
+        Reservar plaza
+       </a>
       </div>
-      <!-- MAPA DE UBICACIÓN -->
-      <div class="map-container" style="margin-top: 2rem; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);">
-       <iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.8231594213235!2d-4.750858399999999!3d41.6163356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd476d004b16e9af%3A0x1b69564b62b3e3d6!2sCreArte%20Cer%C3%A1mica%20Valladolid!5e0!3m2!1ses!2ses!4v1712345678901!5m2!1ses!2ses" style="border:0;" width="100%">
-       </iframe>
+      <!-- Taller Julio 2 -->
+      <div class="taller-agenda-card" data-fecha="2026-07-11">
+       <div class="fecha">
+        Sábado 11 de Julio
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2011%20de%20Julio" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+      <!-- Taller Julio 3 -->
+      <div class="taller-agenda-card" data-fecha="2026-07-11">
+       <div class="fecha">
+        Sábado 11 de Julio
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        11:00 a 14:00h
+       </div>
+       <div class="precio">
+        45€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2011%20de%20Julio" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+      <!-- Taller Julio 4 -->
+      <div class="taller-agenda-card" data-fecha="2026-07-18">
+       <div class="fecha">
+        Sábado 18 de Julio
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2018%20de%20Julio" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+      <!-- Taller Julio 5 -->
+      <div class="taller-agenda-card" data-fecha="2026-07-25">
+       <div class="fecha">
+        Sábado 25 de Julio
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2026%20de%20Julio" target="_blank">
+        Reservar plaza
+       </a>
       </div>
      </div>
-     <div class="contact-form">
-      <h2>
-       Reserva tu plaza o haz tu consulta
-      </h2>
-      <!-- Formulario conectado a Formspree -->
-      <form action="https://formspree.io/f/mvzvdbjw" class="contacto-form" method="POST">
-       <!-- Configuración de Formspree -->
-       <input name="_subject" type="hidden" value="Nueva consulta desde la web de CreArte"/>
-       <input name="_next" type="hidden" value="https://crearteceramica.es/gracias.html"/>
-       <input name="_gotcha" style="display:none" type="text"/>
-       <div class="form-group">
-        <label for="nombre">
-         NOMBRE
-        </label>
-        <input id="nombre" name="nombre" placeholder="Tu nombre" required="" type="text"/>
-       </div>
-       <div class="form-group">
-        <label for="email">
-         EMAIL
-        </label>
-        <input id="email" name="email" placeholder="Tu email" required="" type="email"/>
-       </div>
-       <div class="form-group">
-        <label for="phone">
-         TELÉFONO MÓVIL
-        </label>
-        <input id="phone" name="phone" placeholder="Tu teléfono móvil" required="" type="tel"/>
-       </div>
-       <div class="form-group">
-        <label for="interes">
-         INTERÉS
-        </label>
-        <select id="interes" name="interes">
-         <option value="Taller de Prueba">
-          Taller de Prueba
-         </option>
-         <option value="Clases Semanales">
-          Clases Semanales
-         </option>
-         <option value="Encargo Personalizado">
-          Encargo Personalizado
-         </option>
-         <option value="Vale Regalo">
-          Vale Regalo
-         </option>
-         <option value="Consulta General">
-          Consulta General
-         </option>
-        </select>
-       </div>
-       <div class="form-group">
-        <label for="mensaje">
-         MENSAJE
-        </label>
-        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas, cuántas personas sois, fechas que te vienen bien..." required=""></textarea>
-       </div>
-       <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 2rem;">
-        <input id="rgpd" name="rgpd" required="" style="width: auto; margin-top: 5px;" type="checkbox"/>
-        <label for="rgpd" style="font-weight: 400; font-size: 0.75rem; color: var(--text-light); line-height: 1.4;">
-         He leído y acepto la
-         <a href="privacidad.html" style="color: var(--green); text-decoration: underline;" target="_blank">
-          política de privacidad
-         </a>
-         y el tratamiento de mis datos personales según el RGPD.
-        </label>
-       </div>
-       <button class="btn-primary" type="submit">
-        Enviar mensaje
-       </button>
-      </form>
+    </div>
+    <div class="mes-block">
+     <div class="mes-header">
+      <span class="mes-badge">
+       Agosto
+      </span>
+      <h3>
+       Talleres de Agosto
+      </h3>
      </div>
+     <div class="talleres-agenda-grid">
+      <!-- Taller Agosto 1 -->
+      <div class="taller-agenda-card" data-fecha="2026-08-01">
+       <div class="fecha">
+        Sábado 01 de Agosto
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2001%20de%20Agosto" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+      <!-- Taller Agosto 2 -->
+      <div class="taller-agenda-card" data-fecha="2026-08-08">
+       <div class="fecha">
+        Sábado 08 de Agosto
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2008%20de%20Agosto" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+      <!-- Taller Agosto 3 -->
+      <div class="taller-agenda-card" data-fecha="2026-08-29">
+       <div class="fecha">
+        Sábado 29 de Agosto
+       </div>
+       <div class="tipo-taller">
+        Taller Puntual
+       </div>
+       <div class="hora">
+        12:00 a 13:30h
+       </div>
+       <div class="precio">
+        35€
+       </div>
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2029%20de%20Agosto" target="_blank">
+        Reservar plaza
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="cta-agenda-personalizada">
+     <h2>
+      ¿Buscas un taller privado o una fecha exclusiva?
+     </h2>
+     <p>
+      Diseñamos experiencias a medida para grupos, celebraciones o eventos privados. ¡Cuéntanos tu idea!
+     </p>
+     <a class="btn-white-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20información%20sobre%20un%20taller%20privado%20o%20personalizado" target="_blank">
+      Consultar Talleres Privados por WhatsApp
+     </a>
     </div>
    </div>
   </section>
@@ -1745,6 +1848,36 @@
       } else {
         nav.classList.remove('scrolled');
       }
+    });
+
+   window.addEventListener('DOMContentLoaded', () => {
+      const hoy = new Date();
+      hoy.setHours(0, 0, 0, 0);
+      
+      // 1. Ocultar talleres individuales pasados
+      const talleres = document.querySelectorAll('.taller-agenda-card[data-fecha]');
+      talleres.forEach(taller => {
+        const fechaStr = taller.getAttribute('data-fecha');
+        const [anio, mes, dia] = fechaStr.split('-').map(Number);
+        const fechaTaller = new Date(anio, mes - 1, dia);
+        
+        if (fechaTaller < hoy) {
+          taller.style.display = 'none';
+          taller.classList.add('past-taller'); // Clase de apoyo
+        }
+      });
+      
+      // 2. Ocultar bloques de meses si no tienen talleres visibles
+      const mesBlocks = document.querySelectorAll('.mes-block');
+      mesBlocks.forEach(mesBlock => {
+        const totalTalleres = mesBlock.querySelectorAll('.taller-agenda-card').length;
+        const talleresPasados = mesBlock.querySelectorAll('.taller-agenda-card.past-taller').length;
+        
+        // Si todos los talleres del bloque han pasado, ocultamos el bloque entero (incluye título)
+        if (totalTalleres > 0 && totalTalleres === talleresPasados) {
+          mesBlock.style.display = 'none';
+        }
+      });
     });
   </script>
  </body>

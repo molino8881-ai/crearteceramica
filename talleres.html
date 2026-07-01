@@ -4,38 +4,39 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Talleres de Cerámica | CreArte Cerámica Valladolid
+   Próximos Talleres de Cerámica Valladolid | CreArte
   </title>
   <meta content="Explora nuestros talleres de cerámica en Valladolid: clases semanales, talleres de prueba, puntuales y privados. Aprende modelado, torno y decoración sin experiencia previa." name="description"/>
   <meta content="talleres cerámica Valladolid, clases cerámica, regalos personalizados, conchas bautismo, detalles boda, huellas mascotas, marcos cerámica, vajillas artesanales, decoración hogar, taller artesanal" name="keywords"/>
   <meta content="CreArte Cerámica" name="author"/>
-  <meta content="index, follow" name="robots"/>
-  <link href="https://crearteceramica.es/" rel="canonical"/>
-  <!-- Favicon -->
-  <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
-  <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-  <meta content="#227768" name="theme-color"/>
-  <meta content="#227768" name="msapplication-TileColor"/>
-  <!-- Open Graph / Facebook -->
-  <meta content="website" property="og:type"/>
-  <meta content="https://crearteceramica.es/" property="og:url"/>
-  <meta content="CreArte: Talleres de Cerámica en Valladolid | Clases y Regalos Artesanales Únicos" property="og:title"/>
-  <meta content="CreArte Cerámica Valladolid: Talleres de cerámica, clases semanales, regalos artesanales personalizados y encargos. Especialistas en marcos de cerámica, vajillas artesanales, decoración del hogar, conchas de bautismo, detalles para bodas y huellas de mascotas." property="og:description"/>
-  <meta content="https://crearteceramica.es/hero.webp" property="og:image"/>
+ <meta content="index, follow" name="robots"/>
+<meta name="description" content="Talleres de cerámica en Valladolid para todos los niveles. Clases semanales, torno alfarero, talleres puntuales y privados. Materiales y cocción incluidos."/>
+    <link href="https://crearteceramica.es/talleres.html" rel="canonical"/>
+    <!-- Favicon -->
+    <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <meta content="#227768" name="theme-color"/>
+    <meta content="#227768" name="msapplication-TileColor"/>
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type"/>
+    <meta content="https://crearteceramica.es/talleres.html" property="og:url"/>
+  <meta content="Talleres de Cerámica en Valladolid | CreArte" property="og:title"/>
+  <meta content="Clases semanales, talleres de prueba y eventos privados. Aprende modelado y torno en un ambiente relajado." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/grupo.webp" property="og:image"/>
   <!-- Twitter Card -->
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="CreArte: Talleres de Cerámica en Valladolid" name="twitter:title"/>
   <meta content="Talleres de cerámica, clases semanales y regalos artesanales personalizados en Valladolid." name="twitter:description"/>
-  <meta content="https://crearteceramica.es/herowebp" name="twitter:image"/>
+  <meta content="https://crearteceramica.es/imagenes/hero.webp" name="twitter:image"/>
   <!-- LocalBusiness Structured Data -->
   <script type="application/ld+json">
    {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "CreArte",
-    "image": "https://crearteceramica.es/hero.webp",
+    "image": "https://crearteceramica.es/imagenes/hero.webp",
     "@id": "https://crearteceramica.es/",
     "url": "https://crearteceramica.es/",
     "telephone": "+34639096691",
@@ -48,8 +49,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.61234567890123,
-      "longitude": -4.756789012345
+       "latitude": 41.6163356,
+      "longitude": -4.7508584
     },
     "openingHoursSpecification": [
       {
@@ -68,6 +69,29 @@
     "sameAs": [
       "https://www.instagram.com/crearteceramicavalladolid"
     ]
+  }
+  </script>
+  <!-- Course Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Talleres de Cerámica en Valladolid",
+    "description": "Aprende cerámica desde cero en nuestros talleres en Valladolid. Clases semanales, talleres puntuales y clases de torno alfarero para todos los niveles.",
+    "provider": {
+      "@type": "Organization",
+      "name": "CreArte",
+      "sameAs": "https://crearteceramica.es"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "CreArte Cerámica"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "150"
+    }
   }
   </script>
   <!-- Fuentes -->
@@ -167,6 +191,7 @@
     .logo img { 
       height: 60px;
       width: auto;
+      max-width: 100%;
     }
 
     .nav-links {
@@ -189,6 +214,14 @@
     /* Enlaces móviles adicionales - ocultos en pantallas grandes */
     .mobile-only-link {
       display: none !important;
+    }
+
+    /* Textos adaptables según dispositivo */
+    .desktop-text {
+      display: inline;
+    }
+    .mobile-text {
+      display: none;
     }
 
     .btn-nav {
@@ -283,8 +316,17 @@
 
     .hero-image {
       height: 100vh;
-      background: url('imagenes/hero.webp') center/cover no-repeat;
       position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      max-width: none;
     }
 
     .hero-image::before {
@@ -295,6 +337,13 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(to right, white, transparent 20%);
+      z-index: 1;
+    }
+
+    @media (max-width: 992px) {
+      .hero-image::before {
+        background: linear-gradient(to bottom, white, transparent 20%);
+      }
     }
 
     /* NOSOTROS / FILOSOFÍA */
@@ -339,7 +388,7 @@
 
     .section-header {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
 
     .section-header span {
@@ -347,12 +396,31 @@
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      line-height: 1.2;
     }
 
     .section-header h2 {
       font-size: 3rem;
       margin-top: 1rem;
+    }
+
+    .section-header p {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.7;
     }
 
     .talleres-grid {
@@ -379,8 +447,12 @@
 
     .taller-img {
       height: 240px;
-      background-size: cover;
-      background-position: center;
+      overflow: hidden;
+    }
+    .taller-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .taller-info {
@@ -400,7 +472,7 @@
     .taller-info .tagline {
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
       display: block;
@@ -425,7 +497,7 @@
       display: flex;
       align-items: center;
       justify-content: center; /* Centrar contenido de la lista */
-      gap: 0.5rem;
+      gap: 0.4rem;
     }
 
     .taller-price {
@@ -520,7 +592,7 @@
 
     /* VALE REGALO */
     #vales {
-      padding: 6rem 0;
+      padding: 2rem 0 6rem 0;
       background: var(--green);
       color: white;
       text-align: center;
@@ -629,7 +701,7 @@
     .form-group label {
       display: block;
       font-weight: 700;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       margin-bottom: 0.5rem;
       color: var(--text-light);
     }
@@ -687,8 +759,10 @@
     /* RESPONSIVE */
     /* TABLET Y PANTALLAS MEDIANAS */
     @media (max-width: 992px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
+      .hero-image { display: block; height: 400px; order: -1; }
+      .hero-content { padding: 3rem 1.5rem; text-align: center; }
+      .hero-btns { justify-content: center; }
       .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
       .menu-toggle { display: flex; }
       .nav-links {
@@ -710,6 +784,9 @@
       .nav-links a { font-size: 1.2rem; }
       /* Mostrar enlaces móviles en tablet */
       .mobile-only-link { display: block !important; }
+      /* Mostrar texto móvil en tablet */
+      .desktop-text { display: none; }
+      .mobile-text { display: inline; }
       
       /* Animación hamburguesa */
       .menu-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
@@ -728,7 +805,7 @@
       .logo img {  height: 44px; }
       
       .hero { padding: 4rem 0; }
-      .hero-tag { font-size: 0.8rem; }
+      .hero-tag { font-size: 0.75rem; }
       .hero-title { font-size: 2rem; }
       .hero-description { font-size: 0.95rem; }
       .hero-btns { flex-direction: column; gap: 1rem; }
@@ -787,10 +864,10 @@
       
       .taller-info { padding: 1.2rem; }
       .taller-price { font-size: 1.4rem; }
-      .taller-details li { font-size: 0.8rem; }
+      .taller-details li { font-size: 0.75rem; }
       
       .regalo-item h4 { font-size: 1.1rem; }
-      .regalo-item p { font-size: 0.85rem; }
+      .regalo-item p { font-size: 0.75rem; }
       .regalo-price { font-size: 0.95rem; }
       
       .vale-content h2 { font-size: 1.6rem; }
@@ -812,10 +889,13 @@
       .footer-links { gap: 1rem; flex-wrap: wrap; }
       /* Mostrar enlaces móviles en pantallas pequeñas */
       .mobile-only-link { display: block !important; }
+      /* Mostrar texto móvil en pantallas pequeñas */
+      .desktop-text { display: none; }
+      .mobile-text { display: inline; }
     }
     /* Nuevos estilos para la sección de Próximos Talleres */
     .proximos-talleres {
-      padding: 4rem 0 8rem 0;
+      padding: 4rem 0 2rem 0;
       background: var(--green-pale);
     }
     .proximos-talleres .section-header h2 {
@@ -892,7 +972,7 @@
       color: var(--text);
     }
     .taller-agenda-card .hora {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-light);
       margin-bottom: 0.8rem;
       padding-bottom: 0.8rem;
@@ -923,11 +1003,12 @@
     }
     .cta-agenda-personalizada {
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       padding: 3rem;
       background: var(--green);
       color: white;
       border-radius: 2rem;
+      margin-bottom: 2rem;
     }
     .cta-agenda-personalizada h4 {
       font-size: 1.8rem;
@@ -965,7 +1046,7 @@
     "description": "Talleres de cerámica en Valladolid para todos los niveles. Talleres de prueba, clases semanales, talleres puntuales y privados. Encargos y regalos artesanales personalizados.",
     "url": "https://crearteceramica.es",
     "logo": "https://crearteceramica.es/logo.webp",
-    "image": "https://crearteceramica.es/herowebp",
+    "image": "https://crearteceramica.es/imagenes/hero.webp",
     "telephone": "+34639096691",
     "email": "creartevalladolid@gmail.com",
     "address": {
@@ -978,8 +1059,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.6483,
-      "longitude": -4.7282
+      "latitude": 41.6163356,
+      "longitude": -4.7508584
     },
     "openingHoursSpecification": [
       {
@@ -1206,9 +1287,7 @@
     ]
   }
   </script>
-  <style>
-   dentro de tu <head> o al final del archivo
-     ============================================================ -->
+  
 
 <!-- ESTILOS: pega dentro de <head> o en tu archivo CSS -->
 <style>
@@ -1354,11 +1433,11 @@
   .faq-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     background: white;
     color: #227768;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 500;
     padding: 0.75rem 1.4rem;
     border-radius: 50px;
@@ -1381,7 +1460,126 @@
       padding-right: 0;
     }
   }
-  </style>
+  
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .dropdown-toggle:hover {
+      color: var(--green);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    /* Responsive - Dropdown en móvil */
+    @media (max-width: 992px) {
+      .nav-item {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        width: 100%;
+        text-align: center;
+        min-width: auto;
+      }
+
+      .nav-item.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        background: rgba(34, 119, 104, 0.05);
+        border-radius: 12px;
+        margin-top: 0.5rem;
+      }
+
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        border-radius: 0 !important;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    </style>
   <link as="image" href="imagenes/hero.webp" rel="preload"/>
   <link as="image" href="imagenes/logo.webp" rel="preload"/>
  </head>
@@ -1389,56 +1587,52 @@
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
     <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="1536" height="871"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div class="nav-links">
-     <a href="index.html">
-      INICIO
-     </a>
-     <a href="talleres.html">
-      TIPOS DE TALLERES
-     </a>
-     <a href="regalos.html">
-      REGALOS Y ENCARGOS
-     </a>
-     <a href="faq.html">
-      PREGUNTAS FRECUENTES
-     </a>
-     <!-- Enlaces móviles adicionales -->
-     <a href="talleres.html#proximos-talleres" class="mobile-only-link">
-      PRÓXIMOS TALLERES
-     </a>
-     <a href="regalos.html#vales" class="mobile-only-link">
-      VALES REGALO
-     </a>
-     <a class="btn-nav" href="contacto.html">
-      RESERVAR PLAZA
-     </a>
-    </div>
+<div class="nav-links">
+      <a href="index.html">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres.html">Tipos de talleres</a>
+          <a href="calendario.html">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="vales-regalo.html">VALES REGALO</a>
+      <a href="regalos.html">TIENDA</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+     </div>
    </div>
   </nav>
   <section class="talleres" id="talleres" style="padding-top: 150px; ">
    <div class="container">
     <div class="section-header">
      <span>
-      Aprende con nosotros
+      Aprende Cerámica en Valladolid
      </span>
      <h1>
-      Talleres de Cerámica en Valladolid
+      Talleres de Cerámica para Todos los Niveles
      </h1>
      <p>
-      Desde un primer contacto hasta clases semanales para perfeccionar tu técnica. Encuentra el espacio que mejor se adapte a ti y a tu ritmo.
+      Encuentra el taller que mejor se adapte a ti y a tu ritmo de vida. Cada persona llega al taller con un motivo distinto: unas buscan desconectar una tarde, otras quieren aprender una técnica en serio, y otras simplemente tienen ganas de crear algo con las manos.
+     </p>
+     <p>
+      Por eso en CreArte ofrecemos varios tipos de talleres en Valladolid, pensados para que encuentres el que mejor se adapta a ti, tengas o no experiencia previa. Trabajamos en grupos reducidos, en nuestro taller del Parque Alameda, con tiempo y atención para cada alumno/a.
+     </p>
+     <p>
+      Si buscas talleres de cerámica en Valladolid, clases para principiantes o cursos avanzados de modelado y torno, aquí encontrarás la opción que mejor encaja contigo.
      </p>
     </div>
     <div class="talleres-grid">
      <!-- Taller 1 -->
      <div class="taller-card">
-      <div alt="Manos trabajando en taller de prueba de cerámica - CreArte Valladolid" class="taller-img" style="background-image: url('imagenes/manos.webp');">
+      <div alt="Manos trabajando en taller de prueba de cerámica - CreArte Valladolid" class="taller-img"><img src="imagenes/manos.webp" alt="Manos trabajando en taller de prueba de cerámica - CreArte Valladolid" width="896" height="791" loading="lazy">
       </div>
       <div class="taller-info">
        <span class="tagline">
@@ -1448,7 +1642,7 @@
         Talleres de Prueba
        </h3>
        <p>
-        Perfecta para principiantes o para quien quiera descubrir la cerámica desde cero en Valladolid. En 2 horas aprenderás técnicas básicas de modelado a mano y te llevarás tu primera pieza a casa. Ideal también como plan original en pareja o con amigas.
+        Ideal si nunca has tocado el barro y quieres probar la experiencia. Aprenderás las técnicas básicas de modelado a mano, y crearás tu propia pieza, que recogerás unas semanas después tras la cocción y el esmaltado. Perfecto para una tarde diferente, solo o en grupo. Ideal también como plan original en pareja o con amigas.
        </p>
        <ul class="taller-details">
         <li>
@@ -1480,7 +1674,7 @@
      </div>
      <!-- Taller 2 -->
      <div class="taller-card">
-      <div alt="Alumno trabajando en torno de cerámica - Clases semanales CreArte" class="taller-img" style="background-image: url('imagenes/torno.webp');">
+      <div alt="Alumno trabajando en torno de cerámica - Clases semanales CreArte" class="taller-img"><img src="imagenes/torno.webp" alt="Alumno trabajando en torno de cerámica - Clases semanales CreArte" width="1200" height="1600" loading="lazy">
       </div>
       <div class="taller-info">
        <span class="tagline">
@@ -1490,7 +1684,7 @@
         Clases Semanales
        </h3>
        <p>
-        Clases semanales de 2h/ semana para aprender y perfeccionar técnicas cerámicas. Elige entre 4 o 12 semanas consecutivas. Nos adaptamos a personas con trabajos a turnos.
+         Es la opción más accesible para empezar y muy versátil para dar rienda suelta a la creatividad, trabajamos técnicas como el pellizco, churros y planchas para crear piezas más escultóricas o decorativas. Elige entre 4 o 12 semanas consecutivas. Nos adaptamos a personas con trabajos a turnos.
        </p>
        <ul class="taller-details">
         <li>
@@ -1524,7 +1718,7 @@
      </div>
      <!-- Taller Nuevo: Torno Alfarero -->
      <div class="taller-card">
-      <div alt="Clases de torno alfarero en Valladolid - CreArte" class="taller-img" style="background-image: url('imagenes/torno.webp');">
+      <div alt="Clases de torno alfarero en Valladolid - CreArte" class="taller-img"><img src="imagenes/clasetorno.webp" alt="Clase intensiva de torno alfarero en Valladolid" width="1530" height="1710" loading="lazy">
       </div>
       <div class="taller-info">
        <span class="tagline">
@@ -1534,7 +1728,7 @@
         Clases de Torno Alfarero
        </h3>
        <p>
-        Clases semanales de 2h/ semana para iniciarte en el mundo apasionante del torno de cerámica. Aprenderás el Centrado perfecto, Apertura y alzado, Retorneado y acabado y Esmaltar.
+        Pensado para quienes quieren aprender específicamente la técnica del torno alfarero en Valladolid. Aprenderás a centrar el barro, levantar paredes y dar forma a cuencos, tazas o jarrones. Disponible tanto en formato puntual como en clases continuadas para ir progresando.
        </p>
        <ul class="taller-details">
         <li>
@@ -1576,7 +1770,7 @@
         Talleres Puntuales
        </h3>
        <p>
-        Sesiones de fin de semana en Valladolid: 1,5h o 3h para crear y pintar tus propias piezas de cerámica. Un plan diferente para el fin de semana, sin compromisos y con picoteo incluido. Perfecto para venir sola, en pareja o con amigas.
+        ¿Te apetece probar la cerámica sin compromiso? Nuestros talleres puntuales son sesiones sueltas, pensadas para quienes quieren vivir la experiencia una sola vez: por curiosidad, como regalo, para desconectar o simplemente porque siempre has querido probarlo. No necesitas experiencia previa ni traer nada de tu casa. Sesiones de fin de semana en Valladolid: 1,5h o 3h para crear y pintar tus propias piezas de cerámica. Un plan diferente, con picoteo incluido. Perfecto para venir sola, en pareja o con amigas.
        </p>
        <ul class="taller-details">
         <li>
@@ -1622,7 +1816,7 @@
      </div>
      <!-- Taller 4 -->
      <div class="taller-card">
-      <div alt="Taller privado de cerámica en Valladolid - CreArte" class="taller-img" style="background-image: url('imagenes/tallerprivado.webp');">
+      <div alt="Taller privado de cerámica en Valladolid - CreArte" class="taller-img"><img src="imagenes/tallerprivado.webp" alt="Taller de cerámica privado para grupos y eventos en Valladolid" width="1530" height="1344" loading="lazy">
       </div>
       <div class="taller-info">
        <span class="tagline">
@@ -1632,7 +1826,7 @@
         Talleres Privados
        </h3>
        <p>
-        Experiencias a medida para grupos en Valladolid: despedidas de soltera con cerámica, cumpleaños originales, team building para empresas y celebraciones privadas. Diseñamos cada sesión según lo que necesitéis — vosotras ponéis las ganas, nosotras ponemos el barro y el picoteo.
+        Una experiencia diferente para celebrar algo en compañía: cumpleaños, despedidas de soltera/o, planes con amigas o equipos de trabajo. Adaptamos la sesión al grupo y al motivo de la celebración. Sesiones de fin de semana en Valladolid: 1,5h o 3h para crear y pintar tus propias piezas de cerámica. Un plan diferente en Valladolid para el fin de semana. Vosotras ponéis las ganas, nosotras ponemos el barro y el picoteo.
        </p>
        <ul class="taller-details">
         <li>
@@ -1656,229 +1850,15 @@
          </strong>
          Picoteo incluido
         </li>
+        <li>
+         🏛️ <strong>Extra:</strong> Disponemos de espacio suficiente para grupos grandes
+        </li>
        </ul>
        <div class="taller-price">
         Consultar presupuesto
-       </div>
-      </div>
-     </div>
-    </div>
    </div>
   </section>
-  <section class="proximos-talleres" id="proximos-talleres">
-   <div class="container">
-    <div class="section-header">
-     <span>
-      No te quedes sin tu plaza
-     </span>
-     <h2>
-      Próximos Talleres
-     </h2>
-    </div>
-    <div class="mes-block">
-     <div class="mes-header">
-      <span class="mes-badge">
-       Junio
-      </span>
-      <h3>
-       Talleres de Junio
-      </h3>
-     </div>
-     <div class="talleres-agenda-grid">
-      <!-- Taller Junio 1 -->
-      <div class="taller-agenda-card" data-fecha="2026-06-06">
-       <div class="fecha">
-        Sábado 06 de Junio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2006%20de%20Junio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Junio 2 -->
-      <div class="taller-agenda-card" data-fecha="2026-06-13">
-       <div class="fecha">
-        Sábado 13 de Junio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        11:00 a 14:00h
-       </div>
-       <div class="precio">
-        45€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2013%20de%20Junio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Junio 3 -->
-      <div class="taller-agenda-card" data-fecha="2026-06-20">
-       <div class="fecha">
-        Sábado 20 de Junio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2020%20de%20Junio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Junio 4 -->
-      <div class="taller-agenda-card" data-fecha="2026-06-21">
-       <div class="fecha">
-        Domingo 21 de Junio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Domingo%2021%20de%20Junio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Junio 5 -->
-      <div class="taller-agenda-card" data-fecha="2026-06-27">
-       <div class="fecha">
-        Sábado 27 de Junio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        11:00 a 14:00h
-       </div>
-       <div class="precio">
-        45€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2027%20de%20Junio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-     </div>
-    </div>
-    <div class="mes-block">
-     <div class="mes-header">
-      <span class="mes-badge">
-       Julio
-      </span>
-      <h3>
-       Talleres de Julio
-      </h3>
-     </div>
-     <div class="talleres-agenda-grid">
-      <!-- Taller Julio 1 -->
-      <div class="taller-agenda-card" data-fecha="2026-07-04">
-       <div class="fecha">
-        Sábado 04 de Julio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2004%20de%20Julio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Julio 2 -->
-      <div class="taller-agenda-card" data-fecha="2026-07-11">
-       <div class="fecha">
-        Sábado 11 de Julio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2011%20de%20Julio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Julio 3 -->
-      <div class="taller-agenda-card" data-fecha="2026-07-11">
-       <div class="fecha">
-        Sábado 11 de Julio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        11:00 a 14:00h
-       </div>
-       <div class="precio">
-        45€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2011%20de%20Julio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Julio 4 -->
-      <div class="taller-agenda-card" data-fecha="2026-07-18">
-       <div class="fecha">
-        Sábado 18 de Julio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2018%20de%20Julio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-      <!-- Taller Julio 5 -->
-      <div class="taller-agenda-card" data-fecha="2026-07-25">
-       <div class="fecha">
-        Sábado 25 de Julio
-       </div>
-       <div class="tipo-taller">
-        Taller Puntual
-       </div>
-       <div class="hora">
-        12:00 a 13:30h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20reservar%20plaza%20para%20el%20Taller%20Puntual%20del%20Sábado%2025%20de%20Julio" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
-     </div>
-    </div>
+  </div>
     <div class="cta-agenda-personalizada">
      <h2>
       ¿Buscas un taller privado o una fecha exclusiva?
@@ -1891,27 +1871,17 @@
      </a>
     </div>
    </div>
-  </section>
   <footer>
-   <div class="footer-logo">
-    <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
-   </div>
-   <p>
-    © 2026 CreArte · Cerámica sin postureo. Valladolid, España.
-   </p>
+   <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html#inicio">
-     Inicio
-    </a>
-    <a href="talleres.html#talleres">
-     Talleres
-    </a>
-    <a href="regalos.html#regalos">
-     Regalos
-    </a>
-    <a href="contacto.html#contacto">
-     Contacto
-    </a>
+    <a href="index.html">Inicio</a>
+    <a href="talleres.html">Talleres</a>
+    <a href="vales-regalo.html">Vales regalo</a>
+    <a href="regalos.html">Tienda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacidad.html">Privacidad</a>
    </div>
   </footer>
   <script>
@@ -1926,11 +1896,24 @@
       body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
     });
 
+    // Lógica para el submenú en móvil
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navItem = document.querySelector('.nav-item');
+
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        navItem.classList.toggle('active');
+      }
+    });
+
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        body.style.overflow = 'auto';
+      link.addEventListener('click', (e) => {
+        if (!link.closest('.dropdown-toggle')) {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          body.style.overflow = 'auto';
+        }
       });
     });
 

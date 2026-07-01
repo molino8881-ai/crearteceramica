@@ -4,13 +4,14 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Inicio | CreArte Cerámica Valladolid
+    Talleres de cerámica en Valladolid | CreArte
   </title>
-  <meta content="CreArte: Talleres de cerámica en Valladolid. Aprende técnicas de modelado, torno y decoración. Regalos artesanales únicos: conchas de bautismo, vajillas y detalles personalizados." name="description"/>
-  <meta content="talleres cerámica Valladolid, clases cerámica, regalos personalizados, conchas bautismo, detalles boda, huellas mascotas, marcos cerámica, vajillas artesanales, decoración hogar, taller artesanal" name="keywords"/>
+  <meta content="CreArte es el taller de cerámica de referencia en Valladolid. Ofrecemos clases de modelado, torno alfarero y regalos artesanales personalizados como conchas de bautismo y vajillas únicas. ¡Reserva tu experiencia creativa hoy!" name="description"/>
+  <meta content="talleres cerámica Valladolid, clases cerámica Valladolid, aprender cerámica, torno alfarero Valladolid, regalos personalizados cerámica, conchas bautismo artesanales, detalles boda Valladolid, huellas mascotas cerámica, vajillas artesanales, taller cerámica cerca de mí" name="keywords"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/" rel="canonical"/>
+  <link rel="preload" href="imagenes/hero.webp" as="image" fetchpriority="high">
   <!-- Favicon -->
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -21,21 +22,21 @@
   <!-- Open Graph / Facebook -->
   <meta content="website" property="og:type"/>
   <meta content="https://crearteceramica.es/" property="og:url"/>
-  <meta content="CreArte: Talleres de Cerámica en Valladolid | Clases y Regalos Artesanales Únicos" property="og:title"/>
-  <meta content="CreArte Cerámica Valladolid: Talleres de cerámica, clases semanales, regalos artesanales personalizados y encargos. Especialistas en marcos de cerámica, vajillas artesanales, decoración del hogar, conchas de bautismo, detalles para bodas y huellas de mascotas." property="og:description"/>
-  <meta content="https://crearteceramica.es/hero.webp" property="og:image"/>
+  <meta content="CreArte Cerámica Valladolid | Talleres y Regalos Artesanales" property="og:title"/>
+  <meta content="Aprende cerámica en Valladolid. Talleres para todos los niveles, clases semanales y regalos personalizados hechos a mano." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/hero.webp" property="og:image"/>
   <!-- Twitter Card -->
   <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="CreArte: Talleres de Cerámica en Valladolid" name="twitter:title"/>
+  <meta content="CreArte: Taller de Cerámica en Valladolid" name="twitter:title"/>
   <meta content="Talleres de cerámica, clases semanales y regalos artesanales personalizados en Valladolid." name="twitter:description"/>
-  <meta content="https://crearteceramica.es/herowebp" name="twitter:image"/>
+  <meta content="https://crearteceramica.es/imagenes/hero.webp" name="twitter:image"/>
   <!-- LocalBusiness Structured Data -->
   <script type="application/ld+json">
    {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "CreArte",
-    "image": "https://crearteceramica.es/hero.webp",
+    "image": "https://crearteceramica.es/imagenes/hero.webp",
     "@id": "https://crearteceramica.es/",
     "url": "https://crearteceramica.es/",
     "telephone": "+34639096691",
@@ -47,9 +48,9 @@
       "addressCountry": "ES"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.61234567890123,
-      "longitude": -4.756789012345
+     "@type": "GeoCoordinates",
+      "latitude": 41.6163356,
+      "longitude": -4.7508584
     },
     "openingHoursSpecification": [
       {
@@ -67,7 +68,12 @@
     ],
     "sameAs": [
       "https://www.instagram.com/crearteceramicavalladolid"
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "150"
+    }
   }
   </script>
   <!-- Fuentes -->
@@ -167,6 +173,7 @@
     .logo img { 
       height: 60px;
       width: auto;
+      max-width: 100%;
     }
 
     .nav-links {
@@ -184,11 +191,6 @@
 
     .nav-links a:hover {
       color: var(--green);
-    }
-
-    /* Enlaces móviles adicionales - ocultos en pantallas grandes */
-    .mobile-only-link {
-      display: none !important;
     }
 
     .btn-nav {
@@ -221,38 +223,47 @@
       display: inline-block;
       background: var(--green-pale);
       color: var(--green);
-      font-size: 1.56rem; /* Duplicado de 0.78rem */
+      font-size: 0.78rem;
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       padding: 0.6rem 1.8rem;
       border-radius: 50px;
       margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
     }
 
     .hero-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.6rem, 4vw, 4rem);
+      font-size: clamp(1.6rem, 4.5vw, 2.8rem); /* Reducido ligeramente para asegurar una sola línea */
       font-weight: 700;
       color: var(--text);
       margin-bottom: 1.5rem;
+      word-wrap: break-word; /* Asegura que el texto largo no rompa el diseño */
     }
 
     .hero-title span {
       color: var(--green);
-      display: block;
+      display: inline;
+    }
+
+    .titulo-linea1 {
+      white-space: nowrap;
+      display: inline;
+      color: var(--text) !important;
     }
 
     .hero-description {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       color: var(--text-light);
-      margin-bottom: 2.5rem;
-      max-width: 500px;
+      margin-bottom: 1.5rem;
+      max-width: 600px;
+      line-height: 1.65;
     }
 
     .hero-btns {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
     .btn-primary {
@@ -262,6 +273,7 @@
       border-radius: 50px;
       font-weight: 700;
       box-shadow: 0 10px 20px rgba(34, 119, 104, 0.15);
+      text-align: center;
     }
 
     .btn-primary:hover {
@@ -275,6 +287,7 @@
       padding: 1.2rem 2.5rem;
       border-radius: 50px;
       font-weight: 700;
+      text-align: center;
     }
 
     .btn-secondary:hover {
@@ -283,8 +296,17 @@
 
     .hero-image {
       height: 100vh;
-      background: url('imagenes/hero.webp') center/cover no-repeat;
       position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      max-width: none; /* Asegura que cubra el contenedor */
     }
 
     .hero-image::before {
@@ -295,51 +317,92 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(to right, white, transparent 20%);
+      z-index: 1;
     }
 
-    /* NOSOTROS / FILOSOFÍA */
+    @media (max-width: 992px) {
+      .hero-image::before {
+        background: linear-gradient(to bottom, white, transparent 20%);
+      }
+    }
+
+    /* NOSOTROS */
     .nosotros {
-      padding: 8rem 0;
-      background: var(--green);
-      color: white;
+      padding: 5rem 0;
+      background: linear-gradient(135deg, #e9f2f0 0%, #f5faf9 100%);
+      color: var(--text);
       text-align: center;
     }
 
     .nosotros h2 {
+      font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .nosotros h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      color: var(--text);
+      font-weight: 700;
+      line-height: 1.5;
     }
 
     .nosotros p {
       max-width: 800px;
-      margin: 0 auto 4rem;
-      font-size: 1.2rem;
-      opacity: 0.9;
+      margin: 0 auto 2.5rem;
+      font-size: 1.15rem;
+      color: var(--text-light);
+      line-height: 1.7;
     }
 
     .valores {
       display: flex;
       justify-content: center;
-      gap: 3rem;
+      gap: 2rem;
       flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .valor-item {
-      background: rgba(255,255,255,0.1);
-      padding: 1.5rem 2.5rem;
-      border-radius: 100px;
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 20px;
       font-weight: 600;
-      backdrop-filter: blur(5px);
+      box-shadow: 0 5px 20px rgba(34, 119, 104, 0.08);
+      flex: 1;
+      min-width: 250px;
+      max-width: 320px;
+      border: 1px solid rgba(34, 119, 104, 0.1);
+      text-align: center;
     }
 
-    /* TALLERES */
-    .talleres {
-      padding: 10rem 0;
+    .valor-item strong {
+      display: block;
+      font-size: 1.3rem;
+      color: var(--green);
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+    .valor-item br {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* PREVIEW TALLERES */
+    #talleres-preview {
+      padding: 4rem 0;
+      text-align: center;
     }
 
     .section-header {
-      text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 1rem;
     }
 
     .section-header span {
@@ -351,313 +414,201 @@
     }
 
     .section-header h2 {
-      font-size: 3rem;
-      margin-top: 1rem;
+      font-size: 2rem;
+      margin-top: 0.4rem;
     }
 
-    .talleres-grid {
+    .tarjetas-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 1.5rem 0;
     }
 
-    .taller-card {
+    .tarjeta {
       background: white;
+      padding: 1.5rem 1.5rem;
       border-radius: 24px;
-      overflow: hidden;
       box-shadow: var(--shadow);
-      transition: 0.4s;
+      transition: 0.3s;
       border: 1px solid #f0f0f0;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
-    .taller-card:hover {
+    .tarjeta:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
-    .taller-img {
-      height: 240px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .taller-info {
-      padding: 2.5rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      text-align: center; /* Centrar texto */
-      align-items: center; /* Centrar elementos flex */
-    }
-
-    .taller-info h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .taller-info .tagline {
-      color: var(--green);
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-
-    .taller-info p {
-      color: var(--text-light);
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
-
-    .taller-details {
-      margin-top: auto;
-      padding-top: 1.5rem;
-      border-top: 1px solid #f0f0f0;
-    }
-
-    .taller-details li {
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
+    .tarjeta h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
       color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Centrar contenido de la lista */
-      gap: 0.5rem;
     }
 
-    .taller-price {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--green);
-      margin-top: 1.5rem;
-      text-align: center; /* Asegurar centrado del precio */
-    }
-
-    /* REGALOS Y ENCARGOS */
-    .regalos {
-      padding: 8rem 0;
-      background: var(--green-pale);
-    }
-
-    .regalos-category {
-      margin-bottom: 6rem;
-    }
-
-    .regalos-category h3 {
-      font-size: 2.2rem;
-      margin-bottom: 3rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid var(--green);
-      display: inline-block;
-    }
-
-    .regalos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .regalo-item {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-
-    .regalo-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 1.5rem;
-    }
-
-    .regalo-img-container {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      margin-bottom: 1.5rem;
-      overflow: hidden;
-      border-radius: 15px;
-    }
-
-    .regalo-img-container .regalo-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin-bottom: 0;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .regalo-img-container .regalo-img.active {
-      opacity: 1;
-      position: relative;
-    }
-
-    .regalo-item h4 {
-      font-size: 1.3rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .regalo-item p {
+    .tarjeta p {
       font-size: 0.9rem;
       color: var(--text-light);
       margin-bottom: 1rem;
     }
 
-    .regalo-price {
+    .tarjeta .precio {
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--green);
-      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: block;
     }
 
-    /* VALE REGALO */
-    #vales {
-      padding: 6rem 0;
+    .tarjeta a {
+      background: var(--green-pale);
+      color: var(--green);
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .tarjeta a:hover {
       background: var(--green);
       color: white;
+    }
+
+    .boton-principal {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      margin-top: 1.5rem;
+    }
+
+    /* TALLER DESTACADO - REDISEÑADO */
+    #taller-destacado {
+      padding: 4rem 0;
+      background: var(--green-pale);
       text-align: center;
     }
 
-    .vale-content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 2rem;
+    .destacados-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .vale-content h2 {
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .vale-content p {
-      font-size: 1.2rem;
-      margin-bottom: 3rem;
-      opacity: 0.9;
-    }
-
-    .btn-white {
+    .proximo-taller-card {
       background: white;
-      color: var(--green);
-      padding: 1.2rem 3rem;
+      padding: 1.2rem 1.2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f0f0f0;
+    }
+
+    .proximo-taller-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .proximo-taller-card .fecha-taller {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 0.5rem 1.2rem;
       border-radius: 50px;
       font-weight: 700;
-      display: inline-block;
-      margin-bottom: 3rem;
-    }
-
-    .vale-options {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      text-align: left;
-    }
-
-    .vale-option {
-      background: rgba(255,255,255,0.1);
-      padding: 1.5rem;
-      border-radius: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 80px; /* Asegura altura consistente */
-    }
-    .vale-option span {
-      text-align: left;
-      font-weight: 600;
-    }
-    .vale-option strong {
-      font-size: 1.4rem;
-      /* margin-left: 1rem; */ /* Eliminado para permitir centrado */
-      text-align: center; /* Centrar el texto */
-      flex-grow: 1; /* Permitir que ocupe el espacio disponible para centrar */
-    }
-
-    /* CONTACTO */
-    .contacto {
-      padding: 10rem 0;
-    }
-
-    .contacto-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 5rem;
-      align-items: start;
-    }
-
-    .contact-info h3 {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-info p {
-      margin-bottom: 2rem;
-      color: var(--text-light);
-    }
-
-    .contact-details div {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-    }
-
-    .contact-details strong {
-      display: block;
-      color: var(--green);
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      margin-bottom: 0.3rem;
-    }
-
-    .contact-form {
-      background: white;
-      padding: 3.5rem;
-      border-radius: 30px;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-    }
-
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: 700;
+      margin-bottom: 1rem;
       font-size: 0.8rem;
-      margin-bottom: 0.5rem;
+    }
+
+    .proximo-taller-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+
+    .proximo-taller-card .hora-taller {
       color: var(--text-light);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      font-size: 0.85rem;
     }
 
-    .form-group input, .form-group select, .form-group textarea {
+    .proximo-taller-card .precio-taller {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    /* REGALOS DESTACADOS */
+    #regalos-destacados {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .regalos-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 0.9fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .regalo-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      border: 1px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .regalo-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .regalo-card img {
       width: 100%;
-      padding: 1rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      font-family: inherit;
-      font-size: 1rem;
-      background: #f9f9f9;
+      height: 160px;
+      object-fit: cover;
     }
 
-    .form-group textarea {
-      height: 120px;
-      resize: none;
+    .regalo-card-info {
+      padding: 1.2rem;
+      text-align: center;
     }
 
-    .contacto-form button {
-      width: 100%;
-      border: none;
-      cursor: pointer;
+    .regalo-card-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .regalo-card-info .precio {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 1.3rem;
+      display: block;
     }
 
     /* FOOTER */
     footer {
-      padding: 5rem 0;
+      padding: 3rem 0;
       background: #1a1a1a;
       color: white;
       text-align: center;
@@ -665,19 +616,21 @@
 
     .footer-logo img {
       height: 66px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     .footer-links {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
       opacity: 0.6;
       font-size: 0.9rem;
+      color: white;
     }
 
     .footer-links a:hover {
@@ -685,11 +638,15 @@
     }
 
     /* RESPONSIVE */
-    /* TABLET Y PANTALLAS MEDIANAS */
     @media (max-width: 992px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { display: none; }
-      .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
+      .hero-image { display: block; height: 400px; order: -1; }
+      .hero-content { padding: 3rem 1.5rem; text-align: center; }
+      .hero-btns { justify-content: center; }
+      .nav-links a { font-size: 1.2rem; }
+      .desktop-text { display: none; }
+      .mobile-text { display: inline; }
+      
       .menu-toggle { display: flex; }
       .nav-links {
         display: none;
@@ -707,689 +664,157 @@
         z-index: 1000;
       }
       .nav-links.active { display: flex; }
-      .nav-links a { font-size: 1.2rem; }
-      /* Mostrar enlaces móviles en tablet */
-      .mobile-only-link { display: block !important; }
-      
-      /* Animación hamburguesa */
-      .menu-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
-      .menu-toggle.active span:nth-child(2) { opacity: 0; }
-      .menu-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
-      .talleres-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-      .regalos-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
     }
 
-    /* MOVILES MEDIANOS (768px) */
     @media (max-width: 768px) {
       body { font-size: 15px; }
-      .container { padding: 0 1.5rem; }
+      .container { padding: 0 1.2rem; } /* Reducido ligeramente el padding lateral */
       
-      #navbar { padding: 1.2rem 0; }
-      .logo img {  height: 44px; }
+      #navbar { padding: 1rem 0; }
+      .logo img { height: 40px; }
       
-      .hero { padding: 4rem 0; }
-      .hero-tag { font-size: 0.8rem; }
-      .hero-title { font-size: 2rem; }
+      .hero-tag { font-size: 0.75rem; padding: 0.5rem 1.2rem; }
+      .hero-title { font-size: 1.8rem; line-height: 1.3; }
+      .titulo-linea1 { white-space: normal; }
       .hero-description { font-size: 0.95rem; }
-      .hero-btns { flex-direction: column; gap: 1rem; }
-      .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 1rem; }
+      .hero-btns { flex-direction: column; gap: 1rem; width: 100%; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 1rem; font-size: 1rem; }
       
-      .nosotros { padding: 4rem 0; }
-      .talleres { padding: 4rem 0; }
-      .regalos { padding: 4rem 0; }
-      .contacto { padding: 4rem 0; }
+      .tarjetas-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .section-header h2 { font-size: 1.6rem; }
+      .regalos-preview-grid { grid-template-columns: 1fr; gap: 1.5rem; }
       
-      h2 { font-size: 1.8rem; }
-      h3 { font-size: 1.3rem; }
-      
-      .talleres-grid { grid-template-columns: 1fr; }
-      .taller-img { height: 200px; }
-      .taller-info { padding: 1.5rem; }
-      
-      .regalos-grid { grid-template-columns: 1fr; }
-      .regalo-item { padding: 1rem; }
-      .regalo-img { height: 150px; }
-      
-      .contacto-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .contact-form { padding: 2rem; }
-      .form-group input, .form-group select, .form-group textarea { padding: 0.8rem; font-size: 16px; }
-      
-      iframe { height: 250px; }
+      .nosotros h2 { font-size: 1.8rem; }
+      .nosotros h3 { font-size: 1.1rem; padding: 0 1rem; }
       
       footer { padding: 3rem 0; }
     }
-
-    /* MOVILES PEQUENOS (480px) */
-    @media (max-width: 480px) {
-      body { font-size: 14px; }
-      .container { padding: 0 1rem; }
-      
-      #navbar { padding: 1rem 0; }
-      .logo img {  height: 38px; }
-      
-      .hero { padding: 3rem 0; }
-      .hero-tag { font-size: 0.75rem; }
-      .hero-title { font-size: 1.5rem; }
-      .hero-description { font-size: 0.9rem; }
-      .btn-primary, .btn-secondary { padding: 0.9rem 1.5rem; font-size: 0.9rem; }
-      
-      .nosotros { padding: 2.5rem 0; }
-      .talleres { padding: 2.5rem 0; }
-      .regalos { padding: 2.5rem 0; }
-      .contacto { padding: 2.5rem 0; }
-      
-      .section-header h2 { font-size: 1.5rem; }
-      h2 { font-size: 1.4rem; }
-      h3 { font-size: 1.1rem; }
-      
-      .valores { grid-template-columns: 1fr; gap: 1rem; }
-      .valor-item { padding: 1rem; font-size: 0.9rem; }
-      
-      .taller-info { padding: 1.2rem; }
-      .taller-price { font-size: 1.4rem; }
-      .taller-details li { font-size: 0.8rem; }
-      
-      .regalo-item h4 { font-size: 1.1rem; }
-      .regalo-item p { font-size: 0.85rem; }
-      .regalo-price { font-size: 0.95rem; }
-      
-      .vale-content h2 { font-size: 1.6rem; }
-      .vale-content p { font-size: 1rem; }
-      .vale-options { grid-template-columns: repeat(2, 1fr); }
-      .vale-option { padding: 1rem; }
-      
-      .contact-info h2 { font-size: 1.4rem; }
-      .contact-details div { margin-bottom: 1rem; font-size: 0.95rem; }
-      .contact-form { padding: 1.5rem; }
-      .form-group label { font-size: 0.75rem; }
-      .form-group input, .form-group select, .form-group textarea { padding: 0.7rem; font-size: 16px; }
-      .contacto-form button { padding: 1rem; font-size: 0.95rem; }
-      
-      iframe { height: 200px; }
-      
-      footer { padding: 2rem 0; }
-      .footer-logo img {  height: 55px; }
-      .footer-links { gap: 1rem; flex-wrap: wrap; }
-      /* Mostrar enlaces móviles en pantallas pequeñas */
-      .mobile-only-link { display: block !important; }
-    }
-    /* Nuevos estilos para la sección de Próximos Talleres */
-    .proximos-talleres {
-      padding: 8rem 0;
-      background: var(--green-pale);
-    }
-    .proximos-talleres .section-header h2 {
-      color: var(--green);
-    }
-    .mes-block {
-      margin-bottom: 4rem;
-    }
-    .mes-header {
+  
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
     }
-    .mes-badge {
-      background: var(--green);
-      color: white;
-      padding: 0.5rem 1.5rem;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-    .mes-badge.mayo {
-      background: var(--text-light);
-    }
-    .mes-header h3 {
-      font-size: 2.2rem;
-      margin: 0;
-      color: var(--text);
-    }
-    .talleres-agenda-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 1.5rem;
-    }
-    @media (max-width: 1024px) {
-      .talleres-agenda-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 768px) {
-      .talleres-agenda-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .taller-agenda-card {
-      background: white;
-      padding: 1.2rem;
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-      border: 1px solid #f0f0f0;
+
+    .dropdown-toggle {
       display: flex;
-      flex-direction: column;
-      align-items: center; /* Centrar horizontalmente el contenido */
-      text-align: center; /* Centrar el texto */
-      transition: 0.4s;
-    }
-    .taller-agenda-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-    .taller-agenda-card .fecha {
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
       font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--green);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.3rem;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
     }
-    .taller-agenda-card .tipo-taller {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.3rem;
-      color: var(--text);
-    }
-    .taller-agenda-card .hora {
-      font-size: 0.8rem;
-      color: var(--text-light);
-      margin-bottom: 0.8rem;
-      padding-bottom: 0.8rem;
-      border-bottom: 1px solid #f0f0f0;
-      width: 100%; /* Asegurar que la línea ocupe todo el ancho */
-    }
-    .taller-agenda-card .precio {
-      font-size: 1.2rem;
-      font-weight: 700;
+
+    .dropdown-toggle:hover {
       color: var(--green);
-      margin-bottom: 0.8rem;
-      margin-top: auto;
     }
-    .taller-agenda-card .btn-reserva-whatsapp {
-      background: var(--green);
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 50px;
-      font-weight: 700;
-      text-align: center;
-      transition: 0.3s;
-      display: block;
-      width: 100%; /* Asegurar que el botón ocupe todo el ancho */
-    }
-    .taller-agenda-card .btn-reserva-whatsapp:hover {
-      background: var(--green-dark);
-      transform: translateY(-2px);
-    }
-    .cta-agenda-personalizada {
-      text-align: center;
-      margin-top: 5rem;
-      padding: 3rem;
-      background: var(--green);
-      color: white;
-      border-radius: 2rem;
-    }
-    .cta-agenda-personalizada h4 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .cta-agenda-personalizada p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-    }
-    .btn-white-whatsapp {
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
       background: white;
-      color: var(--green);
-      padding: 1rem 2.5rem;
-      border-radius: 50px;
-      font-weight: 700;
-      display: inline-block;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
       transition: 0.3s;
+      white-space: nowrap;
     }
-    .btn-white-whatsapp:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
     }
-  </style>
-  <!-- ============================================================
-       SCHEMA MARKUP JSON-LD — CreArte Cerámica
-       ============================================================ -->
-  <!-- 1. LocalBusiness -->
-  <script type="application/ld+json">
-   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://crearteceramica.es/#negocio",
-    "name": "CreArte Cerámica",
-    "description": "Talleres de cerámica en Valladolid para todos los niveles. Talleres de prueba, clases semanales, talleres puntuales y privados. Encargos y regalos artesanales personalizados.",
-    "url": "https://crearteceramica.es",
-    "logo": "https://crearteceramica.es/logo.webp",
-    "image": "https://crearteceramica.es/herowebp",
-    "telephone": "+34639096691",
-    "email": "creartevalladolid@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle Vinos de Rueda, 18",
-      "addressLocality": "Valladolid",
-      "postalCode": "47008",
-      "addressRegion": "Castilla y León",
-      "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.6483,
-      "longitude": -4.7282
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Monday",
-        "opens": "17:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Wednesday",
-        "opens": "17:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Thursday",
-        "opens": "17:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "10:00",
-        "closes": "14:00"
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    /* Responsive - Dropdown en móvil */
+    @media (max-width: 992px) {
+      .nav-item {
+        flex-direction: column;
+        width: 100%;
       }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/crearteceramicavalladolid"
-    ],
-    "priceRange": "€€",
-    "currenciesAccepted": "EUR",
-    "paymentAccepted": "Bizum, Transferencia, Efectivo",
-    "areaServed": {
-      "@type": "City",
-      "name": "Valladolid"
-    }
-  }
-  </script>
-  <!-- 2. Servicios / Ofertas -->
-  <script type="application/ld+json">
-   {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Talleres de Cerámica — CreArte",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "Service",
-          "name": "Taller de Prueba de Cerámica",
-          "description": "Sesión introductoria de 2 horas para descubrir la cerámica. Aprenderás técnicas básicas de modelado a mano y te llevarás tu primera pieza a casa. Incluye todos los materiales y cocciones.",
-          "provider": { "@id": "https://crearteceramica.es/#negocio" },
-          "offers": {
-            "@type": "Offer",
-            "price": "24",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "url": "https://crearteceramica.es/#talleres"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "Service",
-          "name": "Clases Semanales de Cerámica",
-          "description": "Clases semanales de 2 horas para aprender y perfeccionar técnicas cerámicas. Elige entre 4 o 12 semanas consecutivas. Incluye todos los materiales y cocciones.",
-          "provider": { "@id": "https://crearteceramica.es/#negocio" },
-          "offers": [
-            {
-              "@type": "Offer",
-              "name": "4 semanas",
-              "price": "85",
-              "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock",
-              "url": "https://crearteceramica.es/#talleres"
-            },
-            {
-              "@type": "Offer",
-              "name": "12 semanas",
-              "price": "215",
-              "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock",
-              "url": "https://crearteceramica.es/#talleres"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Service",
-          "name": "Talleres Puntuales de Cerámica",
-          "description": "Sesiones de fin de semana de 1.5h o 3h para crear una o dos piezas de cerámica y pintarlas. Incluye materiales, cocciones y picoteo.",
-          "provider": { "@id": "https://crearteceramica.es/#negocio" },
-          "offers": {
-            "@type": "Offer",
-            "price": "35",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "url": "https://crearteceramica.es/#talleres"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "Service",
-          "name": "Talleres Privados de Cerámica",
-          "description": "Experiencias a medida para grupos, empresas, despedidas de soltera, cumpleaños y celebraciones. Incluye picoteo.",
-          "provider": { "@id": "https://crearteceramica.es/#negocio" },
-          "offers": {
-            "@type": "Offer",
-            "availability": "https://schema.org/InStock",
-            "url": "https://crearteceramica.es/#contacto"
-          }
-        }
+      
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
       }
-    ]
-  }
-  </script>
-  <!-- 3. FAQ -->
-  <script type="application/ld+json">
-   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Necesito tener experiencia previa para apuntarme a un taller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para nada. En los talleres puntuales partimos de cero y en las clases semanales te incorporas según tu nivel. Lo único que hace falta es tener ganas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué incluye el precio del taller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Todo: materiales, arcilla, esmaltes, uso del horno y las herramientas. Vienes con las manos vacías y te vas con tu pieza."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Me llevo la pieza el mismo día?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Las piezas necesitan secarse, pasar por el horno y esmaltarse. En los talleres puntuales el plazo es de unas 3-4 semanas; en las clases semanales depende del proyecto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánta gente hay en cada sesión?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Trabajamos con grupos reducidos para que puedas aprender de verdad y recibir atención personalizada."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hay que llevar ropa especial al taller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ropa con la que no te importe mancharte. El barro tiene vida propia."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hacéis talleres para grupos, cumpleaños o despedidas de soltera?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Organizamos experiencias a medida para grupos, celebraciones, despedidas y eventos de empresa. Escríbenos por WhatsApp y lo diseñamos juntos."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo regalar un taller de cerámica?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Por supuesto. Tenemos vales regalo disponibles desde 35€. Es de los regalos que más gustan porque se viven, no se guardan en un cajón."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde está el taller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "En la Calle Vinos de Rueda, 18, barrio Parque Alameda, Valladolid (47008). Al reservar te mandamos todos los detalles para llegar."
-        }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        width: 100%;
+        text-align: center;
+        min-width: auto;
       }
-    ]
-  }
-  </script>
-  <!-- 4. BreadcrumbList (navegación) -->
-  <script type="application/ld+json">
-   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://crearteceramica.es/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Talleres de Cerámica",
-        "item": "https://crearteceramica.es/#talleres"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Regalos y Encargos",
-        "item": "https://crearteceramica.es/#regalos"
+
+      .nav-item.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        background: rgba(34, 119, 104, 0.05);
+        border-radius: 12px;
+        margin-top: 0.5rem;
       }
-    ]
-  }
-  </script>
-  <style>
-   dentro de tu <head> o al final del archivo
-     ============================================================ -->
 
-<!-- ESTILOS: pega dentro de <head> o en tu archivo CSS -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
-
-  .faq-section {
-    background: var(--green-pale);
-    background: #F5EFE6;
-    padding: 5rem 1.5rem;
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  .faq-inner {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-
-
-
-
-  .faq-header h2 em {
-    font-style: italic;
-    color: #8B5E3C;
-  }
-
-
-
-  .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .faq-item {
-    border-top: 1px solid rgba(139,94,60,0.2);
-  }
-
-  .faq-item:last-child {
-    border-bottom: 1px solid rgba(139,94,60,0.2);
-  }
-
-  .faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 1.4rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    text-align: left;
-  }
-
-  .faq-question span {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #1C1410;
-    line-height: 1.4;
-    transition: color 0.2s;
-  }
-
-  .faq-question:hover span {
-    color: #8B5E3C;
-  }
-
-  .faq-icon {
-    min-width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(139,94,60,0.35);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.25s, border-color 0.25s, transform 0.3s;
-    color: #8B5E3C;
-  }
-
-  .faq-icon svg {
-    width: 12px;
-    height: 12px;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .faq-item.open .faq-icon {
-    background: #8B5E3C;
-    border-color: #8B5E3C;
-    color: white;
-  }
-
-  .faq-item.open .faq-icon svg {
-    transform: rotate(45deg);
-  }
-
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .faq-item.open .faq-answer {
-    max-height: 300px;
-  }
-
-  .faq-answer-inner {
-    padding-bottom: 1.4rem;
-    font-size: 0.92rem;
-    color: #6B6058;
-    line-height: 1.7;
-    padding-right: 2.5rem;
-  }
-
-  .faq-answer-inner strong {
-    color: #1C1410;
-  }
-
-  .faq-cta {
-    margin-top: 3rem;
-    background: linear-gradient(135deg, #227768 0%, #2E9E87 100%);
-    border-radius: 16px;
-    padding: 2rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .faq-cta p {
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.5;
-  }
-
-  .faq-cta p strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: white;
-    margin-bottom: 0.2rem;
-  }
-
-  .faq-cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: white;
-    color: #227768;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    padding: 0.75rem 1.4rem;
-    border-radius: 50px;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-
-  .faq-cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  }
-
-  @media (max-width: 500px) {
-    .faq-cta {
-      flex-direction: column;
-      text-align: center;
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        border-radius: 0 !important;
+        font-size: 1rem; /* Tamaño más adecuado para móvil */
+        text-align: center;
+        width: 100%;
+      }
     }
-    .faq-answer-inner {
-      padding-right: 0;
-    }
-  }
-  </style>
-  <link as="image" href="imagenes/hero.webp" rel="preload"/>
-  <link as="image" href="imagenes/logo.webp" rel="preload"/>
+
+    </style>
  </head>
  <body>
   <nav id="navbar">
    <div class="container">
     <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="1536" height="871"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
@@ -1397,105 +822,173 @@
       <span></span>
     </div>
     <div class="nav-links">
-     <a href="index.html">
-      INICIO
-     </a>
-     <a href="talleres.html">
-      TIPOS DE TALLERES
-     </a>
-     <a href="regalos.html">
-      REGALOS Y ENCARGOS
-     </a>
-     <a href="faq.html">
-      PREGUNTAS FRECUENTES
-     </a>
-     <!-- Enlaces móviles adicionales -->
-     <a href="talleres.html#proximos-talleres" class="mobile-only-link">
-      PRÓXIMOS TALLERES
-     </a>
-     <a href="regalos.html#vales" class="mobile-only-link">
-      VALES REGALO
-     </a>
-     <a class="btn-nav" href="contacto.html">
-      RESERVAR PLAZA
-     </a>
-    </div>
+      <a href="index.html">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres.html">Tipos de talleres</a>
+          <a href="calendario.html">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="vales-regalo.html">VALES REGALO</a>
+      <a href="regalos.html">TIENDA</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+     </div>
    </div>
   </nav>
+
   <section class="hero" id="inicio">
    <div class="hero-content">
-    <span class="hero-tag">
-     Bienvenid@s a CreArte
-    </span>
+    <span class="hero-tag">Bienvenid@s a CreArte</span>
     <h1 class="hero-title">
-     Talleres de Cerámica en Valladolid:
-     <span>
-      Cerámica sin postureo
-     </span>
+     <span class="titulo-linea1">Taller de Cerámica en Valladolid:</span><br>
+     <span>Cerámica sin postureo</span>
     </h1>
-    <p class="hero-description">
-     En CreArte, te invitamos a mancharte las manos, desconectar de la rutina y crear piezas únicas de cerámica. Talleres de cerámica en Valladolid para todos los niveles: sin experiencia previa, sin presiones. Solo tú y el barro.
+    <p class="hero-description">En CreArte, te invitamos a mancharte las manos, desconectar de la rutina y crear piezas únicas de cerámica. Talleres en Valladolid para todos los niveles. Aquí hacemos <strong>"cerámica sin postureo"</strong>: con las manos en el barro, con errores que se convierten en aprendizaje, y con la satisfacción real de crear algo con tus propias manos. Si te gusta lo auténtico y lo hecho con calma, este es tu sitio.
     </p>
     <div class="hero-btns">
-     <a class="btn-primary" href="talleres.html#talleres">
-      Ver talleres
-     </a>
-     <a class="btn-secondary" href="contacto.html#contacto">
-      Reservar plaza
-     </a>
+    <a class="btn-secondary" href="talleres.html#talleres">Tipos de talleres</a>
+    <a class="btn-primary" href="talleres.html#proximos-talleres">Próximos talleres</a>
     </div>
    </div>
-   <div aria-label="Taller de cerámica en Valladolid - Estudiantes trabajando con barro en CreArte" class="hero-image" role="img">
-   </div>
+    <div class="hero-image">
+      <img src="imagenes/hero.webp" alt="Taller de cerámica CreArte en Valladolid - Alumnas trabajando en sus piezas" width="1920" height="1440" fetchpriority="high">
+    </div>
   </section>
-  <section class="nosotros">
-   <div class="container">
-    <h2>
-     Nuestras Experiencias Creativas
-    </h2>
-    <p>
-     Creemos en el valor de lo hecho a mano, en el tiempo lento y en la satisfacción de crear algo propio. Sin presiones, solo tú y el barro.
-    </p>
-    <div class="valores">
-     <div class="valor-item">
-      100% Artesanal
-     </div>
-     <div class="valor-item">
-      Sin experiencia previa
-     </div>
-     <div class="valor-item">
-      Grupos reducidos
-     </div>
-     <div class="valor-item">
-      Valladolid
+
+   <section class="nosotros">
+    <div class="container">
+     <h2>Quiénes somos</h2>
+     <h3>Soy Montse, ceramista y fundadora de este pequeño taller en el corazón del barrio del Parque Alameda, en Valladolid. Lo que empezó como una pasión personal por el barro se ha convertido en un espacio donde enseño, experimento y comparto la cerámica, ya sea para una tarde de desconexión o para aprender en serio, semana tras semana. Creamos experiencias, no solo cerámica</h3>
+     <p>En CreArte creemos que la cerámica es más que un taller. Es un espacio donde desconectar, crear sin presión y llevarte a casa algo que hiciste con tus manos.</p>
+     <div class="valores">
+      <div class="valor-item">
+        <strong>🎨 Accesible</strong><br>
+        No necesitas experiencia previa. Partimos de cero y nos adaptamos a tu ritmo.
+      </div>
+      <div class="valor-item">
+        <strong>👥 Grupos reducidos</strong><br>
+        Atención personalizada en un ambiente acogedor donde todos nos conocemos.
+      </div>
+      <div class="valor-item">
+        <strong>✨ Completo</strong><br>
+        Materiales, herramientas, cocciones y un picoteo para disfrutar. ¡Tú solo trae las ganas, nosotros nos encargamos del resto!
+      </div>
      </div>
     </div>
-   </div>
+   </section>
+
+  <section id="talleres-preview">
+    <div class="container">
+      <div class="section-header">
+        <span>Explora tus opciones</span>
+        <h2>Nuestros Talleres de Cerámica</h2>
+      </div>
+
+      <div class="tarjetas-grid">
+        <div class="tarjeta">
+          <h3>Taller de Prueba</h3>
+          <p>2 horas · Desde cero · Materiales incluidos</p>
+          <span class="precio">24€</span>
+          <a href="talleres.html#prueba">Ver más</a>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Clases Semanales</h3>
+          <p>2h/semana · 4 o 12 semanas · Todos los niveles</p>
+          <span class="precio">Desde 85€</span>
+          <a href="talleres.html#semanales">Ver más</a>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Torno Alfarero</h3>
+          <p>Clases semanales · Aprende desde cero en el torno</p>
+          <span class="precio">125€ / 4 sem.</span>
+          <a href="talleres.html#torno">Ver más</a>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Talleres Puntuales</h3>
+          <p>Fines de semana · Con picoteo · Sin compromiso</p>
+          <span class="precio">Desde 35€</span>
+          <a href="talleres.html#puntuales">Ver más</a>
+        </div>
+      </div>
+
+      <a href="talleres.html" class="boton-principal">Ver todos los talleres</a>
+    </div>
   </section>
-  <footer>
-   <div class="footer-logo">
-    <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
-   </div>
-   <p>
-    © 2026 CreArte · Cerámica sin postureo. Valladolid, España.
-   </p>
+
+  <section id="taller-destacado">
+    <div class="container">
+      <div class="section-header">
+        <span>Reserva tu plaza</span>
+        <h2>Próximos Talleres de cerámica</h2>
+        <p style="margin-top: 1rem; color: var(--text-light);">¡Ven a crear tus propias piezas! Una sesión para disfrutar de la cerámica con picoteo incluido.</p>
+      </div>
+      
+      <div class="destacados-grid" id="proximos-talleres-container">
+        <!-- Los talleres se cargarán dinámicamente aquí -->
+        <p>Cargando próximos talleres...</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="calendario.html" class="boton-principal">Ver calendario completo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="regalos-destacados">
+    <div class="container">
+      <div class="section-header">
+        <span>Hecho con amor en Valladolid</span>
+        <h2>Regalos Destacados</h2>
+      </div>
+
+      <div class="regalos-preview-grid">
+        <div class="regalo-card">
+          <img src="imagenes/conchasbautismo.webp" alt="Concha de Bautismo - Cerámica artesanal personalizada para regalo">
+          <div class="regalo-card-info">
+            <h3>Concha Bautismo</h3>
+            <span class="precio">28€</span>
+          </div>
+        </div>
+        <div class="regalo-card">
+          <img src="imagenes/huellasbebe.webp" alt="Huellas de Bebé - Recuerdo de cerámica personalizado">
+          <div class="regalo-card-info">
+            <h3>Huellas Bebé</h3>
+            <span class="precio">45€</span>
+          </div>
+        </div>
+        <div class="regalo-card">
+          <img src="imagenes/boda.webp" alt="Porta Alianzas - Detalle de cerámica para bodas en Valladolid">
+          <div class="regalo-card-info">
+            <h3>Porta Alianzas</h3>
+            <span class="precio">Desde 30€</span>
+          </div>
+        </div>
+      </div>
+      
+      <a href="regalos.html" class="boton-principal">Ver todos los regalos</a>
+    </div>
+  </section>
+
+  <footer> 
+   <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html#inicio">
-     Inicio
-    </a>
-    <a href="talleres.html#talleres">
-     Talleres
-    </a>
-    <a href="regalos.html#regalos">
-     Regalos
-    </a>
-    <a href="contacto.html#contacto">
-     Contacto
-    </a>
+    <a href="index.html">Inicio</a>
+    <a href="talleres.html">Talleres</a>
+    <a href="vales-regalo.html">Vales regalo</a>
+    <a href="regalos.html">Tienda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacidad.html">Privacidad</a>
    </div>
   </footer>
+
   <script>
-    // Lógica del menú móvil
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     const body = document.body;
@@ -1503,26 +996,86 @@
     menuToggle.addEventListener('click', () => {
       menuToggle.classList.toggle('active');
       navLinks.classList.toggle('active');
-      // Evitar scroll cuando el menú está abierto
       body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
     });
 
-    // Cerrar menú al hacer clic en un enlace
+    // Lógica para el submenú en móvil
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navItem = document.querySelector('.nav-item');
+
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        navItem.classList.toggle('active');
+      }
+    });
+
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        body.style.overflow = 'auto';
+      link.addEventListener('click', (e) => {
+        if (!link.closest('.dropdown-toggle')) {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          body.style.overflow = 'auto';
+        }
       });
     });
 
-    // Cambiar estilo del nav al hacer scroll
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('navbar');
       if (window.scrollY > 50) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
+      }
+    });
+
+    // Lógica para cargar los 2 próximos talleres disponibles
+    document.addEventListener('DOMContentLoaded', () => {
+      const hoy = new Date();
+      hoy.setHours(0, 0, 0, 0);
+
+      // Datos de talleres (Sincronizados con talleres.html)
+      const talleres = [
+        { fecha: '2026-06-27', dia: 'Sábado 27 de Junio', tipo: 'Taller Puntual', hora: '11:00 a 14:00h', precio: '45€' },
+        { fecha: '2026-07-04', dia: 'Sábado 04 de Julio', tipo: 'Taller Puntual', hora: '12:00 a 13:30h', precio: '35€' },
+        { fecha: '2026-07-11', dia: 'Sábado 11 de Julio', tipo: 'Taller Puntual', hora: '12:00 a 13:30h', precio: '35€' },
+        { fecha: '2026-07-11', dia: 'Sábado 11 de Julio', tipo: 'Taller Puntual', hora: '11:00 a 14:00h', precio: '45€' },
+        { fecha: '2026-07-18', dia: 'Sábado 18 de Julio', tipo: 'Taller Puntual', hora: '12:00 a 13:30h', precio: '35€' },
+        { fecha: '2026-07-25', dia: 'Sábado 25 de Julio', tipo: 'Taller Puntual', hora: '12:00 a 13:30h', precio: '35€' }
+      ];
+
+      // Filtrar talleres futuros y ordenar por fecha
+      const talleresFuturos = talleres
+        .filter(t => {
+          const [anio, mes, dia] = t.fecha.split('-').map(Number);
+          const fechaTaller = new Date(anio, mes - 1, dia);
+          return fechaTaller >= hoy;
+        })
+        .sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
+
+      const container = document.getElementById('proximos-talleres-container');
+      
+      if (talleresFuturos.length > 0) {
+        container.innerHTML = '';
+        // Mostrar solo los 2 primeros
+        talleresFuturos.slice(0, 2).forEach(taller => {
+          const card = document.createElement('div');
+          card.className = 'proximo-taller-card';
+          
+          const msgWhatsapp = `Hola! Me gustaría reservar plaza para el ${taller.tipo} del ${taller.dia}`;
+          const urlWhatsapp = `https://wa.me/34639096691?text=${encodeURIComponent(msgWhatsapp)}`;
+          
+          card.innerHTML = `
+            <span class="fecha-taller">${taller.dia}</span>
+            <h3>${taller.tipo}</h3>
+            <p class="hora-taller">${taller.hora}</p>
+            <p class="precio-taller">${taller.precio}</p>
+            <a href="${urlWhatsapp}" class="btn-primary" target="_blank">Reservar plaza</a>
+          `;
+          container.appendChild(card);
+        });
+      } else {
+        container.innerHTML = '<p style="grid-column: 1/-1; font-size: 1.2rem; color: var(--text-light);">Próximamente anunciaremos nuevas fechas. ¡Estate atent@!</p>';
       }
     });
   </script>

@@ -4,38 +4,39 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Regalos y Encargos | CreArte Cerámica Valladolid
+   Regalos de Cerámica Personalizados en Valladolid | CreArte Cerámica 
   </title>
-  <meta content="Descubre regalos artesanales de cerámica personalizados en Valladolid. Conchas de bautismo, detalles de boda, vajillas y encargos únicos para cualquier ocasión." name="description"/>
+  <meta content="Regalos artesanales de cerámica personalizados en Valladolid. Conchas de bautismo, detalles de boda, vajillas y encargos únicos para cualquier ocasión." name="description"/>
   <meta content="talleres cerámica Valladolid, clases cerámica, regalos personalizados, conchas bautismo, detalles boda, huellas mascotas, marcos cerámica, vajillas artesanales, decoración hogar, taller artesanal" name="keywords"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
-  <link href="https://crearteceramica.es/" rel="canonical"/>
-  <!-- Favicon -->
-  <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
-  <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-  <meta content="#227768" name="theme-color"/>
-  <meta content="#227768" name="msapplication-TileColor"/>
-  <!-- Open Graph / Facebook -->
-  <meta content="website" property="og:type"/>
-  <meta content="https://crearteceramica.es/" property="og:url"/>
-  <meta content="CreArte: Talleres de Cerámica en Valladolid | Clases y Regalos Artesanales Únicos" property="og:title"/>
-  <meta content="CreArte Cerámica Valladolid: Talleres de cerámica, clases semanales, regalos artesanales personalizados y encargos. Especialistas en marcos de cerámica, vajillas artesanales, decoración del hogar, conchas de bautismo, detalles para bodas y huellas de mascotas." property="og:description"/>
-  <meta content="https://crearteceramica.es/hero.webp" property="og:image"/>
+<meta name="description" content="Regalos artesanales de cerámica únicos hechos a mano en Valladolid. Conchas de bautismo, huellas de bebé, detalles de boda y vajillas personalizadas. Envío a toda España."/>
+    <link href="https://crearteceramica.es/regalos.html" rel="canonical"/>
+    <!-- Favicon -->
+    <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <meta content="#227768" name="theme-color"/>
+    <meta content="#227768" name="msapplication-TileColor"/>
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type"/>
+    <meta content="https://crearteceramica.es/regalos.html" property="og:url"/>
+  <meta content="Regalos de Cerámica Personalizados | CreArte Valladolid" property="og:title"/>
+  <meta content="Conchas de bautismo, detalles de boda y vajillas artesanales únicas hechas a mano en nuestro taller." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/detalles_boda.webp" property="og:image"/>
   <!-- Twitter Card -->
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="CreArte: Talleres de Cerámica en Valladolid" name="twitter:title"/>
   <meta content="Talleres de cerámica, clases semanales y regalos artesanales personalizados en Valladolid." name="twitter:description"/>
-  <meta content="https://crearteceramica.es/herowebp" name="twitter:image"/>
+  <meta content="https://crearteceramica.es/imagenes/hero.webp" name="twitter:image"/>
   <!-- LocalBusiness Structured Data -->
   <script type="application/ld+json">
    {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "CreArte",
-    "image": "https://crearteceramica.es/hero.webp",
+    "image": "https://crearteceramica.es/imagenes/hero.webp",
     "@id": "https://crearteceramica.es/",
     "url": "https://crearteceramica.es/",
     "telephone": "+34639096691",
@@ -48,8 +49,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.61234567890123,
-      "longitude": -4.756789012345
+     "latitude": 41.6163356,
+      "longitude": -4.7508584
     },
     "openingHoursSpecification": [
       {
@@ -167,6 +168,7 @@
     .logo img { 
       height: 60px;
       width: auto;
+      max-width: 100%;
     }
 
     .nav-links {
@@ -189,6 +191,14 @@
     /* Enlaces móviles adicionales - ocultos en pantallas grandes */
     .mobile-only-link {
       display: none !important;
+    }
+
+    /* Textos adaptables según dispositivo */
+    .desktop-text {
+      display: inline;
+    }
+    .mobile-text {
+      display: none;
     }
 
     .btn-nav {
@@ -283,8 +293,17 @@
 
     .hero-image {
       height: 100vh;
-      background: url('imagenes/hero.webp') center/cover no-repeat;
       position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      max-width: none;
     }
 
     .hero-image::before {
@@ -295,6 +314,13 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(to right, white, transparent 20%);
+      z-index: 1;
+    }
+
+    @media (max-width: 992px) {
+      .hero-image::before {
+        background: linear-gradient(to bottom, white, transparent 20%);
+      }
     }
 
     /* NOSOTROS / FILOSOFÍA */
@@ -339,7 +365,7 @@
 
     .section-header {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 2.5rem;
     }
 
     .section-header span {
@@ -347,7 +373,7 @@
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
     }
 
     .section-header h2 {
@@ -400,7 +426,7 @@
     .taller-info .tagline {
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
       display: block;
@@ -425,7 +451,7 @@
       display: flex;
       align-items: center;
       justify-content: center; /* Centrar contenido de la lista */
-      gap: 0.5rem;
+      gap: 0.4rem;
     }
 
     .taller-price {
@@ -438,17 +464,17 @@
 
     /* REGALOS Y ENCARGOS */
     .regalos {
-      padding: 8rem 0;
+      padding: 8rem 0 3rem;
       background: var(--green-pale);
     }
 
     .regalos-category {
-      margin-bottom: 6rem;
+      margin-bottom: 3.5rem;
     }
 
     .regalos-category h2 {
       font-size: 2.2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
       padding-bottom: 1rem;
       border-bottom: 2px solid var(--green);
       display: inline-block;
@@ -520,7 +546,7 @@
 
     /* VALE REGALO */
     #vales {
-      padding: 6rem 0;
+      padding: 1rem 0 6rem 0;
       background: var(--green);
       color: white;
       text-align: center;
@@ -629,7 +655,7 @@
     .form-group label {
       display: block;
       font-weight: 700;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       margin-bottom: 0.5rem;
       color: var(--text-light);
     }
@@ -657,7 +683,7 @@
 
     /* FOOTER */
     footer {
-      padding: 5rem 0;
+      padding: 2.5rem 0;
       background: #1a1a1a;
       color: white;
       text-align: center;
@@ -665,11 +691,11 @@
 
     .footer-logo img {
       height: 66px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     .footer-links {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -687,8 +713,10 @@
     /* RESPONSIVE */
     /* TABLET Y PANTALLAS MEDIANAS */
     @media (max-width: 992px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-image { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
+      .hero-image { display: block; height: 400px; order: -1; }
+      .hero-content { padding: 3rem 1.5rem; text-align: center; }
+      .hero-btns { justify-content: center; }
       .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
       .menu-toggle { display: flex; }
       .nav-links {
@@ -710,6 +738,9 @@
       .nav-links a { font-size: 1.2rem; }
       /* Mostrar enlaces móviles en tablet */
       .mobile-only-link { display: block !important; }
+      /* Mostrar texto móvil en tablet */
+      .desktop-text { display: none; }
+      .mobile-text { display: inline; }
       
       /* Animación hamburguesa */
       .menu-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
@@ -728,7 +759,7 @@
       .logo img {  height: 44px; }
       
       .hero { padding: 4rem 0; }
-      .hero-tag { font-size: 0.8rem; }
+      .hero-tag { font-size: 0.75rem; }
       .hero-title { font-size: 2rem; }
       .hero-description { font-size: 0.95rem; }
       .hero-btns { flex-direction: column; gap: 1rem; }
@@ -736,7 +767,7 @@
       
       .nosotros { padding: 4rem 0; }
       .talleres { padding: 4rem 0; }
-      .regalos { padding: 4rem 0; }
+      .regalos { padding: 2.5rem 0; }
       .contacto { padding: 4rem 0; }
       
       h2 { font-size: 1.8rem; }
@@ -746,7 +777,7 @@
       .taller-img { height: 200px; }
       .taller-info { padding: 1.5rem; }
       
-      .regalos-grid { grid-template-columns: 1fr; }
+      .regalos-grid, .regalos-grid-5 { grid-template-columns: 1fr; }
       .regalo-item { padding: 1rem; }
       .regalo-img { height: 150px; }
       
@@ -787,10 +818,10 @@
       
       .taller-info { padding: 1.2rem; }
       .taller-price { font-size: 1.4rem; }
-      .taller-details li { font-size: 0.8rem; }
+      .taller-details li { font-size: 0.75rem; }
       
       .regalo-item h4 { font-size: 1.1rem; }
-      .regalo-item p { font-size: 0.85rem; }
+      .regalo-item p { font-size: 0.75rem; }
       .regalo-price { font-size: 0.95rem; }
       
       .vale-content h2 { font-size: 1.6rem; }
@@ -812,6 +843,9 @@
       .footer-links { gap: 1rem; flex-wrap: wrap; }
       /* Mostrar enlaces móviles en pantallas pequeñas */
       .mobile-only-link { display: block !important; }
+      /* Mostrar texto móvil en pantallas pequeñas */
+      .desktop-text { display: none; }
+      .mobile-text { display: inline; }
     }
     /* Nuevos estilos para la sección de Próximos Talleres */
     .proximos-talleres {
@@ -892,7 +926,7 @@
       color: var(--text);
     }
     .taller-agenda-card .hora {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-light);
       margin-bottom: 0.8rem;
       padding-bottom: 0.8rem;
@@ -965,7 +999,7 @@
     "description": "Talleres de cerámica en Valladolid para todos los niveles. Talleres de prueba, clases semanales, talleres puntuales y privados. Encargos y regalos artesanales personalizados.",
     "url": "https://crearteceramica.es",
     "logo": "https://crearteceramica.es/logo.webp",
-    "image": "https://crearteceramica.es/herowebp",
+    "image": "https://crearteceramica.es/imagenes/hero.webp",
     "telephone": "+34639096691",
     "email": "creartevalladolid@gmail.com",
     "address": {
@@ -978,8 +1012,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.6483,
-      "longitude": -4.7282
+      "latitude": 41.6163356,
+      "longitude": -4.7508584
     },
     "openingHoursSpecification": [
       {
@@ -1206,9 +1240,7 @@
     ]
   }
   </script>
-  <style>
-   dentro de tu <head> o al final del archivo
-     ============================================================ -->
+  
 
 <!-- ESTILOS: pega dentro de <head> o en tu archivo CSS -->
 <style>
@@ -1354,11 +1386,11 @@
   .faq-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     background: white;
     color: #227768;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 500;
     padding: 0.75rem 1.4rem;
     border-radius: 50px;
@@ -1381,7 +1413,126 @@
       padding-right: 0;
     }
   }
-  </style>
+  
+    /* DROPDOWN MENU */
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .dropdown-toggle:hover {
+      color: var(--green);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1rem;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .dropdown-menu a:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--green-pale);
+      color: var(--green);
+    }
+
+    /* Responsive - Dropdown en móvil */
+    @media (max-width: 992px) {
+      .nav-item {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .dropdown-toggle {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        width: 100%;
+        text-align: center;
+        min-width: auto;
+      }
+
+      .nav-item.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        background: rgba(34, 119, 104, 0.05);
+        border-radius: 12px;
+        margin-top: 0.5rem;
+      }
+
+      .dropdown-menu a {
+        padding: 0.8rem 1rem;
+        border-radius: 0 !important;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    </style>
   <link as="image" href="imagenes/hero.webp" rel="preload"/>
   <link as="image" href="imagenes/logo.webp" rel="preload"/>
  </head>
@@ -1399,43 +1550,40 @@
      <span>
      </span>
     </div>
-    <div class="nav-links">
-     <a href="index.html">
-      INICIO
-     </a>
-     <a href="talleres.html">
-      TIPOS DE TALLERES
-     </a>
-     <a href="regalos.html">
-      REGALOS Y ENCARGOS
-     </a>
-     <a href="faq.html">
-      PREGUNTAS FRECUENTES
-     </a>
-     <!-- Enlaces móviles adicionales -->
-     <a href="talleres.html#proximos-talleres" class="mobile-only-link">
-      PRÓXIMOS TALLERES
-     </a>
-     <a href="regalos.html#vales" class="mobile-only-link">
-      VALES REGALO
-     </a>
-     <a class="btn-nav" href="contacto.html">
-      RESERVAR PLAZA
-     </a>
-    </div>
+<div class="nav-links">
+      <a href="index.html">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres.html">Tipos de talleres</a>
+          <a href="calendario.html">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="vales-regalo.html">VALES REGALO</a>
+      <a href="regalos.html">TIENDA</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">BLOG</a>
+      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+     </div>
    </div>
   </nav>
-  <section class="regalos" id="regalos" style="padding-top: 150px; ">
+  <section class="regalos" id="regalos" style="padding-top: 150px;">
    <div class="container">
     <div class="section-header">
-     <span>
+    <span>
       Piezas Únicas Hechas a Mano
      </span>
-     <h1>
+     <h2>
       Regalos y Encargos de Cerámica Personalizada
-     </h1>
+     </h2>     
      <p>
-      Regalos de cerámica artesanal hechos a mano en Valladolid. Encarga piezas personalizadas para bautizos, bodas, nacimientos o simplemente para sorprender a alguien especial. Cada pieza es única porque tú nos dices cómo la quieres.
+      Descubre regalos únicos de cerámica artesanal hechos a mano en Valladolid. Creamos piezas personalizadas para bautizos, bodas, nacimientos, comuniones, aniversarios y ocasiones especiales, así como detalles exclusivos para sorprender a alguien importante.
+
+Cada creación es única y se elabora bajo encargo, adaptándose a tus gustos y necesidades. Tú eliges el diseño, el texto, los colores o los detalles que deseas incorporar, y nosotros transformamos tu idea en una pieza de cerámica exclusiva.
+
+     <p>Trabajamos con gres de alta calidad, un material resistente y duradero que garantiza acabados excepcionales. 
+     </p>
+     <p>Si buscas cerámica personalizada en Valladolid, regalos artesanales originales o piezas hechas a mano con un diseño exclusivo, encontrarás opciones únicas creadas con dedicación y atención al detalle.
      </p>
     </div>
     <!-- Categoría 1 -->
@@ -1445,7 +1593,7 @@
      </h2>
      <div class="regalos-grid">
       <div class="regalo-item">
-       <img alt="Concha de bautismo personalizada en cerámica artesanal - CreArte" class="regalo-img" loading="lazy" src="imagenes/conchasbautismo.webp"/>
+       <img alt="Concha de bautismo personalizada en cerámica artesanal - CreArte" class="regalo-img" loading="lazy" src="imagenes/conchasbautismo.webp" width="896" height="1194"/>
        <h3>
         Concha bautismo
        </h3>
@@ -1457,7 +1605,7 @@
        </span>
       </div>
       <div class="regalo-item">
-       <img alt="Huellas de bebé en cerámica - Recuerdo personalizado CreArte" class="regalo-img" loading="lazy" src="imagenes/huellasbebe.webp"/>
+       <img alt="Huellas de bebé en cerámica - Recuerdo personalizado CreArte" class="regalo-img" loading="lazy" src="imagenes/huellasbebe.webp" width="896" height="830"/>
        <h3>
         Huellas Bebé
        </h3>
@@ -1469,7 +1617,7 @@
        </span>
       </div>
       <div class="regalo-item">
-       <img alt="Inicial personalizada de cerámica para bebé - Recuerdo de nacimiento" class="regalo-img" loading="lazy" src="imagenes/letras.webp"/>
+       <img alt="Inicial personalizada de cerámica para bebé - Recuerdo de nacimiento" class="regalo-img" loading="lazy" src="imagenes/letras.webp" width="704" height="1217"/>
        <h3>
         Inicial Nombre
        </h3>
@@ -1482,8 +1630,8 @@
       </div>
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Marco de fotos de cerámica artesanal personalizado para decoración" class="regalo-img active" loading="lazy" src="imagenes/marcos.webp"/>
-        <img alt="Marco artesanal de cerámica para fotos con diseño único" class="regalo-img" loading="lazy" src="imagenes/marcos1.webp"/>
+        <img alt="Marco de fotos de cerámica artesanal personalizado para decoración" class="regalo-img active" loading="lazy" src="imagenes/marcos.webp" width="1242" height="743"/>
+        <img alt="Marco artesanal de cerámica para fotos con diseño único" class="regalo-img" loading="lazy" src="imagenes/marcos1.webp" width="1024" height="879"/>
        </div>
        <h3>
         Marco Cerámica
@@ -1496,7 +1644,7 @@
        </span>
       </div>
       <div class="regalo-item">
-       <img alt="Vajilla de bebé personalizada de gres de alta calidad - CreArte" class="regalo-img" loading="lazy" src="imagenes/vajillabebe.webp"/>
+       <img alt="Vajilla de bebé personalizada de gres de alta calidad - CreArte" class="regalo-img" loading="lazy" src="imagenes/vajillabebe.webp" width="419" height="426"/>
        <h3>
         Vajilla Bebé
        </h3>
@@ -1517,14 +1665,14 @@
      <div class="regalos-grid-5">
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Porta alianzas de cerámica artesanal para bodas" class="regalo-img active" loading="lazy" src="imagenes/boda.webp"/>
-        <img alt="Plato artesanal para arras de boda en cerámica" class="regalo-img" loading="lazy" src="imagenes/arras.webp"/>
+        <img alt="Porta alianzas de cerámica artesanal para bodas" class="regalo-img active" loading="lazy" src="imagenes/boda.webp" width="1001" height="1500"/>
+        <img alt="Plato artesanal para arras de boda en cerámica" class="regalo-img" loading="lazy" src="imagenes/arras.webp" width="746" height="539"/>
        </div>
        <h3>
         Porta Alianzas/arras
        </h3>
        <p>
-        Recipiente elegante de cerámica para guardar las alianzas y o arras Pieza especial para tu gran día. Diseño personalizado que refleja vuestro estilo.
+        Recipiente elegante de cerámica para guardar las alianzas y/o arras Pieza especial para tu gran día. Diseño personalizado que refleja vuestro estilo.
        </p>
        <span class="regalo-price">
         Desde 30€
@@ -1532,11 +1680,11 @@
       </div>
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Detalles de boda personalizados en cerámica para invitados" class="regalo-img active" loading="lazy" src="imagenes/detalles_boda.webp"/>
-        <img alt="Regalos de boda en cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/detallesboda.webp"/>
-        <img alt="Platitos personalizados de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos.webp"/>
-        <img alt="Platitos artesanales de cerámica para bodas" class="regalo-img" loading="lazy" src="imagenes/platitos1.webp"/>
-        <img alt="Platitos decorativos de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos2.webp"/>
+        <img alt="Detalles de boda personalizados en cerámica para invitados" class="regalo-img active" loading="lazy" src="imagenes/detalles_boda.webp" width="1024" height="1024"/>
+        <img alt="Regalos de boda en cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/detallesboda.webp" width="945" height="717"/>
+        <img alt="Platitos personalizados de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos.webp" width="1074" height="992"/>
+        <img alt="Platitos artesanales de cerámica para bodas" class="regalo-img" loading="lazy" src="imagenes/platitos1.webp" width="896" height="935"/>
+        <img alt="Platitos decorativos de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos2.webp" width="545" height="441"/>
        </div>
        <h3>
         Detalles Boda
@@ -1550,8 +1698,8 @@
       </div>
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Azulejo de cerámica con huella de mascota personalizada" class="regalo-img active" loading="lazy" src="imagenes/mascota.webp"/>
-        <img alt="Azulejo artesanal con huella de mascota en cerámica" class="regalo-img" loading="lazy" src="imagenes/huellamascota.webp"/>
+        <img alt="Azulejo de cerámica con huella de mascota personalizada" class="regalo-img active" loading="lazy" src="imagenes/mascota.webp" width="1024" height="979"/>
+        <img alt="Azulejo artesanal con huella de mascota en cerámica" class="regalo-img" loading="lazy" src="imagenes/huellamascota.webp" width="1024" height="965"/>
        </div>
        <h3>
         Huellas Mascotas
@@ -1565,9 +1713,9 @@
       </div>
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Servilleteros de cerámica artesanal con diseño orgánico para mesa" class="regalo-img active" loading="lazy" src="imagenes/servilleteros2.webp"/>
-        <img alt="Servilleteros decorativos de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros.webp"/>
-        <img alt="Servilleteros de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros3.webp"/>
+        <img alt="Servilleteros de cerámica artesanal con diseño orgánico para mesa" class="regalo-img active" loading="lazy" src="imagenes/servilleteros2.webp" width="896" height="810"/>
+        <img alt="Servilleteros decorativos de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros.webp" width="1024" height="1024"/>
+        <img alt="Servilleteros de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros3.webp" width="973" height="1003"/>
        </div>
        <h3>
         Servilleteros
@@ -1581,9 +1729,9 @@
       </div>
       <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Porta cucharas de cerámica artesanal pintado a mano para cocina" class="regalo-img active" loading="lazy" src="imagenes/cucharas.webp"/>
-        <img alt="Porta cucharas con diseño de huevo de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/huevos.webp"/>
-        <img alt="Porta cucharas decorativo de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/portacucharas.webp"/>
+        <img alt="Porta cucharas de cerámica artesanal pintado a mano para cocina" class="regalo-img active" loading="lazy" src="imagenes/cucharas.webp" width="896" height="1195"/>
+        <img alt="Porta cucharas con diseño de huevo de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/huevos.webp" width="1130" height="896"/>
+        <img alt="Porta cucharas decorativo de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/portacucharas.webp" width="1194" height="896"/>
        </div>
        <h3>
         Porta cucharas
@@ -1642,7 +1790,7 @@
         Bandejas o fuentes de cerámica artesanal con diseños únicos y divertidos. Perfectas para servir o decorar tu hogar. Piezas funcionales y bellas.
        </p>
        <span class="regalo-price">
-        Desde 10€
+        Desde 15€
        </span>
       </div>
       <div class="regalo-item">
@@ -1764,76 +1912,18 @@
     </div>
    </div>
   </section>
-  <div id="vales">
-   <div class="vale-content">
-    <span>
-     Regala Experiencias
-    </span>
-    <h2>
-     Vale regalo de CreArte
-    </h2>
-    <p>
-     Regala una experiencia única e inolvidable. Nuestros vales son perfectos para sorprender a alguien especial con la oportunidad de crear con las manos, conectar con la arcilla y llevarse una pieza hecha por ellos mismos.
-    </p>
-    <a class="btn-white" href="contacto.html#contacto">
-     Comprar Vale
-    </a>
-    <div class="vale-options">
-     <div class="vale-option">
-      <span>
-       Taller puntual 1,5h
-      </span>
-      <strong>
-       35€
-      </strong>
-     </div>
-     <div class="vale-option">
-      <span>
-       Taller puntual 3h
-      </span>
-      <strong>
-       45€
-      </strong>
-     </div>
-     <div class="vale-option">
-      <span>
-       4 Semanas de clases
-      </span>
-      <strong>
-       85€
-      </strong>
-     </div>
-     <div class="vale-option">
-      <span>
-       12 Semanas de clases
-      </span>
-      <strong>
-       215€
-      </strong>
-     </div>
-    </div>
-   </div>
-  </div>
+
   <footer>
-   <div class="footer-logo">
-    <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
-   </div>
-   <p>
-    © 2026 CreArte · Cerámica sin postureo. Valladolid, España.
-   </p>
+   <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html#inicio">
-     Inicio
-    </a>
-    <a href="talleres.html#talleres">
-     Talleres
-    </a>
-    <a href="regalos.html#regalos">
-     Regalos
-    </a>
-    <a href="contacto.html#contacto">
-     Contacto
-    </a>
+    <a href="index.html">Inicio</a>
+    <a href="talleres.html">Talleres</a>
+    <a href="vales-regalo.html">Vales regalo</a>
+    <a href="regalos.html">Tienda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacidad.html">Privacidad</a>
    </div>
   </footer>
   <script>
@@ -1848,11 +1938,24 @@
       body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
     });
 
+    // Lógica para el submenú en móvil
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navItem = document.querySelector('.nav-item');
+
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        navItem.classList.toggle('active');
+      }
+    });
+
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        body.style.overflow = 'auto';
+      link.addEventListener('click', (e) => {
+        if (!link.closest('.dropdown-toggle')) {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          body.style.overflow = 'auto';
+        }
       });
     });
 
