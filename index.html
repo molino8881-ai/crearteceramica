@@ -7,7 +7,6 @@
     Talleres de cerámica en Valladolid | CreArte
   </title>
   <meta content="CreArte es el taller de cerámica de referencia en Valladolid. Ofrecemos clases de modelado, torno alfarero y regalos artesanales personalizados como conchas de bautismo y vajillas únicas. ¡Reserva tu experiencia creativa hoy!" name="description"/>
-  <meta content="talleres cerámica Valladolid, clases cerámica Valladolid, aprender cerámica, torno alfarero Valladolid, regalos personalizados cerámica, conchas bautismo artesanales, detalles boda Valladolid, huellas mascotas cerámica, vajillas artesanales, taller cerámica cerca de mí" name="keywords"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/" rel="canonical"/>
@@ -25,25 +24,78 @@
   <meta content="CreArte Cerámica Valladolid | Talleres y Regalos Artesanales" property="og:title"/>
   <meta content="Aprende cerámica en Valladolid. Talleres para todos los niveles, clases semanales y regalos personalizados hechos a mano." property="og:description"/>
   <meta content="https://crearteceramica.es/imagenes/hero.webp" property="og:image"/>
+  <meta content="es_ES" property="og:locale"/>
+  <meta content="CreArte Cerámica" property="og:site_name"/>
   <!-- Twitter Card -->
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="CreArte: Taller de Cerámica en Valladolid" name="twitter:title"/>
   <meta content="Talleres de cerámica, clases semanales y regalos artesanales personalizados en Valladolid." name="twitter:description"/>
   <meta content="https://crearteceramica.es/imagenes/hero.webp" name="twitter:image"/>
-  <!-- LocalBusiness Structured Data -->
+  <meta content="@crearteceramicavalladolid" name="twitter:site"/>
+
+  <!-- Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://crearteceramica.es/#organization",
+    "name": "CreArte Cerámica Valladolid",
+    "url": "https://crearteceramica.es/",
+    "logo": "https://crearteceramica.es/imagenes/logo.webp",
+    "email": "creartevalladolid@gmail.com",
+    "telephone": "+34639096691",
+    "sameAs": [
+      "https://www.instagram.com/crearteceramicavalladolid",
+      "https://www.facebook.com/crearteceramicavalladolid"
+    ]
+  }
+  </script>
+
+  <!-- WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://crearteceramica.es/#website",
+    "url": "https://crearteceramica.es/",
+    "name": "CreArte Cerámica Valladolid",
+    "publisher": { "@id": "https://crearteceramica.es/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://crearteceramica.es/faq.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://crearteceramica.es/" }
+    ]
+  }
+  </script>
+
+  <!-- Marcado de negocio local estructurado y optimizado para Google Maps -->
   <script type="application/ld+json">
    {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "CreArte",
+    "@type": "ArtsCraftsSchool",
+    "name": "CreArte Cerámica Valladolid",
     "image": "https://crearteceramica.es/imagenes/hero.webp",
     "@id": "https://crearteceramica.es/",
     "url": "https://crearteceramica.es/",
     "telephone": "+34639096691",
+    "email": "creartevalladolid@gmail.com",
+    "description": "Taller de cerámica en Valladolid enfocado a clases semanales, experiencias creativas de fin de semana y modelado de arcilla sin experiencia previa.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "C/ Vinos de rueda, 18",
       "addressLocality": "Valladolid",
+      "addressRegion": "Castilla y León",
       "postalCode": "47008",
       "addressCountry": "ES"
     },
@@ -51,6 +103,11 @@
      "@type": "GeoCoordinates",
       "latitude": 41.6163356,
       "longitude": -4.7508584
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=CreArte+Ceramica+Valladolid",
+    "areaServed": {
+      "@type": "City",
+      "name": "Valladolid"
     },
     "openingHoursSpecification": [
       {
@@ -63,17 +120,26 @@
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Wednesday", "Thursday"],
         "opens": "17:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday"],
+        "opens": "19:00",
         "closes": "21:00"
       }
     ],
     "sameAs": [
-      "https://www.instagram.com/crearteceramicavalladolid"
+      "https://www.instagram.com/crearteceramicavalladolid",
+      "https://www.facebook.com/crearteceramicavalladolid"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "ratingCount": "150"
-    }
+      "ratingCount": "58"
+    },
+    "priceRange": "24€ - 215€",
+    "paymentAccepted": "Bizum, Efectivo"
   }
   </script>
   <!-- Fuentes -->
@@ -808,9 +874,143 @@
       }
     }
 
+    /* MODAL FLOTANTE - ANUNCIO */
+    .anuncio-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 42, 38, 0.6);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3000;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+
+    .anuncio-overlay.activo {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .anuncio-card {
+      position: relative;
+      background: var(--white);
+      border-radius: 24px;
+      max-width: 440px;
+      width: 100%;
+      padding: 2.8rem 2.5rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+      transform: translateY(20px) scale(0.96);
+      transition: transform 0.35s ease;
+    }
+
+    .anuncio-overlay.activo .anuncio-card {
+      transform: translateY(0) scale(1);
+    }
+
+    .anuncio-cerrar {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--green-pale);
+      color: var(--green);
+      border: none;
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .anuncio-cerrar:hover {
+      background: var(--green);
+      color: white;
+      transform: rotate(90deg);
+    }
+
+    .anuncio-tag {
+      display: inline-block;
+      background: var(--terracota);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.3rem;
+      border-radius: 50px;
+      margin-bottom: 1.2rem;
+    }
+
+    .anuncio-card h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green);
+      font-size: 1.9rem;
+      margin-bottom: 0.4rem;
+      line-height: 1.25;
+    }
+
+    .anuncio-card .anuncio-subtitulo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .anuncio-card .anuncio-plazas {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+    }
+
+    .anuncio-card .anuncio-plazas strong {
+      color: var(--green);
+    }
+
+    .anuncio-btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 1rem 2.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 10px 20px rgba(34, 119, 104, 0.2);
+    }
+
+    .anuncio-btn:hover {
+      background: var(--green-dark);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 480px) {
+      .anuncio-card { padding: 2.5rem 1.5rem 2rem; }
+      .anuncio-card h2 { font-size: 1.6rem; }
+    }
     </style>
  </head>
  <body>
+  <div class="anuncio-overlay" id="anuncioOverlay">
+    <div class="anuncio-card">
+      <button class="anuncio-cerrar" id="anuncioCerrar" aria-label="Cerrar aviso">&times;</button>
+      <span class="anuncio-tag">Próximamente en Octubre</span>
+      <h2>Clases de Torno Alfarero</h2>
+      <p class="anuncio-subtitulo">Aprende a centrar, subir paredes y dar forma en el torno</p>
+      <p class="anuncio-plazas"><strong>Plazas limitadas.</strong> Reserva tu plaza cuanto antes.</p>
+      <a href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20información%20sobre%20las%20clases%20de%20torno%20alfarero%20de%20octubre" class="anuncio-btn" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    </div>
+  </div>
+
   <nav id="navbar">
    <div class="container">
     <a class="logo" href="index.html">
@@ -989,6 +1189,36 @@
   </footer>
 
   <script>
+    // Aviso flotante: Clases de Torno Alfarero (Octubre)
+    (function () {
+      const overlay = document.getElementById('anuncioOverlay');
+      const cerrarBtn = document.getElementById('anuncioCerrar');
+
+      function abrirAviso() {
+        overlay.classList.add('activo');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function cerrarAviso() {
+        overlay.classList.remove('activo');
+        document.body.style.overflow = 'auto';
+      }
+
+      window.addEventListener('load', () => {
+        setTimeout(abrirAviso, 400);
+      });
+
+      cerrarBtn.addEventListener('click', cerrarAviso);
+
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) cerrarAviso();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('activo')) cerrarAviso();
+      });
+    })();
+
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     const body = document.body;
