@@ -53,6 +53,56 @@
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://crearteceramica.es/tecnicas-de-ceramica.html" }
   }
   </script>
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la técnica de cerámica más fácil para empezar sin experiencia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El modelado a pellizco (pinching) es la técnica más accesible para principiantes: no requiere herramientas ni torno, solo las manos y un poco de paciencia. Es la técnica con la que solemos empezar en los talleres puntuales de CreArte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se puede hacer cerámica sin torno de alfarero?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El pellizco, los churros (coiling) y las planchas (slab building) son técnicas de modelado a mano que no necesitan torno y llevan siglos usándose para crear todo tipo de piezas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto se tarda en aprender a usar el torno de alfarero?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En un taller puntual ya puedes tocar el torno y llevarte una primera pieza, pero dominar el centrado, la apertura y el levantado con soltura suele llevar varios meses de práctica constante en clases semanales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué técnica de cerámica es mejor para hacer con niños?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El modelado a pellizco y las planchas suelen funcionar mejor con niños: son técnicas intuitivas, no requieren fuerza ni precisión y los resultados se ven rápido, lo que mantiene el interés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué técnica se usa para hacer huellas de bebé en cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las huellas de bebé, de mascota o las conchas de bautismo se hacen con moldes de escayola, que permiten capturar el detalle exacto de la huella con precisión."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Favicon -->
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -582,7 +632,7 @@ blockquote {
   margin-top: 5rem;
 }
 
-.cta-block h3 {
+.cta-block h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -747,7 +797,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
   .blog-header { padding: 140px 0 40px; }
   .blog-meta { flex-direction: column; gap: 0.5rem; }
   .cta-block { padding: 3rem 1.5rem; }
-  .cta-block h3 { font-size: 1.8rem; }
+  .cta-block h2 { font-size: 1.8rem; }
   blockquote { font-size: 1.4rem; padding: 1.5rem; }
 }
 
@@ -810,6 +860,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <li><a href="#moldes">Modelado con moldes</a></li>
           <li><a href="#escultura">Escultura libre</a></li>
           <li><a href="#decoracion">Técnicas de decoración</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
         </ol>
       </nav>
 
@@ -1011,9 +1062,36 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
         </div>
       </section>
 
+      <hr class="divider" />
+
+      <!-- FAQ -->
+      <section class="technique" id="faq">
+        <div class="technique-header">
+          <div class="technique-number">?</div>
+          <h2><span>Dudas frecuentes</span>Preguntas sobre técnicas de cerámica</h2>
+        </div>
+
+        <h3>¿Cuál es la técnica de cerámica más fácil para empezar sin experiencia?</h3>
+        <p>El modelado a pellizco (pinching) es la más accesible: no requiere herramientas ni torno, solo las manos y algo de paciencia. Es la técnica con la que solemos empezar en los <a href="talleres.html">talleres puntuales</a> de CreArte.</p>
+
+        <h3>¿Se puede hacer cerámica sin torno de alfarero?</h3>
+        <p>Sí. El pellizco, los churros (coiling) y las planchas (slab building) son técnicas de modelado a mano que no necesitan torno y llevan siglos usándose para crear todo tipo de piezas.</p>
+
+        <h3>¿Cuánto se tarda en aprender a usar el torno de alfarero?</h3>
+        <p>En un taller puntual ya puedes tocar el torno y llevarte una primera pieza, pero dominar el centrado, la apertura y el levantado con soltura suele llevar varios meses de práctica constante en clases semanales.</p>
+
+        <h3>¿Qué técnica de cerámica es mejor para hacer con niños?</h3>
+        <p>El pellizco y las planchas suelen funcionar mejor con niños: son técnicas intuitivas, no requieren fuerza ni precisión y los resultados se ven rápido.</p>
+
+        <h3>¿Qué técnica se usa para hacer huellas de bebé en cerámica?</h3>
+        <p>Las <a href="vales-regalo.html">huellas de bebé</a>, de mascota o las conchas de bautismo se hacen con moldes de escayola, que capturan el detalle exacto de la huella.</p>
+      </section>
+
+      <hr class="divider" />
+
       <!-- CTA FINAL -->
       <div class="cta-block">
-        <h3>¿Quieres probar estas técnicas?</h3>
+        <h2>¿Quieres probar estas técnicas?</h2>
         <p>Ven a nuestro taller en Valladolid y descubre el placer de crear con tus propias manos. Grupos pequeños, materiales incluidos y picoteo de por medio.</p>
         <div class="cta-buttons">
           <a href="talleres.html" class="btn-primary-cta">Ver talleres disponibles</a>

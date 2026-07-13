@@ -190,47 +190,6 @@
   ]
 }
 </script>
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Necesito experiencia previa para asistir a los talleres?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, No, nada de eso. La mayoría de quienes vienen no han tocado un torno ni modelado barro en su vida. Adaptamos cada sesión al nivel de cada persona. La mayoría de quienes vienen no han tocado ni modelado barro en su vida. Nuestros talleres están diseñados para todos los niveles, desde principiantes hasta avanzados. Nos adaptamos a tu ritmo y experiencia."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué incluyen los talleres?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Todos los materiales, herramientas, cocciones y un picoteo para disfrutar. Sólo debes traer las ganas de crear."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuál es el tamaño de los grupos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Mantenemos grupos reducidos para garantizar atención personalizada en un ambiente acogedor."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cómo puedo reservar un taller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Puedes reservar directamente por WhatsApp al +34639096691 o a través de nuestro formulario de contacto."
-        }
-      }
-    ]
-  }
-  </script>
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -1292,15 +1251,19 @@
     text-align: left;
   }
 
-  .faq-question span {
+  .faq-question span,
+  .faq-question h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: #1C1410;
     line-height: 1.4;
+    margin: 0;
     transition: color 0.2s;
   }
 
-  .faq-question:hover span {
+  .faq-question:hover span,
+  .faq-question:hover h3 {
     color: var(--green);
   }
 
@@ -1501,8 +1464,270 @@
      </div>
    </div>
   </nav>
-  <!-- SECCIÓN DE TESTIMONIOS -->
-  <section class="testimonios-section" id="testimonios" style="padding-top: 150px;">
+  <!-- SECCIÓN DE FAQ -->
+  <section class="faq-section" id="faq" style="padding-top: 150px;">
+   <div class="faq-inner">
+    <div class="section-header">
+     <span>
+      Dudas y Experiencias
+     </span>
+     <h1>
+      Preguntas Frecuentes y Testimonios
+     </h1>
+     <p>
+      Todo lo que suelen preguntar antes de animarse a realizar uno de nuestros talleres de cerámica en Valladolid. Si tu duda no está aquí, escríbenos sin compromiso e intentaremos resolverla.
+     </p>
+     <!-- Decoración SVG opcional -->
+    </div>
+    <div class="faq-list">
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Necesito tener experiencia previa?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Para nada. En los talleres puntuales partimos de cero y en las clases semanales te incorporas según tu nivel. Lo único que hace falta es tener ganas.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Qué incluye el precio?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Todo: materiales, arcilla, engobes, esmaltes, uso del horno y las herramientas. Vienes con las manos vacías y te vas (bueno, casi) con tu pieza.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Me llevo la pieza el mismo día?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        No, y es parte de la magia. Las piezas necesitan secarse, pasar por el horno, esmaltarse y volver a pasar por el horno. En los talleres puntuales el plazo es de unas
+        <strong>
+         3-4 semanas
+        </strong>
+        ; en las clases semanales depende del proyecto. La espera merece la pena, te lo prometemos.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Puedo hacer lo que quiera?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Dentro de lo que permite la técnica del día, sí. Te orientamos para que tu idea tenga forma real — literalmente. El tamaño máximo de las piezas es de
+        <strong>
+         25 cm
+        </strong>
+        .
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Qué pasa si mi pieza se rompe en el horno?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        La cerámica es un proceso vivo y a veces impredecible. Ponemos todo el cuidado posible, pero puede ocurrir. Si pasa, lo hablamos y buscamos solución.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Hay que llevar ropa especial?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Nosotros te proporcionamos delantal, aunque no está de más venir con ropa que no te importe mancharte. El barro tiene vida propia.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Hacéis talleres para grupos, cumpleaños o despedidas?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Sí. Organizamos talleres privados de cerámica en Valladolid para despedidas de soltera, cumpleaños, grupos de amigos y eventos de empresa. Disponemos de espacio suficiente para grupos grandes. Si sois un grupo y queréis una experiencia a vuestra medida, escríbenos por WhatsApp y lo organizamos.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Puedo regalar un taller?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Por supuesto. Tenemos vales regalo disponibles. Los personalizamos para que sea uno de los regalos que más gustan, porque se viven, no se guardan en un cajón. Tienen una validez de 6 meses desde su compra.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Dónde estáis?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        Nuestro taller de cerámica está en el barrio Parque Alameda, Valladolid (C/ Vinos de Rueda, 18). Al reservar tu plaza te mandamos todos los detalles para llegar sin perderte.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿Necesito experiencia para las clases de torno?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        No es necesaria ninguna experiencia previa. En las clases de torno empezamos desde lo más básico: el centrado del barro. Te guiamos paso a paso para que disfrutes del proceso desde el primer momento.
+       </p>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button aria-expanded="false" class="faq-question">
+       <h3>
+        ¿En qué se diferencia el torno del modelado a mano?
+       </h3>
+       <div class="faq-icon">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
+         <line x1="7" x2="7" y1="1" y2="13">
+         </line>
+         <line x1="1" x2="13" y1="7" y2="7">
+         </line>
+        </svg>
+       </div>
+      </button>
+      <div class="faq-answer">
+       <p class="faq-answer-inner">
+        El modelado a mano permite crear formas más orgánicas y libres usando tus manos y herramientas sencillas. El torno, en cambio, utiliza la fuerza centrífuga para crear piezas simétricas y circulares de forma más rápida, requiriendo una técnica distinta de coordinación y control.
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- /faq-list -->
+    <div class="faq-cta">
+     <p>
+      <strong>
+       ¿Tienes alguna otra duda?
+      </strong>
+      Escríbenos por WhatsApp y te respondemos enseguida.
+     </p>
+     <a class="faq-cta-btn" href="https://wa.me/34639096691" rel="noopener" target="_blank">
+      <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+       </path>
+      </svg>
+      Escribir por WhatsApp
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="testimonios-section" id="testimonios" style="padding-top: 2rem;">
     <div class="faq-inner">
       <div class="section-header">
         <span>Lo que dicen quienes ya se mancharon las manos</span>
@@ -1548,269 +1773,6 @@ Me ha gustado mucho la experiencia y seguro que repetiré."
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="faq-section" id="faq" style="padding-top: 2rem;">
-   <div class="faq-inner">
-    <div class="section-header">
-     <span>
-      Dudas y Experiencias
-     </span>
-     <h1>
-      Preguntas Frecuentes y Testimonios
-     </h1>
-     <p>
-      Todo lo que suelen preguntar antes de animarse a realizar uno de nuestros talleres de cerámica en valladolid. Si tu duda no está aquí, escríbenos sin compromiso e intentaremos resolverla.
-     </p>
-     <!-- Decoración SVG opcional -->
-    </div>
-    <div class="faq-list">
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Necesito tener experiencia previa?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Para nada. En los talleres puntuales partimos de cero y en las clases semanales te incorporas según tu nivel. Lo único que hace falta es tener ganas.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Qué incluye el precio?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Todo: materiales, arcilla, engobes, esmaltes, uso del horno y las herramientas. Vienes con las manos vacías y te vas (bueno, casi) con tu pieza.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Me llevo la pieza el mismo día?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        No, y es parte de la magia. Las piezas necesitan secarse, pasar por el horno, esmaltarse y volver a pasar por el horno. En los talleres puntuales el plazo es de unas
-        <strong>
-         3-4 semanas
-        </strong>
-        ; en las clases semanales depende del proyecto. La espera merece la pena, te lo prometemos.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Puedo hacer lo que quiera?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Dentro de lo que permite la técnica del día, sí. Te orientamos para que tu idea tenga forma real — literalmente. El tamaño máximo de las piezas es de
-        <strong>
-         25 cm
-        </strong>
-        .
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Qué pasa si mi pieza se rompe en el horno?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        La cerámica es un proceso vivo y a veces impredecible. Ponemos todo el cuidado posible, pero puede ocurrir. Si pasa, lo hablamos y buscamos solución.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Hay que llevar ropa especial?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Nosotros te proporcionamos delantal, aunque no está de más venir con ropa que no te importe mancharte. El barro tiene vida propia.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Hacéis talleres para grupos, cumpleaños o despedidas?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Sí. Organizamos talleres privados de cerámica en Valladolid para despedidas de soltera, cumpleaños, grupos de amigos y eventos de empresa. Disponemos de espacio suficiente para grupos grandes. Si sois un grupo y queréis una experiencia a vuestra medida, escríbenos por WhatsApp y lo organizamos.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Puedo regalar un taller?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Por supuesto. Tenemos vales regalo disponibles. Los personalizamos para que sea uno de los regalos que más gustan, porque se viven, no se guardan en un cajón. Tienen una validez de 6 meses desde su compra.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Dónde estáis?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        Nuestro taller de cerámica está en el barrio Parque Alameda, Valladolid (C/ Vinos de Rueda, 18). Al reservar tu plaza te mandamos todos los detalles para llegar sin perderte.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿Necesito experiencia para las clases de torno?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        No es necesaria ninguna experiencia previa. En las clases de torno empezamos desde lo más básico: el centrado del barro. Te guiamos paso a paso para que disfrutes del proceso desde el primer momento.
-       </p>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button aria-expanded="false" class="faq-question">
-       <span>
-        ¿En qué se diferencia el torno del modelado a mano?
-       </span>
-       <div class="faq-icon">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 14 14">
-         <line x1="7" x2="7" y1="1" y2="13">
-         </line>
-         <line x1="1" x2="13" y1="7" y2="7">
-         </line>
-        </svg>
-       </div>
-      </button>
-      <div class="faq-answer">
-       <p class="faq-answer-inner">
-        El modelado a mano permite crear formas más orgánicas y libres usando tus manos y herramientas sencillas. El torno, en cambio, utiliza la fuerza centrífuga para crear piezas simétricas y circulares de forma más rápida, requiriendo una técnica distinta de coordinación y control.
-       </p>
-      </div>
-     </div>
-    </div>
-    <!-- /faq-list -->
-    <div class="faq-cta">
-     <p>
-      <strong>
-       ¿Tienes alguna otra duda?
-      </strong>
-      Escríbenos por WhatsApp y te respondemos enseguida.
-     </p>
-     <a class="faq-cta-btn" href="https://wa.me/34639096691" rel="noopener" target="_blank">
-      <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
-       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
-       </path>
-      </svg>
-      Escribir por WhatsApp
-     </a>
-    </div>
-   </div>
   </section>
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
