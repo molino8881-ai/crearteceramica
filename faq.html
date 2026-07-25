@@ -14,7 +14,7 @@
     <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
     <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    
     <meta content="#227768" name="theme-color"/>
     <meta content="#227768" name="msapplication-TileColor"/>
     <!-- Open Graph / Facebook -->
@@ -146,11 +146,11 @@
   "@type": "LocalBusiness",
   "name": "CreArte Cerámica Valladolid",
   "image": "https://crearteceramica.es/imagenes/hero.webp",
-  "@id": "https://crearteceramica.es/",
+  "@id": "https://crearteceramica.es/#school",
   "url": "https://crearteceramica.es/",
   "telephone": "+34639096691",
   "email": "creartevalladolid@gmail.com",
-  "priceRange": "24€ - 215€",
+  "priceRange": "3,90€ - 215€",
   "paymentAccepted": "Bizum, Efectivo",
   "address": {
     "@type": "PostalAddress",
@@ -187,6 +187,37 @@
   "sameAs": [
     "https://www.instagram.com/crearteceramicavalladolid",
     "https://www.facebook.com/crearteceramicavalladolid"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "4"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Diego Pintos" },
+      "reviewBody": "Hemos disfrutado muchísimo del taller de cerámica. Las dos profesoras son encantadoras, cercanas y explican todo con mucha paciencia, lo que hace que la experiencia sea muy agradable. El ambiente es muy acogedor y el pinchoteo un puntazo. Sin duda, un plan totalmente recomendable."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Laura Perez" },
+      "reviewBody": "Me encantó la experiencia. El espacio es muy acogedor y las chicas te ayudan en todo momento, con muchísima paciencia y cercanía. No hace falta tener experiencia, era mi primera vez. Los grupos son pequeños, hay muchas opciones para crear y el precio es más que razonable."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "Gema VS" },
+      "reviewBody": "Acudí hace un mes a un taller de figuras navideñas. Nosotras teníamos otra idea diferente y aun así nos ayudaron en el proceso teniendo paciencia con mi inexperiencia. Era la primera vez que hacía arcilla. Me ha gustado mucho la experiencia y seguro que repetiré."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "author": { "@type": "Person", "name": "beavnovo" },
+      "reviewBody": "Llevo asistiendo a las clases semanales desde septiembre y estoy muy contenta. Hay bastante variedad de materiales y colores. Los grupos son reducidos y si alguna vez no puedo asistir a mi hora no hay problema en cambiar el día. Muy recomendable."
+    }
   ]
 }
 </script>
@@ -1201,12 +1232,10 @@
   </style>
 <!-- ESTILOS: pega dentro de <head> o en tu archivo CSS -->
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
-
-  .faq-section {
+    .faq-section {
     background-color: var(--green-pale) !important;
     padding: 3rem 1.5rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .faq-inner {
@@ -1349,7 +1378,7 @@
     gap: 0.4rem;
     background: white;
     color: #227768;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.75rem 1.4rem;
@@ -1439,8 +1468,8 @@
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
@@ -1448,19 +1477,19 @@
       <span></span>
     </div>
 <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
@@ -1777,14 +1806,14 @@ Me ha gustado mucho la experiencia y seguro que repetiré."
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="contacto">Contacto</a>
+    <a href="blog">Blog</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
   <script>

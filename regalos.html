@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Regalos y Detalles de Cerámica Artesanal y Personalizada en Valladolid | CreArte</title>
-  <meta content="Regalos artesanales de cerámica personalizados en Valladolid. Conchas de bautismo, detalles de boda, vajillas y encargos únicos para cualquier ocasión." name="description"/>
+  <meta content="Regalos de cerámica personalizados en Valladolid: conchas de bautismo, huellas de bebé, detalles de boda y vajillas artesanales hechas a mano. Encargos únicos para cada ocasión." name="description"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/regalos" rel="canonical"/>
@@ -12,7 +12,7 @@
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  
   <meta content="#227768" name="theme-color"/>
   <meta content="#227768" name="msapplication-TileColor"/>
   <!-- Open Graph / Facebook -->
@@ -1148,31 +1148,190 @@
       }
     }
 
+    /* POR QUÉ COMPRAR */
+    .beneficios {
+      padding: 5rem 0 2rem;
+      background: var(--white);
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .beneficio-card {
+      background: var(--green-pale);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .beneficio-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .beneficio-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .beneficio-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* CTA FINAL TIENDA */
+    .cta-tienda {
+      padding: 6rem 0;
+      margin-bottom: 3rem;
+      background: var(--green);
+      color: white;
+      text-align: center;
+    }
+
+    .cta-tienda h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .cta-tienda p {
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* FAQ TIENDA (acordeón) */
+    .faq-section {
+      padding: 5rem 0 6rem;
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .faq-list {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--green);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.6rem 1.5rem;
+      color: var(--text-light);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .faq-cta {
+      margin-top: 3rem;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+    }
+
+    .faq-cta p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .faq-cta p strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-cta-btn {
+      display: inline-block;
+      background: white;
+      color: var(--green-dark);
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    .faq-cta-btn:hover {
+      transform: scale(1.05);
+    }
   </style>
  </head>
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
      <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
@@ -1181,14 +1340,14 @@
    <div class="container">
     <div class="section-header">
      <span>Piezas Únicas Hechas a Mano</span>
-     <h1>Regalos y Encargos de Cerámica Personalizada</h1>
+     <h1>Tienda de cerámica en Valladolid: compra regalos artesanales hechos a mano</h1>
      <p>Descubre regalos únicos de cerámica artesanal hechos a mano en Valladolid. Creamos piezas personalizadas para bautizos, bodas, nacimientos, comuniones, aniversarios y ocasiones especiales, así como detalles exclusivos para sorprender a alguien importante.</p>
      <p>Cada creación es única y se elabora bajo encargo, adaptándose a tus gustos y necesidades. Tú eliges el diseño, el texto, los colores o los detalles que deseas incorporar, y nosotros transformamos tu idea en una pieza de cerámica exclusiva.</p>
      <p>Trabajamos con gres de alta calidad, un material resistente y duradero que garantiza acabados excepcionales. Si buscas cerámica personalizada en Valladolid, regalos artesanales originales o piezas hechas a mano con un diseño exclusivo, encontrarás opciones únicas creadas con dedicación y atención al detalle.</p>
     </div>
 
     <div class="categorias-grid">
-      <a href="ninos-bebes.html" style="text-decoration:none; color:inherit;">
+      <a href="ninos-bebes" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/huellasbebe.webp');"></div>
           <div class="categoria-info">
@@ -1198,7 +1357,7 @@
           </div>
         </div>
       </a>
-      <a href="bodas.html" style="text-decoration:none; color:inherit;">
+      <a href="bodas" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/detalles_boda.webp');"></div>
           <div class="categoria-info">
@@ -1208,7 +1367,7 @@
           </div>
         </div>
       </a>
-      <a href="menaje-hogar.html" style="text-decoration:none; color:inherit;">
+      <a href="menaje-hogar" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/vajillas.webp');"></div>
           <div class="categoria-info">
@@ -1218,7 +1377,7 @@
           </div>
         </div>
       </a>
-      <a href="decoracion.html" style="text-decoration:none; color:inherit;">
+      <a href="decoracion" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/floreros_nuevo.webp');"></div>
           <div class="categoria-info">
@@ -1228,23 +1387,132 @@
           </div>
         </div>
       </a>
+      <a href="mascotas" style="text-decoration:none; color:inherit;">
+        <div class="categoria-card">
+          <div class="categoria-img" style="background-image: url('imagenes/mascota.webp');"></div>
+          <div class="categoria-info">
+            <h2>Regalos de cerámica para mascotas</h2>
+            <p>Huellas personalizadas, comederos, bebederos y casitas de pájaros artesanales.</p>
+            <span class="categoria-link">Ver piezas →</span>
+          </div>
+        </div>
+      </a>
     </div>
    </div>
   </section>
+
+  <section class="beneficios">
+   <div class="container">
+    <div class="section-header">
+     <span>Cerámica con Sello Propio</span>
+     <h2>¿Por qué comprar cerámica artesanal en CreArte?</h2>
+    </div>
+    <div class="beneficios-grid">
+     <div class="beneficio-card">
+      <div class="beneficio-icon">🖐️</div>
+      <h3>Hecho a mano</h3>
+      <p>Cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, sin producción en serie.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">💝</div>
+      <h3>Personalizable</h3>
+      <p>Muchas piezas se pueden adaptar a tu ocasión: nombre, fecha o color a elegir.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">📍</div>
+      <h3>Recogida en Valladolid</h3>
+      <p>Puedes recoger tu pedido directamente en el taller del Parque Alameda, sin gastos de envío.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="cta-tienda">
+   <div class="container">
+    <h2>¿Buscas un regalo de cerámica hecho a mano en Valladolid?</h2>
+    <p>Cuéntanos la ocasión y te ayudamos a elegir o personalizar la pieza perfecta.</p>
+    <a class="btn-white" href="https://wa.me/34639096691?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20tienda%20de%20cer%C3%A1mica">Consultar por WhatsApp</a>
+   </div>
+  </section>
+
+  <section class="faq-section">
+   <div class="faq-inner">
+    <div class="faq-header section-header">
+     <span>Resolvemos tus dudas</span>
+     <h2>Preguntas frecuentes sobre la tienda</h2>
+    </div>
+    <div class="faq-list">
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>No sé qué categoría necesito, ¿me ayudáis a elegir?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Claro, escríbenos por WhatsApp contándonos la ocasión (un bautizo, una boda, un regalo de casa nueva...) y te orientamos hacia la categoría y la pieza que mejor encaje.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Puedo combinar piezas de varias categorías en un mismo pedido?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, por ejemplo puedes encargar a la vez un detalle de boda y una pieza de menaje o decoración; te preparamos un único presupuesto para todo el pedido.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Hacéis envíos fuera de Valladolid?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">La recogida en el taller es gratuita, pero para quien no pueda pasarse por Valladolid también organizamos envío a otras ciudades; consúltanos el coste según destino y tipo de pieza.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Cuál es el plazo general para un encargo personalizado?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Depende de la categoría y de si lleva personalización: para bodas y menaje recomendamos 6-8 semanas, y para regalos de bebé 4-6 semanas. Encontrarás el detalle exacto en la página de cada categoría.</div>
+      </div>
+     </div>
+    </div>
+    <div class="faq-cta">
+     <p><strong>¿Tienes alguna duda que no está aquí?</strong>Escríbenos y te respondemos encantados.</p>
+     <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Tengo%20una%20duda%20sobre%20la%20tienda%20de%20cer%C3%A1mica" target="_blank">Consultar por WhatsApp</a>
+    </div>
+   </div>
+  </section>
+
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="contacto">Contacto</a>
+    <a href="blog">Blog</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
 
+  <script>
+    // Acordeón FAQ tienda
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
   <script>
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');

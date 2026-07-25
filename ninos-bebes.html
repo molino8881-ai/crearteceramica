@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Regalos de Cerámica para Niños y Bebés | CreArte Valladolid</title>
-  <meta content="Recuerdos personalizados en cerámica artesanal para bautizos y nacimientos en Valladolid: conchas de bautismo, huellas de bebé, iniciales y vajillas person" name="description"/>
+  <meta content="Recuerdos personalizados en cerámica artesanal para bautizos y nacimientos en Valladolid: conchas de bautismo, huellas de bebé y vajillas personalizadas." name="description"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/ninos-bebes" rel="canonical"/>
@@ -12,7 +12,7 @@
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  
   <meta content="#227768" name="theme-color"/>
   <meta content="#227768" name="msapplication-TileColor"/>
   <!-- Open Graph -->
@@ -955,17 +955,17 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) */
+    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) - reducidas para que las 4 quepan en una sola línea */
     .categorias-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
       margin-top: 3rem;
     }
 
     .categoria-card {
       background: white;
-      border-radius: 24px;
+      border-radius: 18px;
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: 0.4s;
@@ -974,24 +974,25 @@
     }
 
     .categoria-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
     .categoria-img {
-      height: 220px;
+      height: 110px;
       background-size: cover;
       background-position: center;
     }
 
     .categoria-info {
-      padding: 2rem;
+      padding: 0.8rem 0.5rem;
       text-align: center;
     }
 
-    .categoria-info h2 {
-      font-size: 1.6rem;
-      margin-bottom: 0.8rem;
+    .categoria-info h2,
+    .categoria-info h3 {
+      font-size: 0.85rem !important;
+      margin-bottom: 0.4rem;
       border-bottom: none;
       padding-bottom: 0;
     }
@@ -1006,9 +1007,9 @@
       display: inline-block;
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.03em;
     }
 
     .categoria-link:hover { color: var(--green-dark); }
@@ -1028,8 +1029,18 @@
 
     .volver-tienda:hover { color: var(--green-dark); }
 
-    @media (max-width: 480px) {
-      .categoria-info h2 { font-size: 1.3rem; }
+    @media (max-width: 600px) {
+      .categorias-grid { gap: 0.6rem; }
+      .categoria-img { height: 80px; }
+      .categoria-info { padding: 0.6rem 0.4rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.7rem !important; line-height: 1.15; }
+      .categoria-link { font-size: 0.56rem; }
+    }
+    @media (max-width: 420px) {
+      .categoria-img { height: 60px; }
+      .categoria-info { padding: 0.4rem 0.3rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.6rem !important; }
+      .categoria-link { font-size: 0.48rem; }
     }
     /* DROPDOWN MENU */
     .nav-item {
@@ -1149,31 +1160,222 @@
       }
     }
 
+    /* POR QUÉ ELEGIR */
+    .beneficios {
+      padding: 5rem 0 2rem;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .beneficio-card {
+      background: var(--green-pale);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .beneficio-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .beneficio-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .beneficio-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* CROSS-SELL TALLER */
+    .cross-sell {
+      padding: 4rem 0;
+    }
+
+    .cross-sell-card {
+      background: var(--green-pale);
+      border-radius: 28px;
+      padding: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cross-sell-text {
+      flex: 1 1 380px;
+    }
+
+    .cross-sell-text h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.8rem;
+      color: var(--green-dark);
+    }
+
+    .cross-sell-text p {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .cross-sell-btns {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .cross-sell-btns a {
+      background: var(--green);
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .cross-sell-btns a:hover {
+      background: var(--green-dark);
+    }
+
+    /* FAQ NIÑOS Y BEBÉS (acordeón) */
+    .faq-section {
+      padding: 5rem 0 6rem;
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .faq-list {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--green);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.6rem 1.5rem;
+      color: var(--text-light);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .faq-cta {
+      margin-top: 3rem;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+    }
+
+    .faq-cta p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .faq-cta p strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-cta-btn {
+      display: inline-block;
+      background: white;
+      color: var(--green-dark);
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    .faq-cta-btn:hover {
+      transform: scale(1.05);
+    }
   </style>
  </head>
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
      <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
@@ -1187,14 +1389,13 @@
      <p>Cada pieza se elabora bajo encargo en gres de alta calidad, con el nombre, la fecha o los detalles que elijas, para crear un recuerdo que dure toda la vida.</p>
     </div>
 
-    <a class="volver-tienda" href="regalos.html">← Ver toda la tienda</a>
-
-    <h2>Nuestras piezas para bebés y recién nacidos</h2>
+    <a class="volver-tienda" href="regalos">← Ver toda la tienda</a>
 
     <div class="regalos-category">
+     <h2 style="font-size:1.8rem;">Nuestras piezas para bebés y recién nacidos</h2>
      <div class="regalos-grid">
 <div class="regalo-item">
-       <img alt="Concha de bautismo personalizada en cerámica artesanal - CreArte" class="regalo-img" loading="lazy" src="imagenes/conchasbautismo.webp" width="896" height="1194"/>
+       <img alt="Concha de bautismo personalizada en cerámica artesanal - CreArte" class="regalo-img" fetchpriority="high" src="imagenes/conchasbautismo.webp" width="896" height="1194"/>
        <h3>
         Concha bautismo
        </h3>
@@ -1218,7 +1419,10 @@
        </span>
       </div>
 <div class="regalo-item">
-       <img alt="Inicial personalizada de cerámica para bebé - Recuerdo de nacimiento" class="regalo-img" loading="lazy" src="imagenes/letras.webp" width="704" height="1217"/>
+       <div class="regalo-img-container carousel-container">
+        <img alt="Inicial personalizada de cerámica letra A, decorada a mano con flores prensadas y grabada con fecha, peso y medidas del bebé - CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/letra-A-nacimiento.webp" width="880" height="1190"/>
+        <img alt="Inicial personalizada de cerámica letra P, decorada a mano con globo aerostático, conejito y grabada con fecha, peso y medidas del bebé - CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/letra-P-nacimiento.webp" width="868" height="1024"/>
+       </div>
        <h3>
         Inicial Nombre
        </h3>
@@ -1260,9 +1464,9 @@
     </div>
 
     <div class="regalos-category">
-     <h2 style="font-size:1.8rem;">Otras categorías</h2>
-     <div class="categorias-grid">
-      <a href="bodas.html" style="text-decoration:none; color:inherit;">
+     <h2 style="font-size:1.8rem; margin-bottom:0.5rem;">Otras categorías</h2>
+     <div class="categorias-grid" style="margin-top:1rem;">
+      <a href="bodas" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/detalles_boda.webp');"></div>
           <div class="categoria-info">
@@ -1271,7 +1475,7 @@
           </div>
         </div>
       </a>
-      <a href="menaje-hogar.html" style="text-decoration:none; color:inherit;">
+      <a href="menaje-hogar" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/vajillas.webp');"></div>
           <div class="categoria-info">
@@ -1280,7 +1484,7 @@
           </div>
         </div>
       </a>
-      <a href="decoracion.html" style="text-decoration:none; color:inherit;">
+      <a href="decoracion" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/floreros_nuevo.webp');"></div>
           <div class="categoria-info">
@@ -1289,24 +1493,142 @@
           </div>
         </div>
       </a>
+      <a href="mascotas" style="text-decoration:none; color:inherit;">
+        <div class="categoria-card">
+          <div class="categoria-img" style="background-image: url('imagenes/mascota.webp');"></div>
+          <div class="categoria-info">
+            <h3 style="font-size:1.3rem;">Mascotas</h3>
+            <span class="categoria-link">Ver piezas →</span>
+          </div>
+        </div>
+      </a>
      </div>
     </div>
    </div>
   </section>
+
+  <section class="beneficios">
+   <div class="container">
+    <div class="section-header">
+     <span>Cerámica con Sello Propio</span>
+     <h2>¿Por qué elegir cerámica personalizada para bautizos y nacimientos?</h2>
+    </div>
+    <p style="max-width:700px; margin: 1.5rem auto 0; text-align:center; color: var(--text-light); line-height:1.7;">
+     Un peluche o una manta se guardan un tiempo y acaban en una caja. Una pieza de cerámica con el nombre y la fecha de nacimiento, en cambio, es de esas cosas que se quedan expuestas en casa durante años — el primer recuerdo bonito de un bebé que acaba de llegar. En CreArte cada pieza se modela, cuece y esmalta a mano en nuestro taller de Valladolid, y la personalizamos con el nombre, la fecha o los detalles que nos indiques, para que sea un regalo tan único como el bebé al que va dirigido.
+    </p>
+    <div class="beneficios-grid">
+     <div class="beneficio-card">
+      <div class="beneficio-icon">🖐️</div>
+      <h3>Hecho a mano</h3>
+      <p>Cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, sin producción en serie.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">👶</div>
+      <h3>Personalizable</h3>
+      <p>Nombre, fecha de nacimiento o los detalles que elijas, grabados a mano en cada pieza.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">📍</div>
+      <h3>Recogida en Valladolid</h3>
+      <p>Puedes recoger tu pedido directamente en el taller del Parque Alameda, sin gastos de envío.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="cross-sell">
+   <div class="container">
+    <div class="cross-sell-card">
+     <div class="cross-sell-text">
+      <h2>Un plan diferente para celebrar la llegada del bebé</h2>
+      <p>Si estáis organizando un <strong>baby shower</strong> o simplemente buscáis un plan distinto para celebrar en familia, en CreArte también organizamos <strong>talleres de cerámica para grupos</strong> en Valladolid. Una tarde para pintar o modelar juntos, entre risas y manos manchadas de barro, y llevaros a casa algo hecho por vosotros mismos además del recuerdo personalizado del bebé.</p>
+     </div>
+     <div class="cross-sell-btns">
+      <a href="taller-de-ceramica-valladolid">Ver el taller</a>
+      <a href="https://wa.me/34639096691?text=Hola!%20Nos%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20taller%20de%20cer%C3%A1mica%20para%20un%20baby%20shower" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="faq-section">
+   <div class="faq-inner">
+    <div class="faq-header section-header">
+     <span>Resolvemos tus dudas</span>
+     <h2>Preguntas frecuentes sobre regalos para bebés</h2>
+    </div>
+    <div class="faq-list">
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Con cuánta antelación hay que encargar para un bautizo?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Recomendamos encargar con al menos 4-6 semanas de antelación, sobre todo si el pedido lleva nombre, fecha u otros detalles personalizados.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Podéis grabar el nombre y la fecha exacta de nacimiento?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, es lo más habitual. Podemos grabar el nombre, la fecha de nacimiento, el peso o cualquier otro detalle que quieras que quede reflejado en la pieza.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Las huellas de bebé se toman en el taller?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, solo tienes que avisarnos antes de venir y lo preparamos todo en el taller para que tomes tú mismo/a las huellas de tu bebé, con calma y sin prisas, y después las decores a tu gusto.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Hacéis sets a juego para varios hermanos o primos?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, podemos preparar varias piezas a juego con el mismo estilo y un nombre distinto en cada una, ideal para hermanos, primos o grupos de amigos que celebran juntos.</div>
+      </div>
+     </div>
+    </div>
+    <div class="faq-cta">
+     <p><strong>¿Buscas el regalo perfecto para un bautizo o nacimiento?</strong>Cuéntanos la ocasión y te ayudamos a elegir o personalizar la pieza ideal.</p>
+     <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20regalos%20de%20cer%C3%A1mica%20para%20beb%C3%A9s" target="_blank">Consultar por WhatsApp</a>
+    </div>
+   </div>
+  </section>
+
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="contacto">Contacto</a>
+    <a href="blog">Blog</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
 
+  <script>
+    // Acordeón FAQ niños y bebés
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
   <script>
     // Lógica del menú móvil
     const menuToggle = document.getElementById('mobile-menu');

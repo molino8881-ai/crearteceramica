@@ -8,11 +8,12 @@
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/menaje-hogar" rel="canonical"/>
+  <link rel="preload" href="imagenes/servilleteros2.webp" as="image" fetchpriority="high">
   <!-- Favicon -->
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  
   <meta content="#227768" name="theme-color"/>
   <meta content="#227768" name="msapplication-TileColor"/>
   <!-- Open Graph -->
@@ -955,17 +956,17 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) */
+    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) - reducidas para que las 4 quepan en una sola línea */
     .categorias-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
       margin-top: 3rem;
     }
 
     .categoria-card {
       background: white;
-      border-radius: 24px;
+      border-radius: 18px;
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: 0.4s;
@@ -974,25 +975,25 @@
     }
 
     .categoria-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
     .categoria-img {
-      height: 220px;
+      height: 110px;
       background-size: cover;
       background-position: center;
     }
 
     .categoria-info {
-      padding: 2rem;
+      padding: 0.8rem 0.5rem;
       text-align: center;
     }
 
     .categoria-info h2,
     .categoria-info h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.8rem;
+      font-size: 0.85rem !important;
+      margin-bottom: 0.4rem;
       border-bottom: none;
       padding-bottom: 0;
     }
@@ -1007,9 +1008,9 @@
       display: inline-block;
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.03em;
     }
 
     .categoria-link:hover { color: var(--green-dark); }
@@ -1029,8 +1030,18 @@
 
     .volver-tienda:hover { color: var(--green-dark); }
 
-    @media (max-width: 480px) {
-      .categoria-info h2, .categoria-info h3 { font-size: 1.3rem; }
+    @media (max-width: 600px) {
+      .categorias-grid { gap: 0.6rem; }
+      .categoria-img { height: 80px; }
+      .categoria-info { padding: 0.6rem 0.4rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.7rem !important; line-height: 1.15; }
+      .categoria-link { font-size: 0.56rem; }
+    }
+    @media (max-width: 420px) {
+      .categoria-img { height: 60px; }
+      .categoria-info { padding: 0.4rem 0.3rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.6rem !important; }
+      .categoria-link { font-size: 0.48rem; }
     }
     /* DROPDOWN MENU */
     .nav-item {
@@ -1150,31 +1161,222 @@
       }
     }
 
+    /* POR QUÉ ELEGIR */
+    .beneficios {
+      padding: 5rem 0 2rem;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .beneficio-card {
+      background: var(--green-pale);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .beneficio-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .beneficio-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .beneficio-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* CROSS-SELL TALLER */
+    .cross-sell {
+      padding: 4rem 0;
+    }
+
+    .cross-sell-card {
+      background: var(--green-pale);
+      border-radius: 28px;
+      padding: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cross-sell-text {
+      flex: 1 1 380px;
+    }
+
+    .cross-sell-text h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.8rem;
+      color: var(--green-dark);
+    }
+
+    .cross-sell-text p {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .cross-sell-btns {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .cross-sell-btns a {
+      background: var(--green);
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .cross-sell-btns a:hover {
+      background: var(--green-dark);
+    }
+
+    /* FAQ MENAJE (acordeón) */
+    .faq-section {
+      padding: 5rem 0 6rem;
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .faq-list {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--green);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.6rem 1.5rem;
+      color: var(--text-light);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .faq-cta {
+      margin-top: 3rem;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+    }
+
+    .faq-cta p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .faq-cta p strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-cta-btn {
+      display: inline-block;
+      background: white;
+      color: var(--green-dark);
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    .faq-cta-btn:hover {
+      transform: scale(1.05);
+    }
   </style>
  </head>
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
      <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
@@ -1188,14 +1390,14 @@
      <p>Piezas funcionales y bonitas para el día a día, personalizables en tamaño, color y diseño para que combinen con tu mesa y tu cocina.</p>
     </div>
 
-    <a class="volver-tienda" href="regalos.html">← Ver toda la tienda</a>
+    <a class="volver-tienda" href="regalos">← Ver toda la tienda</a>
 
     <div class="regalos-category">
      <h2 style="font-size:1.8rem;">Vajillas y menaje de cocina en cerámica artesanal hechos a mano</h2>
      <div class="regalos-grid-5">
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Servilleteros de cerámica artesanal con diseño orgánico para mesa" class="regalo-img active" loading="lazy" src="imagenes/servilleteros2.webp" width="896" height="810"/>
+        <img alt="Servilleteros de cerámica artesanal con diseño orgánico para mesa" class="regalo-img active" fetchpriority="high" src="imagenes/servilleteros2.webp" width="896" height="810"/>
         <img alt="Servilleteros decorativos de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros.webp" width="1024" height="1024"/>
         <img alt="Servilleteros de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/servilleteros3.webp" width="973" height="1003"/>
        </div>
@@ -1264,6 +1466,7 @@
         <img alt="Fuentes de cerámica artesanal con diseños únicos y creativos" class="regalo-img" loading="lazy" src="imagenes/fuente1.webp"/>
         <img alt="Bandeja de cerámica artesanal con diseño de peces para decoración" class="regalo-img" loading="lazy" src="imagenes/bandeja.webp"/>
         <img alt="Bandeja de cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/bandeja1.webp"/>
+        <img alt="Fuente de cerámica artesanal con diseño de peces" class="regalo-img" loading="lazy" src="imagenes/fuentes-peces.webp"/>
        </div>
        <h3>
         Bandejas y fuentes de cerámica artesanal para servir
@@ -1325,9 +1528,9 @@
     </div>
 
     <div class="regalos-category">
-     <h2 style="font-size:1.8rem;">Otras categorías</h2>
-     <div class="categorias-grid">
-      <a href="ninos-bebes.html" style="text-decoration:none; color:inherit;">
+     <h2 style="font-size:1.8rem; margin-bottom:0.5rem;">Otras categorías</h2>
+     <div class="categorias-grid" style="margin-top:1rem;">
+      <a href="ninos-bebes" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/huellasbebe.webp');"></div>
           <div class="categoria-info">
@@ -1336,7 +1539,7 @@
           </div>
         </div>
       </a>
-      <a href="bodas.html" style="text-decoration:none; color:inherit;">
+      <a href="bodas" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/detalles_boda.webp');"></div>
           <div class="categoria-info">
@@ -1345,7 +1548,7 @@
           </div>
         </div>
       </a>
-      <a href="decoracion.html" style="text-decoration:none; color:inherit;">
+      <a href="decoracion" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/floreros_nuevo.webp');"></div>
           <div class="categoria-info">
@@ -1354,24 +1557,142 @@
           </div>
         </div>
       </a>
+      <a href="mascotas" style="text-decoration:none; color:inherit;">
+        <div class="categoria-card">
+          <div class="categoria-img" style="background-image: url('imagenes/mascota.webp');"></div>
+          <div class="categoria-info">
+            <h3 style="font-size:1.3rem;">Mascotas</h3>
+            <span class="categoria-link">Ver piezas →</span>
+          </div>
+        </div>
+      </a>
      </div>
     </div>
    </div>
   </section>
+
+  <section class="beneficios">
+   <div class="container">
+    <div class="section-header">
+     <span>Cerámica con Sello Propio</span>
+     <h2>¿Por qué elegir menaje de cerámica artesanal?</h2>
+    </div>
+    <p style="max-width:700px; margin: 1.5rem auto 0; text-align:center; color: var(--text-light); line-height:1.7;">
+     El menaje de producción industrial se compra y se olvida. Una vajilla, una bandeja o un porta cucharas hechos a mano tienen ligeras variaciones de forma y color que los hacen únicos — y eso se nota cada día, en el uso normal de la cocina. En CreArte cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, y podemos personalizarla en tamaño, color o diseño para que combine con tu mesa, tu cocina o el regalo que tengas en mente.
+    </p>
+    <div class="beneficios-grid">
+     <div class="beneficio-card">
+      <div class="beneficio-icon">🖐️</div>
+      <h3>Hecho a mano</h3>
+      <p>Cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, sin producción en serie.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">🎨</div>
+      <h3>Personalizable</h3>
+      <p>Tamaño, color y diseño a elegir, para que cada pieza combine con tu cocina o tu mesa.</p>
+     </div>
+     <div class="beneficio-card">
+      <div class="beneficio-icon">📍</div>
+      <h3>Recogida en Valladolid</h3>
+      <p>Puedes recoger tu pedido directamente en el taller del Parque Alameda, sin gastos de envío.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="cross-sell">
+   <div class="container">
+    <div class="cross-sell-card">
+     <div class="cross-sell-text">
+      <h2>¿Y si haces tú misma/o tu propio menaje?</h2>
+      <p>Cuencos, tazas, platos o bandejas como los que ves en esta página son exactamente el tipo de piezas que se aprenden a hacer en nuestros <strong>talleres de cerámica en Valladolid</strong>. Si te gusta lo que ves aquí, puedes venir a modelarlo tú mismo/a en torno o a mano, en clases sueltas o semanales, y llevarte a casa un menaje hecho por ti.</p>
+     </div>
+     <div class="cross-sell-btns">
+      <a href="taller-de-ceramica-valladolid">Ver el taller</a>
+      <a href="talleres">Ver cursos y precios</a>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="faq-section">
+   <div class="faq-inner">
+    <div class="faq-header section-header">
+     <span>Resolvemos tus dudas</span>
+     <h2>Preguntas frecuentes sobre el menaje de cerámica</h2>
+    </div>
+    <div class="faq-list">
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Se puede meter en el lavavajillas y en el microondas?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, nuestras piezas de menaje están pensadas para el uso diario: son aptas para calentar en microondas y cocinar en airfryer, y puedes meterlas sin problema en el lavavajillas. Para que te duren mucho tiempo, evita únicamente los choques térmicos extremos, como pasar una pieza muy fría del frigorífico directamente a una fuente de calor intensa.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Podéis personalizar el menaje para una lista de bodas o un regalo de inauguración de casa?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, es una de las peticiones más habituales. Podemos adaptar colores, tamaños y combinaciones de piezas para crear un set pensado especialmente para ese regalo.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Hacéis pedidos de vajillas completas a juego?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Sí, podemos preparar vajillas completas combinando platos, cuencos, tazas y otras piezas con un mismo esmalte o estilo, para que formen un conjunto coherente en tu mesa.</div>
+      </div>
+     </div>
+     <div class="faq-item">
+      <button class="faq-question">
+       <span>¿Cuánto tarda un encargo grande de menaje?</span>
+       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-answer">
+       <div class="faq-answer-inner">Depende de la cantidad de piezas y de si llevan personalización, pero para pedidos grandes recomendamos escribirnos con al menos 6-8 semanas de antelación.</div>
+      </div>
+     </div>
+    </div>
+    <div class="faq-cta">
+     <p><strong>¿Buscas un menaje concreto para tu casa o para regalar?</strong>Cuéntanos qué necesitas y te ayudamos a montar el pedido perfecto.</p>
+     <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20menaje%20de%20cer%C3%A1mica" target="_blank">Consultar por WhatsApp</a>
+    </div>
+   </div>
+  </section>
+
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="contacto">Contacto</a>
+    <a href="blog">Blog</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
 
+  <script>
+    // Acordeón FAQ menaje
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
   <script>
     // Lógica del menú móvil
     const menuToggle = document.getElementById('mobile-menu');

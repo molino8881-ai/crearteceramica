@@ -6,7 +6,7 @@
   <title>
     Vales Regalo experiencia de Cerámica en Valladolid | CreArte Cerámica
   </title>
-  <meta content="Regala una experiencia de cerámica en Valladolid. Vales regalo para talleres puntuales o clases semanales. El regalo más original y diferente para cualquier ocasión." name="description"/>
+  <meta content="Regala una experiencia de cerámica en Valladolid. Vales regalo para talleres puntuales o clases semanales. El regalo más original y diferente para cumpleaños, Navidad o el Día de la Madre." name="description"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/vales-regalo" rel="canonical"/>
@@ -14,7 +14,7 @@
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  
   <meta content="#227768" name="theme-color"/>
   <!-- Open Graph / Facebook -->
   <meta content="website" property="og:type"/>
@@ -42,7 +42,7 @@
     "url": "https://crearteceramica.es/",
     "telephone": "+34639096691",
     "email": "creartevalladolid@gmail.com",
-    "priceRange": "24€ - 215€",
+    "priceRange": "3,90€ - 215€",
     "paymentAccepted": "Bizum, Efectivo",
     "address": {
       "@type": "PostalAddress",
@@ -602,13 +602,116 @@
       .form-container { padding: 1.5rem; }
       .pasos-grid { gap: 1.5rem; }
     }
+    /* FAQ VALES REGALO (acordeón) */
+    .faq-section {
+      padding: 5rem 0 6rem;
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .faq-list {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--green);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.6rem 1.5rem;
+      color: var(--text-light);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .faq-cta {
+      margin-top: 3rem;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+    }
+
+    .faq-cta p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .faq-cta p strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-cta-btn {
+      display: inline-block;
+      background: white;
+      color: var(--green-dark);
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    .faq-cta-btn:hover {
+      transform: scale(1.05);
+    }
   </style>
  </head>
  <body>
   <nav id="navbar">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte" src="imagenes/logo.webp" width="1536" height="871"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
@@ -616,22 +719,24 @@
       <span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
+
+  <main>
   <section class="vales-hero" id="vales-hero" style="padding-top: 150px;">
       <div class="container">
   <div class="section-header">
@@ -643,6 +748,7 @@
         </p>
         <p>Un regalo perfecto para cumpleaños, aniversarios, Navidad, el Día de la Madre o cualquier ocasión especial. Regala creatividad, aprendizaje y una experiencia inolvidable en CreArte Cerámica Valladolid.
         </p>
+      </div>
       </div>
     </section>
 
@@ -656,7 +762,7 @@
           <div class="paso-card">
             <span class="paso-numero">1</span>
             <h3>Eliges el importe del vale regalo</h3>
-            <p>Selecciona un importe o un taller concreto. Si lo prefieres, lo personalizamos a tu medida tu nos dices las sesiones que quieres regalar.</p>
+            <p>Selecciona un importe o un taller concreto. Si lo prefieres, lo personalizamos a tu medida: tú nos dices las sesiones que quieres regalar.</p>
           </div>
           <div class="paso-card">
             <span class="paso-numero">2</span>
@@ -754,7 +860,7 @@
 
             <div class="form-checkbox">
               <input type="checkbox" id="privacidad" name="privacidad" required/>
-              <label for="privacidad">Acepto la <a href="privacidad.html" target="_blank" style="text-decoration: underline;">política de privacidad</a> y el uso de mis datos para gestionar esta solicitud. *</label>
+              <label for="privacidad">Acepto la <a href="privacidad" target="_blank" style="text-decoration: underline;">política de privacidad</a> y el uso de mis datos para gestionar esta solicitud. *</label>
             </div>
 
             <button type="submit" class="btn-submit">Enviar solicitud</button>
@@ -767,22 +873,95 @@
         </div>
       </div>
     </section>
+    <section class="faq-section">
+      <div class="faq-inner">
+        <div class="faq-header section-title">
+          <span>Resolvemos tus dudas</span>
+          <h2>Preguntas frecuentes sobre los vales regalo</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuánto tiempo tengo para canjear el vale?</span>
+              <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">El vale tiene una validez de 6 meses desde la fecha de emisión, tiempo de sobra para que el destinatario elija cuándo venir.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué pasa si no se usa a tiempo?</span>
+              <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Escríbenos antes de que caduque y, siempre que sea posible, te ayudamos a ampliar el plazo unas semanas más.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿El vale es transferible a otra persona?</span>
+              <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Sí, no va ligado a un nombre concreto: puede usarlo quien tú quieras, aunque no sea la persona que aparece en la dedicatoria.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Se puede canjear por cualquier taller o solo por el elegido al comprarlo?</span>
+              <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">El destinatario puede cambiarlo por cualquier taller de valor igual o similar en el momento de reservar; si el que elige cuesta más, solo paga la diferencia.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿El vale es físico o solo en PDF?</span>
+              <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Te lo enviamos en PDF personalizado, listo para imprimir en casa o para enseñar directamente desde el móvil el día del regalo.</div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-cta">
+          <p><strong>¿Tienes alguna otra duda sobre los vales regalo?</strong>Escríbenos y te respondemos encantados.</p>
+          <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Tengo%20una%20duda%20sobre%20los%20vales%20regalo" target="_blank">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="contacto">Contacto</a>
+    <a href="blog">Blog</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
 
+  <script>
+    // Acordeón FAQ vales regalo
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
   <script>
     // Menú móvil
     const mobileMenu = document.getElementById('mobile-menu');

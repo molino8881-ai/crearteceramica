@@ -14,7 +14,7 @@
     <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
     <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    
     <meta content="#227768" name="theme-color"/>
     <meta content="#227768" name="msapplication-TileColor"/>
     <!-- Open Graph / Facebook -->
@@ -223,7 +223,7 @@
   "url": "https://crearteceramica.es/",
   "telephone": "+34639096691",
   "email": "creartevalladolid@gmail.com",
-  "priceRange": "24€ - 215€",
+  "priceRange": "3,90€ - 215€",
   "paymentAccepted": "Bizum, Efectivo",
   "address": {
     "@type": "PostalAddress",
@@ -676,6 +676,21 @@
       color: var(--green);
       margin-top: 1.5rem;
       text-align: center; /* Asegurar centrado del precio */
+    }
+
+    .taller-disponibilidad {
+      display: block;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin: 1rem auto 0;
+      width: fit-content;
     }
 
     /* REGALOS Y ENCARGOS */
@@ -1205,13 +1220,11 @@
   </style>
 <!-- ESTILOS: pega dentro de <head> o en tu archivo CSS -->
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
-
   .faq-section {
     background: var(--green-pale);
     background: #F5EFE6;
     padding: 5rem 1.5rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .faq-inner {
@@ -1350,7 +1363,7 @@
     gap: 0.4rem;
     background: white;
     color: #227768;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.75rem 1.4rem;
@@ -1494,14 +1507,13 @@
     }
 
     </style>
-  <link as="image" href="imagenes/hero.webp" rel="preload"/>
   <link as="image" href="imagenes/logo.webp" rel="preload"/>
  </head>
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="1536" height="871"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
@@ -1509,19 +1521,19 @@
       <span></span>
     </div>
 <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres.html">Tipos de talleres</a>
-          <a href="calendario.html">Próximos talleres</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
         </div>
       </div>
-      <a href="vales-regalo.html">VALES REGALO</a>
-      <a href="regalos.html">TIENDA</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">BLOG</a>
-      <a class="btn-nav" href="contacto.html">CONTACTO</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
    </div>
   </nav>
@@ -1730,6 +1742,63 @@
        </div>
       </div>
      </div>
+     <!-- Taller puntual torno -->
+     <div class="taller-card" id="puntual-torno">
+      <div class="taller-img"><img src="imagenes/clasetorno-puntual.webp" alt="Manos modelando un cuenco de cerámica en el torno alfarero durante un taller puntual en Valladolid - CreArte" width="1080" height="1440" loading="lazy">
+      </div>
+      <div class="taller-info">
+       <span class="tagline">
+        Sesiones flexibles y creativas de torno
+       </span>
+       <h3>
+        Taller Puntual Torno
+       </h3>
+       <p>
+        ¿Sientes curiosidad por el torno alfarero pero no quieres comprometerte a un curso semanal? Esta es tu sesión: te sientas frente al torno, aprendes lo básico de la técnica y te llevas a casa tus propias piezas, sin necesidad de haber tocado el barro antes. Ideal para un capricho, un regalo diferente o esa cosa que siempre quisiste probar. Sesión de fin de semana en Valladolid, con 3 horas para centrar, modelar y decorar en el torno, rematada con un picoteo para reponer fuerzas.
+       </p>
+       <ul class="taller-details">
+        <li>
+         ⏱️
+         <strong>
+          Duración:
+         </strong>
+         3h
+        </li>
+        <li>
+         📅
+         <strong>
+          Horario:
+         </strong>
+         Sábados o Domingos / Mañana o Tarde
+        </li>
+        <li>
+         🎨
+         <strong>
+          Temática:
+         </strong>
+         Libre
+        </li>
+        <li>
+         ✨
+         <strong>
+          Incluye:
+         </strong>
+         Materiales y cocciones
+        </li>
+        <li>
+         🍷
+         <strong>
+          Extra:
+         </strong>
+         Picoteo incluido
+        </li>
+       </ul>
+       <div class="taller-price">
+        65€
+       </div>
+       <span class="taller-disponibilidad">Disponible a partir de octubre</span>
+      </div>
+     </div>
      <!-- Taller 4 -->
      <div class="taller-card" id="privados">
       <div alt="Taller privado de cerámica en Valladolid - CreArte" class="taller-img"><img src="imagenes/tallerprivado.webp" alt="Taller de cerámica privado para grupos y eventos en Valladolid" width="1530" height="1344" loading="lazy">
@@ -1792,14 +1861,14 @@
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="talleres.html">Talleres</a>
-    <a href="vales-regalo.html">Vales regalo</a>
-    <a href="regalos.html">Tienda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="blog.html">Blog</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="privacidad.html">Privacidad</a>
+    <a href="/">Inicio</a>
+    <a href="talleres">Talleres</a>
+    <a href="vales-regalo">Vales regalo</a>
+    <a href="regalos">Tienda</a>
+    <a href="faq">FAQ</a>
+    <a href="blog">Blog</a>
+    <a href="contacto">Contacto</a>
+    <a href="privacidad">Privacidad</a>
    </div>
   </footer>
   <script>
