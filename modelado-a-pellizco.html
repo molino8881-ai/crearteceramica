@@ -36,7 +36,7 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Modelado a pellizco: la forma más honesta de entender el barro",
+    "headline": "Modelado a pellizco: la técnica de cerámica más antigua que sigue conquistando a todos",
     "description": "Hay algo especial en crear una pieza sin más herramientas que tus propias manos.",
     "image": "https://crearteceramica.es/imagenes/grupo.webp",
     "author": { "@type": "Person", "name": "Montserrat López" },
@@ -57,11 +57,12 @@
   <style>
 :root {
   --green: #227768;
-  --green-dark: #1a4d44;
+  --green-dark: #1a5d51;
   --green-light: #2d9a87;
-  --green-pale: #f4f9f8;
-  --clay: #c4723a;
-  --clay-pale: #fdf4ee;
+  --green-pale: #e9f2f0;
+  --terracota: #d97757;
+  --terracota-pale: #fdf1ec;
+  --verde-salvia: #8da399;
   --text: #2d3436;
   --text-light: #636e72;
   --white: #ffffff;
@@ -93,13 +94,18 @@ body {
 /* NAVBAR */
 nav {
   background: white;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   box-shadow: var(--shadow);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+}
+
+nav.scrolled {
+  padding: 1rem 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 nav .container {
@@ -109,13 +115,14 @@ nav .container {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 100%;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -126,6 +133,7 @@ nav .container {
   font-size: 0.9rem;
   transition: color 0.3s;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .nav-links a:hover {
@@ -137,6 +145,12 @@ nav .container {
   color: white !important;
   padding: 0.8rem 1.5rem;
   border-radius: 50px;
+  font-size: 0.85rem !important;
+}
+
+.btn-nav:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
 }
 
 /* DROPDOWN MENU */
@@ -239,7 +253,7 @@ nav .container {
 
 .blog-header h1 em {
   font-style: italic;
-  color: var(--clay);
+  color: var(--terracota);
 }
 
 .blog-header p.blog-index-subtitle {
@@ -282,6 +296,33 @@ nav .container {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: var(--text-light);
+}
+
+.article-body ul {
+  margin: 0 0 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.article-body ul li {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  padding: 0.6rem 0 0.6rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-body ul li:last-child {
+  border-bottom: none;
+}
+
+.article-body ul li::before {
+  content: '●';
+  color: var(--terracota);
+  position: absolute;
+  left: 0;
+  font-size: 0.7rem;
+  top: 1.1rem;
 }
 
 .toc {
@@ -359,15 +400,51 @@ nav .container {
   display: block;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.8rem;
-  color: var(--clay);
+  color: var(--terracota);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.2rem;
 }
 
+/* GALERÍA DE IMÁGENES DENTRO DEL ARTÍCULO */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.gallery-placeholder {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  background: var(--green-pale);
+  border: 1.5px dashed var(--verde-salvia);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.gallery-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
 .clay-card {
-  background: var(--clay-pale);
-  border-left: 4px solid var(--clay);
+  background: var(--terracota-pale);
+  border-left: 4px solid var(--terracota);
   padding: 1.5rem;
   border-radius: 0 12px 12px 0;
   margin: 2rem 0;
@@ -375,7 +452,7 @@ nav .container {
 
 .clay-card strong {
   display: block;
-  color: var(--clay);
+  color: var(--terracota);
   margin-bottom: 0.5rem;
 }
 
@@ -398,7 +475,6 @@ blockquote {
   margin: 4rem 0;
 }
 
-/* ARTICLE / DECORATION CARDS (used in "Más del blog" and blog index) */
 .article-card {
   background: white;
   border: 1px solid var(--border);
@@ -474,7 +550,6 @@ blockquote {
   margin: 1.5rem 0 0.5rem;
 }
 
-/* BLOG INDEX GRID (listing page) */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -546,9 +621,8 @@ blockquote {
   gap: 0.4rem;
 }
 
-.blog-card-link:hover { color: var(--clay); }
+.blog-card-link:hover { color: var(--terracota); }
 
-/* RELATED ARTICLES (bottom of an individual article page) */
 .related-articles {
   margin-top: 5rem;
 }
@@ -565,7 +639,6 @@ blockquote {
   gap: 1.5rem;
 }
 
-/* CTA FINAL */
 .cta-block {
   background: var(--green-dark);
   color: white;
@@ -600,13 +673,17 @@ blockquote {
 }
 
 .btn-primary-cta {
-  background: var(--clay);
+  background: var(--terracota);
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 700;
   transition: transform 0.3s;
+}
+
+.btn-primary-cta:hover {
+  transform: translateY(-3px);
 }
 
 .btn-secondary-cta {
@@ -625,11 +702,10 @@ blockquote {
   color: var(--green-dark);
 }
 
-/* FOOTER */
 footer {
   background: #1a1a1a;
   color: white;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   text-align: center;
 }
 
@@ -653,16 +729,24 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
 .footer-links a:hover { opacity: 1; }
 
-/* MOBILE MENU */
-.menu-toggle { display: none; cursor: pointer; }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
 .menu-toggle span {
-  display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
   background: var(--green);
-  margin: 5px 0;
+  border-radius: 3px;
   transition: 0.3s;
 }
+
+.menu-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
 @media (max-width: 1200px) {
   .article-body {
@@ -677,21 +761,24 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 992px) {
-  .menu-toggle { display: block; z-index: 1001; }
+  .menu-toggle { display: flex; }
   .nav-links {
+    display: none;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 80%;
     height: 100vh;
     background: white;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
     transition: 0.4s;
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
     align-items: center;
+    z-index: 1000;
   }
-  .nav-links.active { right: 0; }
+  .nav-links.active { display: flex; }
   .nav-item { flex-direction: column; width: 100%; }
   .nav-item .dropdown-menu {
     position: static;
@@ -749,14 +836,14 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
  <body>
   <nav id="navbar">
    <div class="container">
-    <a class="logo" href="/">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
+    <a class="logo" href="index.html">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
       <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="/">INICIO</a>
+      <a href="index.html">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
@@ -775,26 +862,46 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
   <header class="blog-header">
     <div class="container">
+      <a href="blog" class="back-to-blog" style="display:block;text-align:left;width:fit-content;margin:0 0 2rem 0;font-size:0.9rem;font-weight:600;color:var(--green);text-decoration:none;">&larr; Ver todo el blog</a>
       <span>Técnicas</span>
-      <h1>Modelado a pellizco:<br/><em>la forma más honesta de entender el barro</em></h1>
+      <h1>Modelado a pellizco:<br/><em>la técnica de cerámica más antigua que sigue conquistando a todos</em></h1>
       <div class="blog-meta">
         <p>✍️ CreArte Cerámica</p>
         <p>📍 Valladolid</p>
-        <p>⏱ 2 min de lectura</p>
+        <p>⏱ 4 min de lectura</p>
       </div>
     </div>
   </header>
 
   <main class="container">
     <article class="article-body">
-      <p>Hay algo especial en crear una pieza sin más herramientas que tus propias manos. El barro no necesita que seas experta para empezar a hablar contigo.</p>
+      <p>Si existe una técnica capaz de conectar a cualquier persona con el barro desde el primer minuto, esa es el <strong>modelado a pellizco</strong>. Es sencilla, intuitiva y sorprendentemente versátil. No hace falta un torno ni herramientas especiales: solo una bola de arcilla y las manos.</p>
+
+      <p>Aunque hoy es una de las primeras técnicas que se enseñan en cualquier <strong>taller de cerámica</strong>, su historia comenzó hace miles de años. De hecho, el modelado a pellizco está considerado el origen de la cerámica tal y como la conocemos.</p>
 
       <section class="technique">
         <div class="technique-header">
           <div class="technique-number">1</div>
-          <h2><span>El proceso, no el resultado</span>Aprender a modelar cerámica a pellizco con las manos</h2>
+          <h2><span>Guía completa</span>¿Qué es la técnica de cerámica a pellizco?</h2>
         </div>
-        <p>Cuando trabajamos con herramientas complejas es fácil centrarse en el resultado. Con el modelado a pellizco ocurre justo lo contrario: la atención se desplaza hacia el proceso.</p>
+        <p>La <strong>técnica a pellizco</strong> consiste en transformar una bola de arcilla maciza en una pieza hueca utilizando únicamente la presión de los dedos. El proceso comienza formando una esfera de barro. Después, con el pulgar se abre un hueco central y, mediante pequeños pellizcos alrededor de toda la pieza, se van afinando las paredes hasta conseguir el grosor y la forma deseados.</p>
+        <p>A diferencia del torno, donde la fuerza centrífuga ayuda a levantar las paredes de la pieza, en el modelado a pellizco todo depende de la sensibilidad de las manos. Cada presión modifica el volumen, la curva y el equilibrio del barro, convirtiendo el proceso en una experiencia completamente artesanal.</p>
+
+        <h3 style="font-family:'Playfair Display', serif; color: var(--green); font-size:1.3rem; margin-bottom:1rem;">Galería de piezas realizadas a pellizco</h3>
+        <div class="gallery-grid">
+          <div class="gallery-placeholder">
+            <!-- Sustituir por: <img src="imagenes/pellizco-1.webp" alt="Cuenco de cerámica modelado a pellizco en CreArte Valladolid"/> -->
+            📷 Foto 1<br/>Cuenco a pellizco
+          </div>
+          <div class="gallery-placeholder">
+            <!-- Sustituir por: <img src="imagenes/pellizco-2.webp" alt="Jarrón de cerámica realizado con la técnica del pellizco"/> -->
+            📷 Foto 2<br/>Jarrón a pellizco
+          </div>
+          <div class="gallery-placeholder">
+            <!-- Sustituir por: <img src="imagenes/pellizco-3.webp" alt="Alumna modelando una pieza de cerámica a pellizco en el taller"/> -->
+            📷 Foto 3<br/>Modelando en el taller
+          </div>
+        </div>
       </section>
 
       <hr class="divider" />
@@ -802,12 +909,49 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
       <section class="technique">
         <div class="technique-header">
           <div class="technique-number">2</div>
-          <h2><span>Sin postureo</span>La belleza de lo imperfecto en la cerámica hecha a mano</h2>
+          <h2><span>10.000 años de historia</span>Una técnica con más de 10.000 años de antigüedad</h2>
         </div>
-        <p>Las pequeñas marcas de los dedos no son errores. Son parte de la historia de la pieza. Algunas de las cerámicas más interesantes conservan precisamente esas huellas.</p>
+        <p>Mucho antes de la invención del torno alfarero, los primeros seres humanos ya modelaban recipientes utilizando esta técnica. Los arqueólogos han encontrado vasijas realizadas mediante pellizco con más de <strong>10.000 años de antigüedad</strong>, pertenecientes a comunidades del Neolítico que necesitaban almacenar agua, cocinar alimentos o guardar semillas.</p>
+        <p>Prácticamente todas las grandes civilizaciones desarrollaron esta forma de trabajar la arcilla. Desde los primeros pobladores de Oriente Próximo hasta culturas de África, Asia, Europa y América, el modelado a pellizco fue la base sobre la que evolucionó toda la alfarería posterior.</p>
+        <p>Por eso se considera la técnica más antigua de la cerámica y el punto de partida de todas las demás.</p>
+      </section>
+
+      <section class="technique">
+        <div class="technique-header">
+          <div class="technique-number">3</div>
+          <h2><span>La base de todo ceramista</span>¿Por qué aprender primero el modelado a pellizco?</h2>
+        </div>
+        <p>En muchos talleres de cerámica se empieza enseñando esta técnica porque permite comprender cómo se comporta realmente la arcilla. Mientras se modela, el alumno aprende de forma natural aspectos fundamentales como:</p>
+        <ul>
+          <li>Controlar el grosor uniforme de las paredes.</li>
+          <li>Entender el punto de humedad adecuado del barro.</li>
+          <li>Conseguir equilibrio y estabilidad en una pieza.</li>
+          <li>Corregir deformaciones antes de que aparezcan grietas.</li>
+          <li>Desarrollar sensibilidad en las manos para trabajar el material.</li>
+        </ul>
+        <p>Todo ello sin depender de maquinaria ni herramientas complejas.</p>
+      </section>
+
+      <section class="technique">
+        <div class="technique-header">
+          <div class="technique-number">4</div>
+          <h2><span>Sin postureo</span>Mucho más que una técnica para principiantes</h2>
+        </div>
+        <p>Existe la idea de que el modelado a pellizco es únicamente una técnica básica, pero la realidad es muy diferente. Muchos ceramistas profesionales continúan utilizándola durante toda su carrera para crear cuencos, tazas, esculturas, jarrones y piezas de autor con formas orgánicas que serían muy difíciles de conseguir en un torno.</p>
+        <p>Las pequeñas irregularidades que dejan los dedos no se consideran defectos, sino parte de la personalidad de cada creación. Esa huella humana convierte cada pieza en un objeto único e irrepetible.</p>
+      </section>
+
+      <section class="technique">
+        <div class="technique-header">
+          <div class="technique-number">5</div>
+          <h2><span>Manos, barro y calma</span>Una forma diferente de conectar con el barro</h2>
+        </div>
+        <p>Trabajar a pellizco obliga a reducir el ritmo. No hay prisas ni movimientos mecánicos. Cada gesto requiere atención, observación y paciencia.</p>
+        <p>Muchas personas descubren que modelar barro produce una sensación de calma y concentración difícil de encontrar en otras actividades. El contacto continuo con la arcilla favorece la creatividad, ayuda a desconectar del estrés diario y permite disfrutar del proceso sin preocuparse únicamente por el resultado final.</p>
+        <p>Por eso cada vez más personas buscan <strong>cursos de cerámica</strong> como una forma de desarrollar su creatividad mientras dedican un tiempo a sí mismas.</p>
         <div class="clay-card">
-          <strong>¿Quieres saber más sobre las técnicas?</strong>
-          Tenemos <a href="tecnicas-de-ceramica">un artículo completo</a> donde repasamos el pellizco, los churros, las planchas, el torno y más.
+          <strong>Aprende la técnica a pellizco en CreArte Cerámica</strong>
+          En nuestro taller de Valladolid enseñamos el modelado a pellizco sin prisas, comprendiendo el comportamiento del barro y disfrutando de cada etapa del proceso. Es perfecta tanto para quienes nunca han tocado la arcilla como para quienes quieren profundizar en los fundamentos de la cerámica.
         </div>
       </section>
 
@@ -842,7 +986,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
       <div class="cta-block">
         <h2>¿Quieres probar el modelado a pellizco en Valladolid?</h2>
-        <p>Ven a nuestro taller en Valladolid y crea tu primera pieza a pellizco con tus propias manos.</p>
+        <p>Porque antes de existir el torno, los esmaltes o las herramientas especializadas, ya existían unas manos, un poco de barro y la necesidad de crear. Ven a nuestro taller y descubre esa misma sensación.</p>
         <div class="cta-buttons">
           <a href="talleres" class="btn-primary-cta">Ver talleres disponibles</a>
           <a href="https://wa.me/34639096691" class="btn-secondary-cta">Preguntar por WhatsApp</a>
@@ -855,7 +999,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
     <div class="container">
       <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
       <div class="footer-links">
-        <a href="/">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="talleres">Talleres</a>
         <a href="vales-regalo">Vales regalo</a>
         <a href="regalos">Tienda</a>
@@ -898,6 +1042,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
   </script>
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

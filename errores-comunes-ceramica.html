@@ -33,7 +33,16 @@
     "headline": "Errores comunes en cerámica y cómo evitarlos",
     "author": { "@type": "Person", "name": "Montse López" },
     "publisher": { "@type": "Organization", "name": "CreArte Cerámica" },
-    "image": "https://crearteceramica.es/imagenes/hero.webp",
+    "image": [
+      "https://crearteceramica.es/imagenes/hero.webp",
+      "https://crearteceramica.es/imagenes/explosion-pieza-horno-ceramica-crearte.webp",
+      "https://crearteceramica.es/imagenes/grieta-secado-ceramica-crearte.webp",
+      "https://crearteceramica.es/imagenes/union-despegada-asa-ceramica-crearte.webp",
+      "https://crearteceramica.es/imagenes/grieta-grosor-irregular-ceramica-crearte.webp",
+      "https://crearteceramica.es/imagenes/exceso-humedad-antes-despues-ceramica-crearte.webp",
+      "https://crearteceramica.es/imagenes/escamado-esmalte-borde-ceramica-crearte.webp"
+    ],
+    "about": ["errores de cerámica", "explosiones en el horno", "grietas de secado", "exceso de humedad en cerámica", "esmaltado de cerámica"],
     "mainEntityOfPage": "https://crearteceramica.es/errores-comunes-ceramica"
   }
   </script>
@@ -1162,7 +1171,7 @@
 
   .error-bloque {
     max-width: 900px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1.25rem;
     background: white;
     border-radius: 24px;
     padding: 2.5rem 2.5rem;
@@ -1254,6 +1263,26 @@
     font-weight: 700;
   }
 
+  .error-figura {
+    margin: 0 0 0.75rem;
+    text-align: center;
+  }
+  .error-figura img {
+    width: 33%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0.5rem auto 0;
+    box-shadow: var(--shadow);
+  }
+  .error-figura figcaption {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    margin-top: 0.6rem;
+    font-style: italic;
+  }
+
   @media (max-width: 768px) {
     .error-bloque { padding: 1.8rem 1.5rem; border-radius: 18px; }
     .pagina-hero { padding: 120px 0 2rem; }
@@ -1311,6 +1340,10 @@
      <span class="error-numero">1</span>
      <h2>Las explosiones en el horno</h2>
      <p class="intro-error">Es el drama por excelencia: abres el horno y tu pieza favorita se ha convertido en confeti de barro. Casi siempre pasa por uno de estos dos motivos.</p>
+     <figure class="error-figura">
+      <img src="imagenes/explosion-pieza-horno-ceramica-crearte.webp" alt="Pieza de cerámica cruda hecha añicos dentro del horno tras una explosión por exceso de humedad, taller CreArte Valladolid" width="297" height="396" loading="lazy">
+      <figcaption>Así queda una pieza cuando entra al horno sin estar del todo seca: fragmentos sueltos sobre la placa refractaria.</figcaption>
+     </figure>
      <div class="error-caja problema">
       <span class="etiqueta">El error</span>
       <ul>
@@ -1328,6 +1361,10 @@
      <span class="error-numero">2</span>
      <h2>Grietas de secado</h2>
      <p class="intro-error">El barro tiene memoria, y si lo fuerzas, te lo hace saber. Las grietas de secado son de los fallos más frecuentes en quienes empiezan.</p>
+     <figure class="error-figura">
+      <img src="imagenes/grieta-secado-ceramica-crearte.webp" alt="Primer plano de una grieta de secado en el borde de una pieza de cerámica cruda, causada por un secado desigual, taller CreArte Valladolid" width="297" height="395" loading="lazy">
+      <figcaption>Vista de cerca: la grieta se abre justo en el borde, la zona que suele secarse antes que el resto de la pieza.</figcaption>
+     </figure>
      <div class="error-caja problema">
       <span class="etiqueta">El error</span>
       <ul>
@@ -1346,6 +1383,10 @@
      <span class="error-numero">3</span>
      <h2>Asas y piezas que se despegan</h2>
      <p class="intro-error">Pocas cosas frustran tanto como pegar el asa de tu taza con todo el cariño del mundo... y encontrártela suelta en el suelo del horno.</p>
+     <figure class="error-figura">
+      <img src="imagenes/union-despegada-asa-ceramica-crearte.webp" alt="Pieza de cerámica cruda con una unión despegándose en la base, donde la pieza añadida se separa del cuerpo principal, taller CreArte Valladolid" width="400" height="300" loading="lazy">
+      <figcaption>La grieta oscura en la base marca el punto exacto donde la unión no llegó a fusionarse con el cuerpo de la pieza.</figcaption>
+     </figure>
      <div class="error-caja problema">
       <span class="etiqueta">El error</span>
       <p>Apretar barro contra barro sin más, confiando en que "ya se pegará solo". No es suficiente — y menos si las dos piezas no tienen la misma humedad.</p>
@@ -1360,6 +1401,10 @@
      <span class="error-numero">4</span>
      <h2>Grosor irregular y paredes demasiado gruesas</h2>
      <p class="intro-error">Uno de los errores más silenciosos: no se nota hasta que la pieza ya está en el horno.</p>
+     <figure class="error-figura">
+      <img src="imagenes/grieta-grosor-irregular-ceramica-crearte.webp" alt="Grieta en el borde de una pieza de cerámica ya esmaltada, causada por un grosor de pared irregular, taller CreArte Valladolid" width="300" height="400" loading="lazy">
+      <figcaption>Esta grieta no se vio durante el modelado: apareció por la tensión acumulada entre una zona gruesa y otra fina, y solo se hizo visible con la pieza ya esmaltada.</figcaption>
+     </figure>
      <div class="error-caja problema">
       <span class="etiqueta">El error</span>
       <ul>
@@ -1375,8 +1420,30 @@
 
     <div class="error-bloque">
      <span class="error-numero">5</span>
+     <h2>Exceso de humedad</h2>
+     <p class="intro-error">Este es de los errores más comunes entre quienes empiezan, y muchas veces pasa desapercibido: se nota más en el resultado final que en el momento en que ocurre.</p>
+     <figure class="error-figura">
+      <img src="imagenes/exceso-humedad-antes-despues-ceramica-crearte.webp" alt="Comparativa antes y después de una pieza de cerámica dañada por exceso de humedad al esponjarla o pintarla entera sin estar en estado hueso" width="330" height="123" loading="lazy">
+      <figcaption>Antes y después: el exceso de agua en la superficie deja marca incluso tras la cocción.</figcaption>
+     </figure>
+     <div class="error-caja problema">
+      <span class="etiqueta">El error</span>
+      <p>Mojar demasiado la pieza con la esponja mientras la trabajas, o pintarla entera (engobe o esmalte) cuando todavía no ha llegado al estado de hueso. En ambos casos metes más agua de la que el barro puede asumir sin perder forma ni firmeza.</p>
+     </div>
+     <div class="error-caja solucion">
+      <span class="etiqueta">Cómo lo evitamos</span>
+      <p>Rematando las piezas con los dedos mientras están húmedas, para tener que recurrir a la esponja lo menos posible. Dejamos que la pieza se seque despacio y, si queremos pintarla entera, esperamos a que esté en estado de hueso — así el barro aguanta el agua de la pintura sin ablandarse ni deformarse.</p>
+     </div>
+    </div>
+
+    <div class="error-bloque">
+     <span class="error-numero">6</span>
      <h2>Desastres del esmaltado</h2>
      <p class="intro-error">El esmalte es pura química, y tiene sus propias normas. Aquí es donde vemos los fallos más variados.</p>
+     <figure class="error-figura">
+      <img src="imagenes/escamado-esmalte-borde-ceramica-crearte.webp" alt="Esmalte rojo escamado y saltado en el borde de un cuenco de cerámica, mostrando el bizcocho blanco expuesto, taller CreArte Valladolid" width="300" height="400" loading="lazy">
+      <figcaption>Escamado en el borde: el esmalte se salta y deja a la vista el bizcocho, señal de que encoge de forma distinta a la pasta.</figcaption>
+     </figure>
      <div class="error-caja problema">
       <span class="etiqueta">El error</span>
       <ul>
@@ -1426,7 +1493,7 @@
        <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       </button>
       <div class="faq-answer">
-       <div class="faq-answer-inner">No. En nuestro taller no hacemos cocciones sueltas ni cocemos piezas que no se hayan realizado en nuestras instalaciones. Es una decisión pensada: si no hemos visto el proceso, no podemos saber si el barro estaba bien amasado, si el secado fue el adecuado o si el grosor es seguro para el horno — y una sola pieza en mal estado puede arruinar toda una cocción, incluidas las piezas de otras personas. Por eso solo cocemos lo que se ha creado con nosotras, paso a paso.</div>
+       <div class="faq-answer-inner">No. Lo sentimos mucho pero en nuestro taller no hacemos cocciones sueltas ni cocemos piezas que no se hayan realizado en nuestras instalaciones. Es una decisión pensada: si no hemos visto el proceso, no podemos saber si el barro estaba bien amasado, si el secado fue el adecuado o si el grosor es seguro para el horno — y una sola pieza en mal estado puede arruinar toda una cocción, incluidas las piezas de otras personas. Por eso solo cocemos lo que se ha creado con nosotras, paso a paso.</div>
       </div>
      </div>
     </div>
@@ -1513,5 +1580,10 @@
     });
   </script>
 
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

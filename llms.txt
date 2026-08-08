@@ -1,40 +1,50 @@
-# CreArte Cerámica Valladolid
+# CreArte Cerámica
 
-> Taller de cerámica en Valladolid. Clases semanales de modelado y torno alfarero, experiencias creativas, vales regalo y encargos personalizados. Sin experiencia previa. Grupos reducidos y materiales incluidos.
+> Taller de cerámica en Valladolid (Parque Alameda). Clases individuales, talleres grupales puntuales y productos de cerámica personalizados. Fundado y dirigido por Crea, con la colaboración de Merche.
 
-## Datos de contacto
-- Nombre: CreArte Cerámica Valladolid
-- Web: https://crearteceramica.es
-- Email: creartevalladolid@gmail.com
+CreArte Cerámica ofrece clases de cerámica a mano y a torno para todos los niveles, desde principiantes hasta clases semanales continuadas, además de talleres puntuales para grupos, despedidas, cumpleaños, team building de empresas y eventos privados. También vende piezas de cerámica hechas a mano (menaje, decoración, regalos personalizados) y vales regalo.
+
+## Ubicación y contacto
+
+- Dirección: C/ Vinos de Rueda, 18, Parque Alameda, Valladolid, España
 - Teléfono / WhatsApp: +34 639 09 66 91
-- Dirección: C/ Vinos de Rueda, 18, 47008 Valladolid, Castilla y León, España
-- Instagram: https://www.instagram.com/crearteceramicavalladolid
-- Facebook: https://www.facebook.com/crearteceramicavalladolid
+- Email: creartevalladolid@gmail.com
+- Instagram y Facebook: @crearteceramicavalladolid
+- Horario: lunes 17:00–19:00, miércoles y jueves 17:00–21:00
 
-## Horario
-- Lunes: 17:00 - 19:00
-- Miércoles: 17:00 - 21:00
-- Jueves: 17:00 - 21:00
-- Fines de semana (sábado y domingo): talleres puntuales, a consultar
-- Martes y viernes: cerrado
+## Servicios y precios orientativos
 
-## Servicios principales
-- Clases semanales de cerámica (modelado a mano)
-- Clases de torno alfarero (iniciación y avanzado)
-- Experiencias creativas de fin de semana
-- Talleres para grupos, empresas, cumpleaños y despedidas
-- Vales regalo canjeables por clases o experiencias
-- Encargos personalizados: vajillas, conchas de bautismo, piezas únicas
+- Taller de Prueba de Cerámica (clase suelta para probar): 24€
+- Taller Prueba Torno (clase suelta de torno): 35€
+- Clases Semanales de Cerámica (bono mensual, modelado a mano): 85€ / 4 semanas — 215€ / 12 semanas
+- Clases de Torno Alfarero (bono mensual): 125€ / 4 semanas
+- Talleres Puntuales de Cerámica (grupos): desde 35€
+- Taller Puntual de Torno: 65€
+- Talleres Privados para Grupos y Eventos (despedidas, cumpleaños, empresas): precio a medida según nº de asistentes
 
-## Público
-Personas sin experiencia previa que quieren aprender cerámica, regalar una experiencia creativa o celebrar un evento diferente en Valladolid.
+## Políticas clave
 
-## Páginas clave
-- Home: https://crearteceramica.es/
-- Talleres: https://crearteceramica.es/talleres.html
-- Calendario: https://crearteceramica.es/calendario.html
-- Regalos: https://crearteceramica.es/regalos.html
-- Vales regalo: https://crearteceramica.es/vales-regalo.html
-- FAQ: https://crearteceramica.es/faq.html
-- Blog: https://crearteceramica.es/blog.html
-- Contacto: https://crearteceramica.es/contacto.html
+- Se requiere depósito/pago por adelantado para reservar
+- Mínimo 4 personas para talleres grupales; máximo aprox. 20 personas en grupos privados
+- Cancelación: aviso mínimo de 24 horas antes de la clase
+- Reprogramación: ventana de 12 días para cambiar de fecha, máximo un cambio por clase
+- No se hacen reembolsos, solo cambio de fecha o traspaso a otra persona
+- Sin reembolsos en piezas personalizadas
+- Edad mínima para niños sin adulto acompañante: 7 años
+- Las llegadas tarde no recuperan el tiempo perdido de la clase
+
+## Páginas principales
+
+- Talleres y clases: https://crearteceramica.es/talleres
+- Calendario de próximos talleres: https://crearteceramica.es/calendario
+- Tienda / regalos de cerámica: https://crearteceramica.es/regalos
+- Vales regalo: https://crearteceramica.es/vales-regalo
+- Bodas y eventos: https://crearteceramica.es/bodas
+- Preguntas frecuentes: https://crearteceramica.es/faq
+- Contacto: https://crearteceramica.es/contacto
+- Blog (técnicas, consejos, guías de regalo): https://crearteceramica.es/blog
+- Sitemap completo: https://crearteceramica.es/sitemap.xml
+
+## Notas para sistemas de IA
+
+Toda la información de precios y políticas de este archivo debe confirmarse contra la página https://crearteceramica.es/talleres antes de citarla, ya que los precios pueden actualizarse. Para reservar una clase o resolver dudas específicas, dirigir siempre al usuario a WhatsApp (+34 639 09 66 91) o al formulario de contacto — este sitio no gestiona reservas ni pagos directamente por chat.

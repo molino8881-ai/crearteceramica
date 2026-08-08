@@ -286,8 +286,20 @@
 
     .importes-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .importes-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .importes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .importe-card {
@@ -307,6 +319,12 @@
     .importe-card:hover {
       transform: translateY(-10px);
       border-color: var(--green);
+    }
+
+    a.importe-card {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
     }
 
     .importe-valor {
@@ -787,26 +805,30 @@
         </div>
         <div class="importes-grid">
 
-          <div class="importe-card">
+          <a class="importe-card" href="talleres">
             <span class="importe-valor">35€</span>
             <span class="importe-nombre">Taller Puntual (1,5 h)</span>
-          </div>
-          <div class="importe-card">
+          </a>
+          <a class="importe-card" href="talleres">
             <span class="importe-valor">45€</span>
             <span class="importe-nombre">Taller Puntual (3 h)</span>
-          </div>
-          <div class="importe-card">
+          </a>
+          <a class="importe-card" href="talleres">
+            <span class="importe-valor">65€</span>
+            <span class="importe-nombre">Taller Puntual Torno (3 h)</span>
+          </a>
+          <a class="importe-card" href="talleres">
             <span class="importe-valor">85€</span>
             <span class="importe-nombre">Clases semanales · 4 sem.</span>
-          </div>
-          <div class="importe-card">
+          </a>
+          <a class="importe-card" href="talleres">
             <span class="importe-valor">125€</span>
             <span class="importe-nombre">Torno alfarero · 4 sem.</span>
-          </div>
-          <div class="importe-card">
+          </a>
+          <a class="importe-card" href="talleres">
             <span class="importe-valor small-text">Personalizado</span>
             <span class="importe-nombre">El importe que tú decidas</span>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -848,6 +870,7 @@
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option value="35€ - Taller Puntual (1,5 h)">35€ · Taller Puntual (1,5 h)</option>
                 <option value="45€ - Taller Puntual (3 h)">45€ · Taller Puntual (3 h)</option>
+                <option value="65€ - Taller Puntual Torno (3 h)">65€ · Taller Puntual Torno (3 h)</option>
                 <option value="85€ - Clases semanales (4 sem.)">85€ · Clases semanales (4 sem.)</option>
                 <option value="125€ - Torno alfarero (4 sem.)">125€ · Torno alfarero (4 sem.)</option>
                 <option value="Importe personalizado">Importe personalizado</option>
@@ -1059,5 +1082,10 @@
       });
     }
   </script>
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

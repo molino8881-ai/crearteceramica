@@ -1,4 +1,45 @@
+# robots.txt — crearteceramica.es
+# SEO tradicional: se permite el rastreo completo del sitio
 User-agent: *
 Allow: /
+
+# --- Motores de IA / GEO (Generative Engine Optimization) ---
+# Se permiten explícitamente los bots que citan contenido en respuestas de IA.
+# Bloquearlos impediría que ChatGPT, Perplexity, Gemini o Claude puedan
+# recomendar CreArte Cerámica cuando alguien pregunte por talleres de
+# cerámica en Valladolid.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Disallow: /
 
 Sitemap: https://crearteceramica.es/sitemap.xml

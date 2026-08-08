@@ -3,30 +3,31 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Regalos y Detalles de Cerámica para Bodas | CreArte Valladolid</title>
-  <meta content="Detalles de boda y complementos en cerámica artesanal hechos a mano en Valladolid: porta alianzas, arras y detalles personalizados para vuestros invitados." name="description"/>
+  <title>Complementos de Cerámica Artesanal | CreArte Valladolid</title>
+  <meta content="Pendientes, collares y broches de cerámica pintados a mano en nuestro taller de Valladolid. Piezas únicas y ligeras, perfectas para regalar." name="description"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
-  <link href="https://crearteceramica.es/bodas" rel="canonical"/>
+  <link href="https://crearteceramica.es/complementos" rel="canonical"/>
+  <link rel="preload" href="imagenes/colgante-natura-verde-lima-1.webp" as="image" fetchpriority="high">
   <!-- Favicon -->
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  
   <meta content="#227768" name="theme-color"/>
   <meta content="#227768" name="msapplication-TileColor"/>
   <!-- Open Graph -->
   <meta content="website" property="og:type"/>
-  <meta content="https://crearteceramica.es/bodas" property="og:url"/>
-  <meta content="Regalos de Cerámica para Bodas | CreArte Valladolid" property="og:title"/>
-  <meta content="Detalles de boda y complementos en cerámica artesanal hechos a mano en Valladolid: porta alianzas, arras y detalles personalizados para vuestros invitados." property="og:description"/>
-  <meta content="https://crearteceramica.es/imagenes/detalles_boda.webp" property="og:image"/>
+  <meta content="https://crearteceramica.es/complementos" property="og:url"/>
+  <meta content="Complementos de Cerámica Artesanal | CreArte Valladolid" property="og:title"/>
+  <meta content="Pendientes, collares y broches de cerámica pintados a mano en nuestro taller de Valladolid." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/colgante-natura-verde-lima-1.webp" property="og:image"/>
   <meta content="es_ES" property="og:locale"/>
   <meta content="CreArte Cerámica" property="og:site_name"/>
   <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Regalos de Cerámica para Bodas | CreArte" name="twitter:title"/>
-  <meta content="Detalles de boda y complementos en cerámica artesanal hechos a mano en Valladolid: porta alianzas, arras y detalles personalizados para vuestros invitados." name="twitter:description"/>
-  <meta content="https://crearteceramica.es/imagenes/detalles_boda.webp" name="twitter:image"/>
+  <meta content="Complementos de Cerámica Artesanal | CreArte" name="twitter:title"/>
+  <meta content="Pendientes, collares y broches de cerámica pintados a mano en nuestro taller de Valladolid." name="twitter:description"/>
+  <meta content="https://crearteceramica.es/imagenes/colgante-natura-verde-lima-1.webp" name="twitter:image"/>
   <meta content="@crearteceramicavalladolid" name="twitter:site"/>
   <!-- BreadcrumbList -->
   <script type="application/ld+json">
@@ -36,7 +37,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://crearteceramica.es/" },
       { "@type": "ListItem", "position": 2, "name": "Tienda de regalos", "item": "https://crearteceramica.es/regalos" },
-      { "@type": "ListItem", "position": 3, "name": "Regalos de Cerámica para Bodas", "item": "https://crearteceramica.es/bodas" }
+      { "@type": "ListItem", "position": 3, "name": "Complementos de Cerámica Artesanal", "item": "https://crearteceramica.es/complementos" }
     ]
   }
   </script>
@@ -455,6 +456,28 @@
       gap: 1.5rem;
     }
 
+    .regalos-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .regalo-img-placeholder {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 1rem;
+    }
+
     .regalo-item {
       background: white;
       padding: 1.5rem;
@@ -496,7 +519,7 @@
       position: relative;
     }
 
-    .regalo-item h4 {
+    .regalo-item h3, .regalo-item h4 {
       font-size: 1.3rem;
       margin-bottom: 0.8rem;
     }
@@ -717,6 +740,7 @@
       .menu-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
       .talleres-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
       .regalos-grid, .regalos-grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+      .regalos-grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
     }
 
     /* MOVILES MEDIANOS (768px) */
@@ -747,8 +771,9 @@
       .taller-info { padding: 1.5rem; }
       
       .regalos-grid, .regalos-grid-5 { grid-template-columns: 1fr; }
+      .regalos-grid-4 { grid-template-columns: 1fr; }
       .regalo-item { padding: 1rem; }
-      .regalo-img { height: 150px; }
+      .regalo-img, .regalo-img-placeholder { height: 150px; }
       
       .contacto-grid { grid-template-columns: 1fr; gap: 2rem; }
       .contact-form { padding: 2rem; }
@@ -955,17 +980,17 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) */
+    /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) - reducidas para que las 5 quepan en una sola línea */
     .categorias-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
       margin-top: 3rem;
     }
 
     .categoria-card {
       background: white;
-      border-radius: 24px;
+      border-radius: 18px;
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: 0.4s;
@@ -974,30 +999,27 @@
     }
 
     .categoria-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
     .categoria-img {
-      height: 160px;
+      height: 110px;
       background-size: cover;
       background-position: center;
     }
 
     .categoria-info {
-      padding: 1.2rem;
+      padding: 0.8rem 0.5rem;
       text-align: center;
     }
 
-    .categoria-info h2 {
-      font-size: 1.6rem;
-      margin-bottom: 0.8rem;
+    .categoria-info h2,
+    .categoria-info h3 {
+      font-size: 0.85rem !important;
+      margin-bottom: 0.4rem;
       border-bottom: none;
       padding-bottom: 0;
-    }
-
-    .categoria-info h3 {
-      font-size: 1.1rem !important;
     }
 
     .categoria-info p {
@@ -1010,9 +1032,9 @@
       display: inline-block;
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.03em;
     }
 
     .categoria-link:hover { color: var(--green-dark); }
@@ -1032,21 +1054,18 @@
 
     .volver-tienda:hover { color: var(--green-dark); }
 
-    @media (max-width: 768px) {
-      .categorias-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    @media (max-width: 600px) {
+      .categorias-grid { gap: 0.6rem; }
+      .categoria-img { height: 80px; }
+      .categoria-info { padding: 0.6rem 0.4rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.7rem !important; line-height: 1.15; }
+      .categoria-link { font-size: 0.56rem; }
     }
-
-    @media (max-width: 480px) {
-      .categoria-info h2 { font-size: 1.3rem; }
-      .categorias-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-      }
-      .categoria-img {
-        height: 120px;
-      }
+    @media (max-width: 420px) {
+      .categoria-img { height: 60px; }
+      .categoria-info { padding: 0.4rem 0.3rem; }
+      .categoria-info h2, .categoria-info h3 { font-size: 0.6rem !important; }
+      .categoria-link { font-size: 0.48rem; }
     }
     /* DROPDOWN MENU */
     .nav-item {
@@ -1254,7 +1273,7 @@
       background: var(--green-dark);
     }
 
-    /* FAQ BODAS (acordeón) */
+    /* FAQ MENAJE (acordeón) */
     .faq-section {
       padding: 5rem 0 6rem;
     }
@@ -1362,14 +1381,14 @@
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
-    <a class="logo" href="index.html">
-     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp"/>
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
     </a>
     <div class="menu-toggle" id="mobile-menu">
      <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">INICIO</a>
+      <a href="/">INICIO</a>
       <div class="nav-item">
         <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
@@ -1390,106 +1409,173 @@
    <div class="container">
     <div class="section-header">
      <span>Piezas Únicas Hechas a Mano</span>
-     <h1>Regalos de Cerámica para Bodas</h1>
-     <p>Detalles de boda y complementos en cerámica artesanal hechos a mano en Valladolid: porta alianzas, arras y detalles personalizados para vuestros invitados.</p>
-     <p>Una alternativa original a los detalles típicos que acaban olvidados en un cajón: piezas únicas que llevan vuestro sello en el día más especial.</p>
+     <h1>Complementos de Cerámica Artesanal de Valladolid</h1>
+     <p>Pendientes, collares y broches de cerámica pintados a mano en nuestro taller de Valladolid.</p>
+     <p>Piezas ligeras y resistentes, pensadas para el día a día o para un regalo con carácter — todas modeladas y esmaltadas a mano, una a una.</p>
     </div>
 
     <a class="volver-tienda" href="regalos">← Ver toda la tienda</a>
 
-    <h2>Nuestras piezas para bodas</h2>
-
     <div class="regalos-category">
-     <div class="regalos-grid">
+     <h2 style="font-size:1.8rem;">Pendientes, collares y broches de cerámica artesanal hechos a mano</h2>
+     <div class="regalos-grid-5">
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Porta alianzas de cerámica artesanal hecho a mano para bodas en Valladolid — CreArte" class="regalo-img active" loading="lazy" src="imagenes/boda.webp" width="1001" height="1500"/>
+        <img alt="Pendientes de cerámica pintados a mano con esmalte azul violeta, hecho a mano en taller CreArte Valladolid" class="regalo-img active" fetchpriority="high" src="imagenes/colgante-color-flor-azul-violeta-1.webp"/>
+        <img alt="Pendientes de cerámica flor naranja esmaltada pintados a mano, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-flor-1.webp"/>
+        <img alt="Pendientes de cerámica flor blanca con centro amarillo, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-blanca-amarilla-1.webp"/>
+        <img alt="Pendientes de cerámica flor azul petróleo esmaltada, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-azul-petroleo-1.webp"/>
        </div>
-       <h3>Porta Alianzas</h3>
-       <p>Porta alianzas de cerámica artesanal, hecho a mano en nuestro taller de Valladolid. Personalizable con vuestros nombres, la fecha o el color que mejor encaje con vuestra boda.</p>
-       <span class="regalo-price">Desde 15€</span>
+       <h3>Pendientes de cerámica pintados a mano</h3>
+       <p>Pendientes ligeros de cerámica, modelados y pintados a mano en el taller. Cada par es una pieza única, perfecta para el día a día o para un regalo con carácter.</p>
+       <span class="regalo-price">Desde 8€/par</span>
       </div>
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Porta alianzas de cerámica artesanal para bodas" class="regalo-img active" loading="lazy" src="imagenes/boda.webp" width="1001" height="1500"/>
-        <img alt="Plato artesanal para arras de boda en cerámica" class="regalo-img" loading="lazy" src="imagenes/arras.webp" width="746" height="539"/>
+        <img alt="Pendientes de flores de cerámica azul violeta esmaltada, hecho a mano en Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-color-flor-azul-violeta-1.webp"/>
+        <img alt="Pendientes de cerámica flor verde azul moteada, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-flor-verde-azul-1.webp"/>
+        <img alt="Pendientes de cerámica flor naranja con textura esmaltada, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-flor-1.webp"/>
+        <img alt="Pendientes de cerámica flor azul petróleo brillante, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-azul-petroleo-1.webp"/>
        </div>
-       <h3>
-        Porta Alianzas/arras
-       </h3>
-       <p>
-        Recipiente elegante de cerámica para guardar las alianzas y/o arras Pieza especial para tu gran día. Diseño personalizado que refleja vuestro estilo.
-       </p>
-       <span class="regalo-price">
-        Desde 30€
-       </span>
+       <h3>Pendientes de flores de cerámica</h3>
+       <p>Pendientes con forma de flor, pintados a mano con esmaltes de color. Delicados, ligeros y disponibles en varios acabados.</p>
+       <span class="regalo-price">Desde 9€/par</span>
       </div>
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Detalles de boda personalizados en cerámica para invitados" class="regalo-img active" loading="lazy" src="imagenes/detalles_boda.webp" width="1024" height="1024"/>
-        <img alt="Regalos de boda en cerámica artesanal" class="regalo-img" loading="lazy" src="imagenes/detallesboda.webp" width="945" height="717"/>
-        <img alt="Platitos personalizados de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos.webp" width="1074" height="992"/>
-        <img alt="Platitos artesanales de cerámica para bodas" class="regalo-img" loading="lazy" src="imagenes/platitos1.webp" width="896" height="935"/>
-        <img alt="Platitos decorativos de cerámica para detalles de boda" class="regalo-img" loading="lazy" src="imagenes/platitos2.webp" width="545" height="441"/>
+        <img alt="Collar de cerámica artesanal azul turquesa craquelado, hecho a mano en taller CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-color-turquesa-ovalado-1.webp"/>
+        <img alt="Collar de cerámica verde lima con forma de punta, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-verde-lima-1.webp"/>
+        <img alt="Collar de cerámica rojo ovalado liso esmaltado, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-rojo-ovalado-liso-1.webp"/>
+        <img alt="Collar de cerámica naranja ovalado moteado, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-ovalado-1.webp"/>
        </div>
-       <h3>
-        Detalles Boda
-       </h3>
-       <p>
-        Detalles de boda personalizados en cerámica artesanal para tus invitados. Fabricados a mano en Valladolid, cada pieza lleva vuestro sello. Una alternativa original a los detalles de boda típicos que acaban olvidados en un cajón.
-       </p>
-       <span class="regalo-price">
-        Desde 20€/ud
-       </span>
+       <h3>Collares de cerámica artesanal</h3>
+       <p>Collares con colgante de cerámica modelado y esmaltado a mano, montados sobre cordón o cadena. Una pieza distinta para cada ocasión.</p>
+       <span class="regalo-price">Desde 12€</span>
       </div>
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Set de bodas de cerámica artesanal personalizado" class="regalo-img active" loading="lazy" src="imagenes/set-boda.webp"/>
+        <img alt="Collar especial de cerámica violeta ovalado con textura de ondas, hecho a mano en Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-color-violeta-ovalado-ondas-1.webp"/>
+        <img alt="Collar de cerámica raku verde triangular con esmalte terroso, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-verde-escudo-2.webp"/>
+        <img alt="Collar de cerámica conejito rosa oscuro con textura estriada, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-conejo-rosa-1.webp"/>
+        <img alt="Collar de cerámica conejito azul marino sobre cordón rosa, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-conejo-azul-1.webp"/>
        </div>
-       <h3>
-        Set de Bodas
-       </h3>
-       <p>
-        Conjunto de piezas a juego pensado para la mesa de los novios o como detalle especial: cerámica artesanal con vuestro nombre, fecha o iniciales, hecha a mano en nuestro taller de Valladolid.
-       </p>
-       <span class="regalo-price">
-        Desde 35€
-       </span>
+       <h3>Collares especiales de cerámica</h3>
+       <p>Colgantes de edición limitada o personalizados, con diseños más elaborados y detalles pintados a mano. Ideales como regalo especial.</p>
+       <span class="regalo-price">Precio a consultar</span>
       </div>
 <div class="regalo-item">
        <div class="regalo-img-container carousel-container">
-        <img alt="Servilleteros de cerámica artesanal para bodas" class="regalo-img active" loading="lazy" src="imagenes/servilleteros-boda.webp"/>
+        <img alt="Broche sujetagafas de cerámica azul cobalto punta, hecho a mano en taller CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-geometrico-azul-punta-1.webp"/>
+        <img alt="Broche sujetagafas de cerámica verde oliva con orificios calados, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-verde-oliva-calado-1.webp"/>
+        <img alt="Broche sujetagafas de cerámica rectangular turquesa con puntos, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-turquesa-rectangular-1.webp"/>
+        <img alt="Broche sujetagafas de cerámica azul marino diamante con orificio, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-azul-marino-diamante-1.webp"/>
        </div>
-       <h3>
-        Servilleteros
-       </h3>
-       <p>
-        Servilleteros de cerámica hechos a mano, ideales para decorar la mesa de vuestro banquete o como detalle para los invitados. Personalizables con nombres, fecha o color a juego con la decoración.
-       </p>
-       <span class="regalo-price">
-        Desde 3.9€/ud
-       </span>
+       <h3>Broches sujetagafas de cerámica</h3>
+       <p>Broches pensados para sujetar las gafas a la ropa sin perderlas de vista, modelados y pintados a mano. Prácticos y decorativos a la vez.</p>
+       <span class="regalo-price">Desde 10€</span>
+      </div>
+<div class="regalo-item">
+       <div class="regalo-img-container carousel-container">
+        <img alt="Broche divertido de cerámica corazón rojo estriado con bola amarilla, hecho a mano en Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-color-corazon-rojo-1.webp"/>
+        <img alt="Broche de cerámica estrella bronce y negro esmaltada, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-tierra-estrella-bronce-1.webp"/>
+        <img alt="Broche de cerámica flor naranja esmaltada con textura, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-flor-1.webp"/>
+        <img alt="Broche de cerámica barra roja lisa esmaltada, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-barra-roja-1.webp"/>
+       </div>
+       <h3>Broches divertidos de cerámica</h3>
+       <p>Broches con formas originales y un puntito de humor, perfectos para darle personalidad a una chaqueta, bolso o gorro.</p>
+       <span class="regalo-price">Desde 7€</span>
       </div>
      </div>
     </div>
 
     <div class="regalos-category">
-     <h2 style="font-size:1.8rem;">Otras categorías</h2>
-     <div class="categorias-grid" style="grid-template-columns: repeat(5, 1fr);">
+     <h2 style="font-size:1.8rem;">Colecciones de colgantes de cerámica por color y estilo</h2>
+     <p style="max-width:700px; color:var(--text-light); margin:-0.8rem 0 1.5rem;">Organizamos nuestros colgantes de cerámica artesanal en colecciones según su paleta y su forma, para que encuentres fácilmente el estilo que buscas entre las piezas hechas a mano en el taller de Valladolid.</p>
+     <div class="regalos-grid-4">
+      <div class="regalo-item">
+       <div class="regalo-img-container carousel-container">
+        <img alt="Colgante de cerámica artesanal verde lima con forma de punta y estrías, Colección Natura, hecho a mano en taller CreArte Valladolid" class="regalo-img active" fetchpriority="high" src="imagenes/colgante-natura-verde-lima-1.webp"/>
+        <img alt="Colgante de cerámica verde esmeralda con forma triangular y agujero calado, Colección Natura, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-verde-esmeralda-1.webp"/>
+        <img alt="Colgante de cerámica abanico verde oscuro con esmalte terroso, Colección Natura, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-abanico-verde-oscuro-1.webp"/>
+        <img alt="Colgante de cerámica abanico verde lima con manchas naranjas, Colección Natura, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-verde-lima-abanico-2.webp"/>
+        <img alt="Colgante de cerámica flor verde azul moteado sobre cordón azul, Colección Natura, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-flor-verde-azul-1.webp"/>
+        <img alt="Colgante de cerámica raku verde con forma triangular y esmalte terroso, Colección Natura, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-natura-verde-escudo-2.webp"/>
+       </div>
+       <h3>Colección Natura</h3>
+       <p>Verdes, flores, hojas y texturas inspiradas en el paisaje: colgantes con esmaltes moteados y formas orgánicas que recuerdan a la naturaleza.</p>
+       <span class="regalo-price">Desde 12€</span>
+      </div>
+      <div class="regalo-item">
+       <div class="regalo-img-container carousel-container">
+        <img alt="Colgante de cerámica raku verde oscuro con manchas ocres, técnica pit-fire, Colección Tierra, hecho a mano en taller CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-natura-verde-escudo-2.webp"/>
+        <img alt="Colgante de cerámica estrella bronce y negro con esmalte brillante, Colección Tierra, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-tierra-estrella-bronce-1.webp"/>
+        <img alt="Colgante de cerámica abanico azul oscuro con reflejos bronce sobre cordón azul, Colección Tierra, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-tierra-abanico-azul-oscuro-1.webp"/>
+        <img alt="Colgante de cerámica bronce con forma de corazón asimétrico y esmalte metálico, Colección Tierra, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-tierra-bronce-corazon-1.webp"/>
+       </div>
+       <h3>Colección Tierra</h3>
+       <p>Ocres, cobres y marrones cálidos, con esmaltes terrosos que recuerdan al barro cocido. Cada pieza combina matices distintos en cada cocción.</p>
+       <span class="regalo-price">Desde 12€</span>
+      </div>
+      <div class="regalo-item">
+       <div class="regalo-img-container carousel-container">
+        <img alt="Colgante de cerámica artesanal azul turquesa con esmalte craquelado moteado, Colección Color, hecho a mano en taller CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-color-turquesa-ovalado-1.webp"/>
+        <img alt="Colgante de cerámica roja y negra con forma de gota, Colección Color, hecho a mano en taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-rojo-negro-gota-1.webp"/>
+        <img alt="Colgante de cerámica naranja con forma de flor y textura esmaltada, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-flor-1.webp"/>
+        <img alt="Colgante de cerámica flor blanca con centro amarillo esmaltado, Colección Color, hecho a mano en taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-blanca-amarilla-1.webp"/>
+        <img alt="Colgante de cerámica ovalado rojo multicolor con esmalte burbuja sobre cordón rosa, Colección Color, Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-rojo-ovalado-multicolor-1.webp"/>
+        <img alt="Colgante de cerámica flor azul violeta con esmalte moteado, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-azul-violeta-1.webp"/>
+        <img alt="Colgante de cerámica corazón rojo estriado con bola amarilla decorativa, Colección Color, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-corazon-rojo-1.webp"/>
+        <img alt="Colgante de cerámica barra roja lisa con esmalte uniforme, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-barra-roja-1.webp"/>
+        <img alt="Colgante de cerámica rojo con forma de luna orgánica y esmalte brillante, Colección Color, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-rojo-luna-1.webp"/>
+        <img alt="Colgante de cerámica violeta ovalado con textura de ondas y esmalte lavanda, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-violeta-ovalado-ondas-1.webp"/>
+        <img alt="Colgante de cerámica abanico amarillo ocre liso con textura estriada, Colección Color, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-amarillo-abanico-1.webp"/>
+        <img alt="Colgante de cerámica ovalado rojo intenso liso, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-rojo-ovalado-liso-1.webp"/>
+        <img alt="Colgante de cerámica naranja pico con agujero calado y manchas rojas, Colección Color, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-pico-1.webp"/>
+        <img alt="Colgante de cerámica abanico naranja con esmalte de burbujas, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-abanico-1.webp"/>
+        <img alt="Colgante de cerámica ovalado naranja moteado liso, Colección Color, hecho a mano en taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-naranja-ovalado-1.webp"/>
+        <img alt="Colgante de cerámica flor azul petróleo con esmalte brillante, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-flor-azul-petroleo-1.webp"/>
+        <img alt="Colgante de cerámica en forma de conejito azul marino sobre cordón rosa, Colección Color, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-conejo-azul-1.webp"/>
+        <img alt="Colgante de cerámica en forma de conejito rosa oscuro con textura estriada, Colección Color, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-color-conejo-rosa-1.webp"/>
+       </div>
+       <h3>Colección Color</h3>
+       <p>Rojos, turquesas, naranjas y figuras originales para quien busca un colgante con carácter. Esmaltes craquelados, tonos intensos y formas que no pasan desapercibidas.</p>
+       <span class="regalo-price">Desde 12€</span>
+      </div>
+      <div class="regalo-item">
+       <div class="regalo-img-container carousel-container">
+        <img alt="Colgante de cerámica azul cobalto con forma de punta alargada y esmalte mate, Colección Geométrica, hecho a mano en taller CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/colgante-geometrico-azul-punta-1.webp"/>
+        <img alt="Colgante de cerámica negro con mancha roja en forma de abanico, Colección Geométrica, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-negro-abanico-1.webp"/>
+        <img alt="Colgante de cerámica azul marino en forma de diamante con orificio circular y textura acanalada, Colección Geométrica, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-azul-marino-diamante-1.webp"/>
+        <img alt="Colgante de cerámica negro abanico con manchas rojas sobre cordón rojo, Colección Geométrica, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-negro-abanico-rojo-2.webp"/>
+        <img alt="Colgante de cerámica abanico azul verde moteado sobre cordón azul, Colección Geométrica, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-azul-verde-abanico-2.webp"/>
+        <img alt="Colgante de cerámica rectangular turquesa oscuro con puntos y bola artesanal, Colección Geométrica, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-turquesa-rectangular-1.webp"/>
+        <img alt="Colgante de cerámica rectangular verde oliva con orificios calados, Colección Geométrica, hecho a mano en Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-verde-oliva-calado-1.webp"/>
+        <img alt="Colgante de cerámica ovalado negro con manchas rojas sobre cordón rojo, Colección Geométrica, taller CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/colgante-geometrico-negro-oval-rojo-1.webp"/>
+       </div>
+       <h3>Colección Geométrica</h3>
+       <p>Puntas, abanicos y rombos con acabados contrastados en negro, azul y rojo: colgantes de diseño limpio y contemporáneo, esmaltados a mano en el taller.</p>
+       <span class="regalo-price">Desde 12€</span>
+      </div>
+     </div>
+    </div>
+
+    <div class="regalos-category">
+     <h2 style="font-size:1.8rem; margin-bottom:0.5rem;">Otras categorías</h2>
+     <div class="categorias-grid">
       <a href="ninos-bebes" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/huellasbebe.webp');"></div>
           <div class="categoria-info">
-            <h3>Niños y Bebés</h3>
+            <h3 style="font-size:1.3rem;">Niños y Bebés</h3>
             <span class="categoria-link">Ver piezas →</span>
           </div>
         </div>
       </a>
-      <a href="menaje-hogar" style="text-decoration:none; color:inherit;">
+      <a href="bodas" style="text-decoration:none; color:inherit;">
         <div class="categoria-card">
-          <div class="categoria-img" style="background-image: url('imagenes/vajillas.webp');"></div>
+          <div class="categoria-img" style="background-image: url('imagenes/detalles_boda.webp');"></div>
           <div class="categoria-info">
-            <h3>Menaje y Hogar</h3>
+            <h3 style="font-size:1.3rem;">Bodas</h3>
             <span class="categoria-link">Ver piezas →</span>
           </div>
         </div>
@@ -1498,7 +1584,16 @@
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/floreros_nuevo.webp');"></div>
           <div class="categoria-info">
-            <h3>Decoración</h3>
+            <h3 style="font-size:1.3rem;">Decoración</h3>
+            <span class="categoria-link">Ver piezas →</span>
+          </div>
+        </div>
+      </a>
+      <a href="menaje-hogar" style="text-decoration:none; color:inherit;">
+        <div class="categoria-card">
+          <div class="categoria-img" style="background-image: url('imagenes/vajillas.webp');"></div>
+          <div class="categoria-info">
+            <h3 style="font-size:1.3rem;">Menaje y Hogar</h3>
             <span class="categoria-link">Ver piezas →</span>
           </div>
         </div>
@@ -1507,16 +1602,7 @@
         <div class="categoria-card">
           <div class="categoria-img" style="background-image: url('imagenes/mascota.webp');"></div>
           <div class="categoria-info">
-            <h3>Mascotas</h3>
-            <span class="categoria-link">Ver piezas →</span>
-          </div>
-        </div>
-      </a>
-      <a href="complementos.html" style="text-decoration:none; color:inherit;">
-        <div class="categoria-card">
-          <div class="categoria-img" style="background-image: url('imagenes/boda.webp');"></div>
-          <div class="categoria-info">
-            <h3>Complementos</h3>
+            <h3 style="font-size:1.3rem;">Mascotas</h3>
             <span class="categoria-link">Ver piezas →</span>
           </div>
         </div>
@@ -1530,10 +1616,10 @@
    <div class="container">
     <div class="section-header">
      <span>Cerámica con Sello Propio</span>
-     <h2>¿Por qué elegir cerámica personalizada para tu boda?</h2>
+     <h2>¿Por qué elegir complementos de cerámica artesanal?</h2>
     </div>
     <p style="max-width:700px; margin: 1.5rem auto 0; text-align:center; color: var(--text-light); line-height:1.7;">
-     Los detalles típicos de boda acaban casi siempre en un cajón. Una pieza de cerámica hecha a mano, en cambio, es algo que vuestros invitados usarán de verdad: una taza para el café de cada mañana, un platito para las llaves, un recuerdo que dura años en vez de minutos. En CreArte cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, y podemos personalizarla con vuestros nombres, la fecha de la boda o el color que mejor encaje con vuestra decoración — para que el detalle tenga tanto significado como la ocasión que celebráis.
+     La bisutería de producción industrial se repite en miles de personas. Un pendiente, un collar o un broche de cerámica hechos a mano tienen ligeras variaciones de forma, color y esmalte que los hacen únicos — no hay dos piezas exactamente iguales. En CreArte cada complemento se modela, cuece y pinta en nuestro taller de Valladolid, y podemos adaptar color o diseño para que sea justo lo que buscas.
     </p>
     <div class="beneficios-grid">
      <div class="beneficio-card">
@@ -1542,14 +1628,14 @@
       <p>Cada pieza se modela, cuece y esmalta en nuestro taller de Valladolid, sin producción en serie.</p>
      </div>
      <div class="beneficio-card">
-      <div class="beneficio-icon">💍</div>
+      <div class="beneficio-icon">🎨</div>
       <h3>Personalizable</h3>
-      <p>Nombres, fecha de la boda o color a elegir, para que cada pieza refleje vuestro estilo.</p>
+      <p>Color y diseño a elegir, para que cada complemento tenga tu toque personal.</p>
      </div>
      <div class="beneficio-card">
       <div class="beneficio-icon">📍</div>
       <h3>Recogida en Valladolid</h3>
-      <p>Puedes recoger el pedido directamente en el taller del Parque Alameda, sin gastos de envío.</p>
+      <p>Puedes recoger tu pedido directamente en el taller del Parque Alameda, sin gastos de envío.</p>
      </div>
     </div>
    </div>
@@ -1559,12 +1645,12 @@
    <div class="container">
     <div class="cross-sell-card">
      <div class="cross-sell-text">
-      <h2>¿Buscáis un plan diferente antes de la boda?</h2>
-      <p>Además de los detalles y complementos para vuestro gran día, en CreArte organizamos <strong>talleres de cerámica en pareja</strong> y <strong>talleres de cerámica para despedidas de soltera y soltero</strong> en Valladolid. Una forma distinta de celebrar con vuestra gente, mancharse las manos de barro y llevaros a casa una pieza hecha por vosotros mismos, en lugar del plan de siempre.</p>
+      <h2>¿Y si haces tú misma/o tus propios complementos?</h2>
+      <p>Los pendientes, collares y broches como los que ves en esta página son exactamente el tipo de piezas que se aprenden a hacer en nuestros <strong>talleres de cerámica en Valladolid</strong>. Si te gusta lo que ves aquí, puedes venir a modelarlo tú mismo/a en clases sueltas o semanales, y llevarte a casa un complemento hecho por ti.</p>
      </div>
      <div class="cross-sell-btns">
       <a href="taller-de-ceramica-valladolid">Ver el taller</a>
-      <a href="https://wa.me/34639096691?text=Hola!%20Nos%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20taller%20de%20cer%C3%A1mica%20para%20una%20despedida" target="_blank" rel="noopener">Consultar despedida por WhatsApp</a>
+      <a href="talleres">Ver cursos y precios</a>
      </div>
     </div>
    </div>
@@ -1574,58 +1660,49 @@
    <div class="faq-inner">
     <div class="faq-header section-header">
      <span>Resolvemos tus dudas</span>
-     <h2>Preguntas frecuentes sobre detalles de boda</h2>
+     <h2>Preguntas frecuentes sobre los complementos de cerámica</h2>
     </div>
     <div class="faq-list">
      <div class="faq-item">
       <button class="faq-question">
-       <span>¿Con cuánta antelación tenemos que encargar los detalles de boda?</span>
+       <span>¿Los pendientes y broches llevan algún metal que dé alergia?</span>
        <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       </button>
       <div class="faq-answer">
-       <div class="faq-answer-inner">Recomendamos encargar con al menos 6-8 semanas de antelación, sobre todo si el pedido incluye muchas unidades o personalización. En temporada alta de bodas conviene reservar con más margen.</div>
+       <div class="faq-answer-inner">Usamos cierres y ganchos de acero quirúrgico hipoalergénico en pendientes y broches, pensados para pieles sensibles. Si tienes una alergia concreta, escríbenos antes de encargar y te lo confirmamos sin problema.</div>
       </div>
      </div>
      <div class="faq-item">
       <button class="faq-question">
-       <span>¿Podemos personalizar los detalles con nuestros nombres o la fecha?</span>
+       <span>¿Se pueden mojar o llevar en la ducha?</span>
        <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       </button>
       <div class="faq-answer">
-       <div class="faq-answer-inner">Sí, la mayoría de piezas se pueden personalizar con nombres, fecha de la boda o un color concreto. Cuéntanos la idea y te decimos qué opciones tenemos disponibles.</div>
+       <div class="faq-answer-inner">La cerámica esmaltada no se estropea con el agua, pero recomendamos quitarte pendientes y collares para dormir o ducharte, sobre todo para cuidar los cierres metálicos y evitar golpes contra superficies duras.</div>
       </div>
      </div>
      <div class="faq-item">
       <button class="faq-question">
-       <span>¿Hay una cantidad mínima de pedido para detalles de invitados?</span>
+       <span>¿Hacéis pedidos personalizados de broches o collares para bodas y eventos?</span>
        <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       </button>
       <div class="faq-answer">
-       <div class="faq-answer-inner">No hay un mínimo fijo, pero al tratarse de piezas hechas a mano, para pedidos grandes es mejor que nos escribas con antelación para organizar bien la producción y poder ofreceros el mejor precio posible.</div>
+       <div class="faq-answer-inner">Sí, es una de las peticiones más habituales — desde collares a juego para las damas de honor hasta broches personalizados como detalle de boda. Cuéntanos la idea y te decimos qué es posible.</div>
       </div>
      </div>
      <div class="faq-item">
       <button class="faq-question">
-       <span>¿Podemos ver una muestra antes de encargar todos los detalles?</span>
+       <span>¿Cuánto tarda un pedido de varias unidades iguales?</span>
        <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       </button>
       <div class="faq-answer">
-       <div class="faq-answer-inner">Para pedidos de varias unidades podemos mostraros piezas de muestra antes de confirmar el pedido, así os aseguráis de que el color y el acabado son los que buscáis.</div>
-      </div>
-     </div>
-     <div class="faq-item">
-      <button class="faq-question">
-       <span>¿Dónde recogemos el pedido una vez esté listo?</span>
-       <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-      </button>
-      <div class="faq-answer">
-       <div class="faq-answer-inner">Podéis recoger vuestro pedido directamente en el taller, en el barrio del Parque Alameda en Valladolid, sin gastos de envío.</div>
+       <div class="faq-answer-inner">Depende de la cantidad y del diseño, pero para pedidos de varias unidades iguales (por ejemplo, para un evento) recomendamos escribirnos con al menos 3-4 semanas de antelación.</div>
       </div>
      </div>
     </div>
     <div class="faq-cta">
-     <p><strong>¿Tenéis alguna idea concreta para vuestra boda?</strong>Cuéntanosla y os ayudamos a personalizar los detalles perfectos para vuestros invitados.</p>
-     <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Nos%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20detalles%20de%20cer%C3%A1mica%20para%20nuestra%20boda" target="_blank">Consultar por WhatsApp</a>
+     <p><strong>¿Buscas un complemento concreto o quieres encargar varias unidades iguales?</strong>Cuéntanos qué necesitas y te ayudamos a montar el pedido perfecto.</p>
+     <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20complementos%20de%20cer%C3%A1mica" target="_blank">Consultar por WhatsApp</a>
     </div>
    </div>
   </section>
@@ -1633,7 +1710,7 @@
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
-    <a href="index.html">Inicio</a>
+    <a href="/">Inicio</a>
     <a href="talleres">Talleres</a>
     <a href="vales-regalo">Vales regalo</a>
     <a href="regalos">Tienda</a>
@@ -1644,6 +1721,19 @@
    </div>
   </footer>
 
+  <script>
+    // Acordeón FAQ complementos
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
   <script>
     // Lógica del menú móvil
     const menuToggle = document.getElementById('mobile-menu');
@@ -1685,19 +1775,7 @@
       }
     });
 
-    // Acordeón FAQ bodas
-    document.querySelectorAll('.faq-item').forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(openItem => {
-          if (openItem !== item) openItem.classList.remove('open');
-        });
-        item.classList.toggle('open', !isOpen);
-      });
-    });
-
-    // Carrusel de imágenes de regalos
+    // Carrusel de imágenes de productos
     window.addEventListener('DOMContentLoaded', () => {
       const carousels = document.querySelectorAll('.regalo-img-container');
       carousels.forEach(container => {
@@ -1714,5 +1792,10 @@
     });
   </script>
 
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

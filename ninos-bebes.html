@@ -958,7 +958,7 @@
     /* CATEGORY INDEX CARDS (para regalos.html como índice de categorías) - reducidas para que las 4 quepan en una sola línea */
     .categorias-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1rem;
       margin-top: 3rem;
     }
@@ -1407,7 +1407,11 @@
        </span>
       </div>
 <div class="regalo-item">
-       <img alt="Huellas de bebé en cerámica - Recuerdo personalizado CreArte" class="regalo-img" loading="lazy" src="imagenes/huellasbebe.webp" width="896" height="830"/>
+       <div class="regalo-img-container carousel-container">
+        <img alt="Huellas de bebé en cerámica - recuerdo de nacimiento personalizado CreArte Valladolid" class="regalo-img active" loading="lazy" src="imagenes/huellasbebe.webp" width="896" height="830"/>
+        <img alt="Pie de un bebé recién nacido junto a la pieza de cerámica con su huella de mano y pie recién marcadas, recuerdo de nacimiento personalizado en CreArte Valladolid" class="regalo-img" loading="lazy" src="imagenes/huella-pie-bebe-ceramica-personalizada-valladolid.webp" width="750" height="1000"/>
+        <img alt="Manos de un bebé apoyadas sobre la pieza de cerámica mientras se toman sus huellas de nacimiento en el taller CreArte de Valladolid" class="regalo-img" loading="lazy" src="imagenes/huella-manos-bebe-ceramica-personalizada-valladolid.webp" width="750" height="1000"/>
+       </div>
        <h3>
         Huellas Bebé
        </h3>
@@ -1498,6 +1502,15 @@
           <div class="categoria-img" style="background-image: url('imagenes/mascota.webp');"></div>
           <div class="categoria-info">
             <h3 style="font-size:1.3rem;">Mascotas</h3>
+            <span class="categoria-link">Ver piezas →</span>
+          </div>
+        </div>
+      </a>
+      <a href="complementos" style="text-decoration:none; color:inherit;">
+        <div class="categoria-card">
+          <div class="categoria-img" style="background-image: url('imagenes/complementos.webp');"></div>
+          <div class="categoria-info">
+            <h3 style="font-size:1.3rem;">Complementos</h3>
             <span class="categoria-link">Ver piezas →</span>
           </div>
         </div>
@@ -1687,5 +1700,10 @@
     });
   </script>
 
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

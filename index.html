@@ -508,6 +508,60 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
+    #en-los-medios {
+      padding: 4rem 0;
+      text-align: center;
+      background: var(--green-pale);
+    }
+
+    .medios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0 0;
+    }
+
+    .medio-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid #f0f0f0;
+      text-align: left;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s;
+    }
+
+    .medio-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .medio-nombre {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .medio-card p {
+      color: var(--text-light);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .medio-link {
+      color: var(--terracota);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
     .tarjeta h3 {
       font-size: 1.4rem;
       margin-bottom: 0.6rem;
@@ -993,6 +1047,18 @@
       transform: translateY(-3px);
     }
 
+    .anuncio-alt {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .anuncio-alt a {
+      color: var(--terracota);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
     @media (max-width: 480px) {
       .anuncio-card { padding: 2.5rem 1.5rem 2rem; }
       .anuncio-card .anuncio-titulo { font-size: 1.6rem; }
@@ -1008,6 +1074,7 @@
       <p class="anuncio-subtitulo">Aprende a centrar, subir paredes y dar forma en el torno</p>
       <p class="anuncio-plazas"><strong>Plazas limitadas.</strong> Reserva tu plaza cuanto antes.</p>
       <a href="https://wa.me/34639096691?text=Hola!%20Me%20gustaría%20información%20sobre%20las%20clases%20de%20torno%20alfarero%20de%20octubre" class="anuncio-btn" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+      <p class="anuncio-alt">¿Prefieres probar antes? Tenemos un <a href="talleres#prueba-torno">Taller Prueba Torno por 35€</a></p>
     </div>
   </div>
 
@@ -1179,6 +1246,36 @@
     </div>
   </section>
 
+  <section id="en-los-medios">
+    <div class="container">
+      <div class="section-header">
+        <span>Hablan de nosotros</span>
+        <h2>En los medios</h2>
+      </div>
+
+      <div class="medios-grid">
+        <a href="https://www.tribunavalladolid.com/noticias/433995/cre-arte-ceramica-el-refugio-vallisoletano-donde-el-barro-se-convierte-en-experiencia-compartida" target="_blank" rel="noopener" class="medio-card">
+          <span class="medio-nombre">Tribuna Valladolid</span>
+          <p>"CreArte Cerámica, el refugio vallisoletano donde el barro se convierte en experiencia compartida" — un reportaje sobre nuestra filosofía de "cerámica sin postureo".</p>
+          <span class="medio-link">Leer artículo →</span>
+        </a>
+
+        <a href="https://www.tribunavalladolid.com/noticias/418330/crearte-ceramica-el-refugio-creativo-donde-la-arcilla-cobra-vida-en-parque-alameda" target="_blank" rel="noopener" class="medio-card">
+          <span class="medio-nombre">Tribuna Valladolid</span>
+          <p>"CrearteCerámica: el refugio creativo donde la arcilla cobra vida en Parque Alameda" — cómo nació el taller y por qué se ha convertido en un punto de encuentro en el barrio.</p>
+          <span class="medio-link">Leer artículo →</span>
+        </a>
+
+        <a href="https://www.cyltv.es/ficha/77029134-5d61-4ed4-b53c940ea126d05d/20250616/el-programa-de-cristina-16062025" target="_blank" rel="noopener" class="medio-card">
+          <span class="medio-nombre">La 7 · Castilla y León Televisión</span>
+          <p>Entrevista en "El Programa de Cristina" (16/06/2025), a partir del minuto 11:43, hablando de nuestro taller y de los talleres de cerámica en Valladolid.</p>
+          <span class="medio-link">Ver reportaje →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <footer> 
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
@@ -1326,5 +1423,10 @@
       }
     });
   </script>
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>

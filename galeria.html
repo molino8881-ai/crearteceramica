@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Galería de alumnos: piezas de cerámica hechas en nuestro taller | CreArte Valladolid</title>
+  <meta content="Descubre las piezas que han creado nuestros alumnos en las clases semanales y en los talleres puntuales de CreArte. Inspírate para tu próxima creación en cerámica en Valladolid." name="description"/>
+  <meta content="CreArte Cerámica" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://crearteceramica.es/galeria" rel="canonical"/>
+  <meta content="#227768" name="theme-color"/>
+  <meta content="#227768" name="msapplication-TileColor"/>
+  <!-- Open Graph / Facebook -->
+  <meta content="website" property="og:type"/>
+  <meta content="https://crearteceramica.es/galeria" property="og:url"/>
+  <meta content="Galería de alumnos | CreArte Valladolid" property="og:title"/>
+  <meta content="Piezas de cerámica creadas por nuestros alumnos en clases semanales y talleres puntuales en Valladolid." property="og:description"/>
+  <meta content="https://crearteceramica.es/imagenes/galeria/galeria-hero.webp" property="og:image"/>
+  <meta content="es_ES" property="og:locale"/>
+  <meta content="CreArte Cerámica" property="og:site_name"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Galería de alumnos | CreArte Valladolid" name="twitter:title"/>
+  <meta content="Piezas de cerámica creadas por nuestros alumnos en clases semanales y talleres puntuales." name="twitter:description"/>
+  <meta content="https://crearteceramica.es/imagenes/galeria/galeria-hero.webp" name="twitter:image"/>
+  <meta content="@crearteceramicavalladolid" name="twitter:site"/>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://crearteceramica.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Galería de alumnos", "item": "https://crearteceramica.es/galeria" }
+    ]
+  }
+  </script>
+
+  <!-- Minimal LocalBusiness stub (entidad canónica en index.html) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://crearteceramica.es/#negocio",
+    "name": "CreArte Cerámica"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+:root {
+  --green: #227768;
+  --green-dark: #1a4d44;
+  --green-light: #2d9a87;
+  --green-pale: #f4f9f8;
+  --clay: #c4723a;
+  --clay-pale: #fdf4ee;
+  --text: #2d3436;
+  --text-light: #636e72;
+  --white: #ffffff;
+  --bg: #fcfcfc;
+  --shadow: 0 10px 30px rgba(0,0,0,0.05);
+  --border: #e2ece7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* NAVBAR */
+nav {
+  background: white;
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+
+.logo img { height: 50px; width: auto; }
+
+.menu-toggle { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; }
+.menu-toggle span { width: 30px; height: 3px; background: var(--green); border-radius: 3px; transition: 0.3s; }
+
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover { color: var(--green); }
+
+.btn-nav {
+  background: var(--green);
+  color: white !important;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+}
+
+/* DROPDOWN MENU */
+.nav-item { position: relative; display: flex; align-items: center; }
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.dropdown-toggle:hover { color: var(--green); }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  margin-top: 0.5rem;
+}
+
+.nav-item:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:first-child { border-radius: 12px 12px 0 0; }
+.dropdown-menu a:last-child { border-radius: 0 0 12px 12px; }
+.dropdown-menu a:hover { background: var(--green-pale); color: var(--green); }
+
+/* HEADER GALERÍA */
+.galeria-header {
+  padding: 180px 0 60px;
+  background: var(--green-pale);
+  text-align: center;
+}
+
+.galeria-header span.tag {
+  display: inline-block;
+  background: var(--green-light);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.galeria-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--green);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.galeria-header h1 em { font-style: italic; color: var(--clay); }
+
+.galeria-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-size: 1.15rem;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0 1rem;
+}
+
+.filtro-btn {
+  background: white;
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.filtro-btn:hover { border-color: var(--green-light); color: var(--green); }
+
+.filtro-btn.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+/* GALERÍA GRID */
+.galeria-section { padding: 3rem 0 6rem; }
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 1.2rem;
+}
+
+.pieza {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  background: var(--green-pale);
+}
+
+.pieza.tall { grid-row: span 2; }
+.pieza.wide { grid-column: span 2; }
+
+.pieza img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.pieza:hover img { transform: scale(1.08); }
+
+.pieza-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,77,68,0.85) 0%, rgba(26,77,68,0) 55%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pieza:hover .pieza-overlay { opacity: 1; }
+
+.pieza-overlay .info { color: white; }
+.pieza-overlay .categoria {
+  display: inline-block;
+  background: var(--clay);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+  margin-bottom: 0.4rem;
+}
+.pieza-overlay .autor { font-weight: 600; font-size: 0.95rem; }
+
+.galeria-empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-light);
+  display: none;
+}
+
+/* CTA BLOQUE (estilo blog) */
+.cta-block {
+  background: var(--green);
+  color: white;
+  padding: 4rem 3rem;
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-block h2 { font-size: 2rem; margin-bottom: 1rem; }
+.cta-block p { max-width: 550px; margin: 0 auto 2rem; opacity: 0.9; }
+
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+.btn-primary-cta {
+  background: white;
+  color: var(--green);
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.btn-primary-cta:hover { background: var(--clay-pale); }
+
+.btn-secondary-cta {
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.btn-secondary-cta:hover { background: rgba(255,255,255,0.15); }
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(26,26,26,0.92);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox-content {
+  max-width: 900px;
+  max-height: 85vh;
+  width: 100%;
+  text-align: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 65vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.lightbox-caption { color: white; margin-top: 1.2rem; }
+.lightbox-caption .categoria {
+  display: inline-block;
+  background: var(--clay);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  margin-bottom: 0.6rem;
+}
+.lightbox-caption .autor { font-family: 'Playfair Display', serif; font-size: 1.3rem; }
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  color: white;
+  font-size: 2.2rem;
+  cursor: pointer;
+  line-height: 1;
+  background: none;
+  border: none;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+
+footer {
+  background: var(--text);
+  color: rgba(255,255,255,0.7);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.footer-links a { color: rgba(255,255,255,0.7); }
+.footer-links a:hover { color: white; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .menu-toggle { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    align-items: center;
+  }
+  .nav-links.active { right: 0; }
+  .nav-item { flex-direction: column; width: 100%; }
+  .nav-item .dropdown-menu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(34, 119, 104, 0.05);
+    width: 100%;
+    text-align: center;
+    min-width: auto;
+    box-shadow: none;
+    transform: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .nav-item.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+  }
+  .dropdown-toggle { font-size: 1.2rem; padding: 0.5rem 0; width: 100%; justify-content: center; display: flex; align-items: center; }
+  .dropdown-menu a { padding: 0.8rem 1rem; font-size: 1rem; text-align: center; width: 100%; display: block; }
+  .nav-links a { font-size: 1.2rem; }
+
+  .galeria-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+  .pieza.wide { grid-column: span 2; }
+}
+
+@media (max-width: 600px) {
+  .galeria-header { padding: 140px 0 40px; }
+  .galeria-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; gap: 0.8rem; }
+  .pieza.tall { grid-row: span 1; }
+  .cta-block { padding: 3rem 1.5rem; }
+  .cta-block h2 { font-size: 1.6rem; }
+  .lightbox-nav { width: 40px; height: 40px; font-size: 1.5rem; }
+  .lightbox-close { top: 1.2rem; right: 1.2rem; font-size: 1.8rem; }
+}
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+   <div class="container">
+    <a class="logo" href="/">
+     <img alt="Logo de CreArte - Talleres de Cerámica en Valladolid" src="imagenes/logo.webp" width="300" height="200"/>
+    </a>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/">INICIO</a>
+      <div class="nav-item">
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
+        </div>
+      </div>
+      <a href="galeria">GALERÍA</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="faq">FAQ</a>
+      <a href="blog">BLOG</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
+    </div>
+   </div>
+  </nav>
+
+  <header class="galeria-header">
+    <div class="container">
+      <span class="tag">Trabajos de nuestros alumnos</span>
+      <h1>¿Sin inspiración?<br/><em>Mira lo que han creado nuestras manos</em></h1>
+      <p>Aquí tienes algunas de las obras de arte que nuestros alumnos han realizado en el taller, tanto en las clases semanales como en los talleres puntuales. Cada pieza cuenta una historia distinta: la suya.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="galeria-section">
+      <div class="filtros">
+        <button class="filtro-btn active" data-filtro="todas">Todas las piezas</button>
+        <button class="filtro-btn" data-filtro="semanales">Clases semanales</button>
+        <button class="filtro-btn" data-filtro="puntuales">Talleres puntuales</button>
+      </div>
+
+      <!--
+        CÓMO AÑADIR PIEZAS NUEVAS:
+        1. Copia un bloque <figure class="pieza ..."> completo.
+        2. Cambia el src por la ruta de la foto en imagenes/galeria/ (formato .webp).
+        3. Ajusta data-categoria a "semanales" o "puntuales".
+        4. Cambia el texto de .autor (puede ser un nombre, iniciales o "Alumna del taller").
+        5. Las clases "tall" y "wide" son opcionales, sirven para variar el tamaño en el mosaico.
+      -->
+      <div class="galeria-grid" id="galeriaGrid">
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Cuenco de cerámica hecho a torno por alumna de clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-01.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Cuenco a torno</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Taza de cerámica pintada a mano con motivo de gato en taller puntual de CreArte Valladolid" loading="lazy" src="imagenes/galeria/puntuales-07.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Taza pintada a mano</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="semanales">
+          <img alt="Jarrón de cerámica con técnica de churros hecho por alumna en Valladolid" loading="lazy" src="imagenes/galeria/semanales-02.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Jarrón en churros</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza wide" data-categoria="puntuales">
+          <img alt="Plato decorado a mano en taller puntual de cerámica en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-02.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Plato decorado</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Taza de cerámica con mensaje grabado a mano hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-07.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Taza con mensaje grabado</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Taza de cerámica con asa en forma de flor hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-08.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Taza con asa de flor</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Figura de cerámica modelada a mano en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-03.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Figura modelada</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="semanales">
+          <img alt="Florero de cerámica con técnica de planchas hecho en clases semanales" loading="lazy" src="imagenes/galeria/semanales-04.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Florero en planchas</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="puntuales">
+          <img alt="Cuenco decorado con esgrafiado hecho en taller puntual de cerámica" loading="lazy" src="imagenes/galeria/puntuales-04.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Cuenco esgrafiado</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza wide" data-categoria="semanales">
+          <img alt="Set de piezas de cerámica hechas a torno por alumnos de clases semanales" loading="lazy" src="imagenes/galeria/semanales-05.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Set de piezas a torno</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="puntuales">
+          <img alt="Portavelas de cerámica hecho en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-05.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Portavelas</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="semanales">
+          <img alt="Vasija de cerámica de gran formato hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-06.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Vasija de gran formato</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Maceta de cerámica pintada a mano en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-06.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Maceta pintada</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Tabla de cerámica con estampado de damero pintada a mano en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-09.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Tabla con damero</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Figura de seta de cerámica pintada a mano en taller puntual de CreArte Valladolid" loading="lazy" src="imagenes/galeria/puntuales-08.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Seta decorativa</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza wide" data-categoria="puntuales">
+          <img alt="Bandeja de cerámica personalizada con nombres y dibujos de gatos hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-09.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Bandeja personalizada con gatos</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza wide" data-categoria="puntuales">
+          <img alt="Bandeja de cerámica decorada con lunares y aceitunas en relieve hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-10.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Bandeja con aceitunas</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Taza de cerámica con asa cuadrada y estampado de huella y texto grabado, hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-10.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Taza con asa cuadrada</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Bandeja de cerámica ovalada con hojas de arce estampadas en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-11.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Bandeja con hojas de otoño</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza wide" data-categoria="semanales">
+          <img alt="Bandeja de cerámica con coche navideño y texto grabado hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-11.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Bandeja del coche navideño</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Árbol de Navidad de cerámica calado hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-12.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Árbol de Navidad calado</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Árbol de Navidad de cerámica con luces de colores hecho en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-12.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Árbol de Navidad con luces</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Porción de pizza de cerámica con mensaje Pizza Lover hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-13.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Porción de pizza</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Plato de cerámica con cara de reno hecho en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-14.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Plato con cara de reno</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Bandeja de cerámica con cara de reno y cornamenta hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-13.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Bandeja con cara de reno</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza" data-categoria="puntuales">
+          <img alt="Taza de cerámica con estampado de cuadros rojos hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-15.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Taza a cuadros</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Taza de cerámica con corazón en relieve y pequeños corazones hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-16.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Taza con corazón</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Cuenco de cerámica pintado con un cervatillo y flor, personalizado con inicial, hecho en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-17.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Cuenco con cervatillo</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Ajero de cerámica con tapa y ajo modelado, con texto Quien pica ajos come, hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-14.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Ajero con tapa</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Bandeja de cerámica con forma de limón y hojas en relieve hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-18.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Bandeja con forma de limón</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Paleta de cerámica con huecos para mezclar colores, decorada con florecitas, hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-19.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Paleta de mezclas</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Jarrón de cerámica esférico con esmalte moteado hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-15.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Jarrón esférico moteado</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Jarra de cerámica de estilo antiguo con asa y esmalte verde grisáceo hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-16.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Jarra de estilo antiguo</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Plato de cerámica con pasta pintada y texto Pasta e Basta hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-17.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Plato "Pasta e Basta"</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales">
+          <img alt="Olivero de cerámica con ramas de olivo pintadas a mano hecho en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-20.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Taller puntual</span>
+              <p class="autor">Olivero con ramas de olivo</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="semanales">
+          <img alt="Plato de cerámica con forma de rodaja de naranja hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-18.webp"/>
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria">Clases semanales</span>
+              <p class="autor">Plato con forma de naranja</p>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <p class="galeria-empty" id="galeriaEmpty">Todavía no tenemos piezas en esta categoría, ¡pero pronto las subiremos!</p>
+
+      <div class="cta-block">
+        <h2>¿Te apetece crear la tuya?</h2>
+        <p>Ven a nuestro taller en Valladolid y déjate inspirar. Grupos pequeños, materiales incluidos y mucho barro entre las manos.</p>
+        <div class="cta-buttons">
+          <a href="talleres" class="btn-primary-cta">Ver talleres disponibles</a>
+          <a href="https://wa.me/34639096691" class="btn-secondary-cta">Preguntar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+    <div class="lightbox-content">
+      <img alt="" id="lightboxImg" src=""/>
+      <div class="lightbox-caption">
+        <span class="categoria" id="lightboxCategoria"></span>
+        <p class="autor" id="lightboxAutor"></p>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
+      <div class="footer-links">
+        <a href="/">Inicio</a>
+        <a href="talleres">Talleres</a>
+        <a href="galeria">Galería</a>
+        <a href="vales-regalo">Vales regalo</a>
+        <a href="regalos">Tienda</a>
+        <a href="faq">FAQ</a>
+        <a href="contacto">Contacto</a>
+        <a href="blog">Blog</a>
+        <a href="privacidad">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+const body = document.body;
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const navItem = document.querySelector('.nav-item');
+
+dropdownToggle.addEventListener('click', (e) => {
+  if (window.innerWidth <= 992) {
+    e.preventDefault();
+    navItem.classList.toggle('active');
+  }
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    if (!link.closest('.dropdown-toggle')) {
+      menuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      body.style.overflow = 'auto';
+    }
+  });
+});
+
+// FILTROS DE GALERÍA
+const filtroBtns = document.querySelectorAll('.filtro-btn');
+const piezas = document.querySelectorAll('.pieza');
+const galeriaEmpty = document.getElementById('galeriaEmpty');
+
+function aplicarFiltro(filtro) {
+  let visibles = 0;
+  piezas.forEach(pieza => {
+    const coincide = filtro === 'todas' || pieza.dataset.categoria === filtro;
+    pieza.style.display = coincide ? '' : 'none';
+    if (coincide) visibles++;
+  });
+  galeriaEmpty.style.display = visibles === 0 ? 'block' : 'none';
+}
+
+filtroBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filtroBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    aplicarFiltro(btn.dataset.filtro);
+  });
+});
+
+// LIGHTBOX
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCategoria = document.getElementById('lightboxCategoria');
+const lightboxAutor = document.getElementById('lightboxAutor');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+
+let piezasVisibles = [];
+let indiceActual = 0;
+
+function abrirLightbox(index) {
+  piezasVisibles = Array.from(piezas).filter(p => p.style.display !== 'none');
+  indiceActual = piezasVisibles.indexOf(index);
+  mostrarPieza(indiceActual);
+  lightbox.classList.add('open');
+  body.style.overflow = 'hidden';
+}
+
+function mostrarPieza(i) {
+  const pieza = piezasVisibles[i];
+  const img = pieza.querySelector('img');
+  const categoria = pieza.querySelector('.categoria').textContent;
+  const autor = pieza.querySelector('.autor').textContent;
+  lightboxImg.src = img.src;
+  lightboxImg.alt = img.alt;
+  lightboxCategoria.textContent = categoria;
+  lightboxAutor.textContent = autor;
+}
+
+piezas.forEach(pieza => {
+  pieza.addEventListener('click', () => abrirLightbox(pieza));
+});
+
+lightboxClose.addEventListener('click', () => {
+  lightbox.classList.remove('open');
+  body.style.overflow = 'auto';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove('open');
+    body.style.overflow = 'auto';
+  }
+});
+
+lightboxPrev.addEventListener('click', () => {
+  indiceActual = (indiceActual - 1 + piezasVisibles.length) % piezasVisibles.length;
+  mostrarPieza(indiceActual);
+});
+
+lightboxNext.addEventListener('click', () => {
+  indiceActual = (indiceActual + 1) % piezasVisibles.length;
+  mostrarPieza(indiceActual);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') { lightbox.classList.remove('open'); body.style.overflow = 'auto'; }
+  if (e.key === 'ArrowLeft') lightboxPrev.click();
+  if (e.key === 'ArrowRight') lightboxNext.click();
+});
+  </script>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
+</html>

@@ -430,6 +430,33 @@ nav .container {
   margin: 2rem 0;
 }
 
+.technique-image-placeholder {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  border: 2px dashed var(--clay);
+  background: var(--clay-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.technique-image-placeholder span {
+  color: var(--clay);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .technique-image-placeholder { height: 200px; }
+}
+
 .clay-card strong {
   display: block;
   color: var(--clay);
@@ -834,6 +861,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
   <header class="blog-header">
     <div class="container">
+      <a href="blog" class="back-to-blog" style="display:block;text-align:left;width:fit-content;margin:0 0 2rem 0;font-size:0.9rem;font-weight:600;color:var(--green);text-decoration:none;">&larr; Ver todo el blog</a>
       <span>Aprende cerámica</span>
       <h1>Técnicas de cerámica:<br /><em>¿cuál es la tuya?</em></h1>
       <div class="blog-meta">
@@ -870,6 +898,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">1</div>
           <h2><span>Lo más primario</span>Modelado a pellizco (pinching)</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Modelado a pellizco</span></div>
         <p>También llamada <em>pinching</em>, es probablemente la técnica más antigua de todas. Coges una bola de barro, metes el pulgar en el centro y vas pellizcando hacia fuera con los dedos para darle forma. Así de sencillo. Así de directo.</p>
         <p>No hace falta ninguna herramienta. Solo tus manos, el barro y paciencia. La textura que deja el pellizco en las paredes es parte del encanto: las piezas tienen una huella muy personal, casi orgánica, que hace que ninguna sea igual a otra.</p>
         <div class="clay-card">
@@ -887,8 +916,9 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">2</div>
           <h2><span>Meditar con las manos</span>Técnica de churros (coiling)</h2>
         </div>
-        <p>Se trata de hacer churros de barro —sí, churros, exacto— e ir apilándolos en espiral para construir las paredes de la pieza. Cada capa se funde con la anterior usando los dedos o una espátula, y poco a poco la forma va creciendo hacia arriba.</p>
-        <p>Es una técnica lenta, meditativa. No hay prisa. El barro decide en parte cómo va quedando la pieza, y eso requiere escucharle un poco. Permite crear piezas grandes, con formas curvas o asimétricas que serían difíciles de conseguir de otra manera.</p>
+        <div class="technique-image-placeholder"><span>Imagen: Técnica de churros</span></div>
+        <p>Se trata de hacer churros de barro —sí, churros, exacto— e ir apilándolos en espiral para construir las paredes de la pieza. Cada capa se funde con la anterior usando los dedos o un palito, y poco a poco la forma va creciendo hacia arriba.</p>
+        <p>Es una técnica lenta, meditativa. No hay prisa. El barro decide en parte cómo va quedando la pieza, y eso requiere escucharle un poco. Permite crear piezas grandes, con formas curvas o asimétricas que serían difíciles de conseguir de otra manera. En Crearte es la que más nos gusta porque eres capaz de hacer cualquier cosa que te propongas con ella.</p>
         <div class="clay-card">
           <strong>Lo que más nos gusta de esta técnica</strong>
           Da mucho control sobre la forma final: puedes inclinar las paredes, crear curvas, hacer piezas altas y orgánicas. Las jarras, las vasijas altas y los cuencos grandes quedan espectaculares con churros.
@@ -904,6 +934,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">3</div>
           <h2><span>Precisión y geometría</span>Técnica de planchas (slab building)</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Técnica de planchas</span></div>
         <p>El barro se extiende en planchas —como si fuera masa de pizza— con un rodillo o una máquina laminadora. Esas planchas se cortan y se ensamblan como si construyeras con cartón, uniendo los bordes con barbotina (una especie de pegamento de arcilla) y reforzando las uniones desde dentro.</p>
         <p>Esta técnica es muy versátil: sirve para piezas con geometría angular —cajas, bandejas, marcos, maceteros cuadrados— pero también para formas curvas si doblas las planchas sobre moldes o sobre la mano antes de que se sequen del todo.</p>
         <div class="clay-card">
@@ -920,6 +951,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">4</div>
           <h2><span>La estrella del taller</span>Torno de alfarero</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Torno de alfarero</span></div>
         <p>El torno es el icono de la cerámica por algo: hay algo casi hipnótico en ver cómo una masa de barro informe se convierte en un cuenco perfectamente simétrico bajo las manos de alguien que sabe. Y esa persona puedes ser tú, aunque lleve más tiempo del que parece.</p>
         <p>El proceso tiene nombre propio: <em>centrado</em> (conseguir que el barro gire sin tambalearse, que es lo más difícil), <em>apertura</em> (crear el hueco interior) y <em>levantado</em> (subir las paredes). Requiere práctica, coordinación de manos y un punto de entrega al proceso. El torno no se domina en un día, pero sí en unos meses de práctica constante.</p>
         <div class="clay-card">
@@ -941,6 +973,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">5</div>
           <h2><span>Repetición y detalle</span>Modelado con moldes</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Modelado con moldes</span></div>
         <p>Los moldes de escayola permiten reproducir formas con precisión y consistencia. Se usa mucho en la producción industrial, pero también en el trabajo artesanal cuando quieres crear una serie de piezas iguales o cuando necesitas una forma muy específica que sería difícil de conseguir a mano.</p>
         <p>Hay dos sistemas principales: el <em>colado</em> (se vierte barbotina líquida en el molde y se espera a que las paredes se consoliden) y el <em>prensado</em> (se aplana barro sobre el molde). Es muy útil para bases de tazas, platos o figuras decorativas con mucho detalle.</p>
         <div class="clay-card">
@@ -957,6 +990,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">6</div>
           <h2><span>Sin reglas</span>Escultura libre</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Escultura libre</span></div>
         <p>La escultura cerámica no sigue un método concreto: combina todas las técnicas anteriores según lo que pida la pieza. Se modela, se pellizca, se añade, se quita, se texturiza. La única norma es que el barro tiene que estar bien construido por dentro para que no explote en el horno.</p>
         <p>Es la técnica más libre y también la que más asusta al principio, porque no hay pasos fijos que seguir. Pero cuando pierdes el miedo es la que más cosas te permite hacer: desde figuras humanas o animales hasta instalaciones abstractas o piezas mixtas con otros materiales.</p>
         <div class="clay-card">
@@ -973,6 +1007,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <div class="technique-number">✦</div>
           <h2><span>Dale vida a la pieza</span>Técnicas de decoración</h2>
         </div>
+        <div class="technique-image-placeholder"><span>Imagen: Técnicas de decoración</span></div>
         <p>Dar forma al barro es solo la mitad del proceso. La otra mitad es la decoración: el momento en el que la pieza adquiere su carácter definitivo. Hay muchas maneras de decorar cerámica, y cada una produce un resultado muy distinto.</p>
 
         <div class="article-card">
@@ -1149,5 +1184,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
   </script>
- </body>
+   <script
+    src="https://centeia-sass-gsxz.onrender.com/static/embed.min.js"
+    data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
+    defer
+  ></script>
+</body>
 </html>
