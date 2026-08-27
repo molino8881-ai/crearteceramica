@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Galería de alumnos: piezas de cerámica hechas en nuestro taller | CreArte Valladolid</title>
-  <meta content="Descubre las piezas que han creado nuestros alumnos en las clases semanales y en los talleres puntuales de CreArte. Inspírate para tu próxima creación en cerámica en Valladolid." name="description"/>
+  <title>Galería de Alumnos: Piezas de Cerámica | CreArte Valladolid</title>
+  <meta content="Descubre las piezas creadas por nuestros alumnos en clases semanales y talleres puntuales. Inspírate para tu próxima creación en Valladolid." name="description"/>
   <meta content="CreArte Cerámica" name="author"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://crearteceramica.es/galeria" rel="canonical"/>
@@ -100,7 +100,7 @@ nav {
 
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 
-.logo img { height: 50px; width: auto; }
+.logo img { height: 60px; width: auto; max-width: 100%; }
 
 .menu-toggle { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; }
 .menu-toggle span { width: 30px; height: 3px; background: var(--green); border-radius: 3px; transition: 0.3s; }
@@ -436,6 +436,7 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+  .logo img { height: 44px; }
   .menu-toggle { display: flex; }
   .nav-links {
     position: fixed;
@@ -483,6 +484,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .logo img { height: 38px; }
   .galeria-header { padding: 140px 0 40px; }
   .galeria-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; gap: 0.8rem; }
   .pieza.tall { grid-row: span 1; }
@@ -511,11 +513,12 @@ footer {
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
-      <a href="galeria">GALERÍA</a>
       <a href="vales-regalo">VALES REGALO</a>
       <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
       <a class="btn-nav" href="contacto">CONTACTO</a>
     </div>
@@ -526,7 +529,7 @@ footer {
     <div class="container">
       <span class="tag">Trabajos de nuestros alumnos</span>
       <h1>¿Sin inspiración?<br/><em>Mira lo que han creado nuestras manos</em></h1>
-      <p>Aquí tienes algunas de las obras de arte que nuestros alumnos han realizado en el taller, tanto en las clases semanales como en los talleres puntuales. Cada pieza cuenta una historia distinta: la suya.</p>
+      <p>En esta galería verás piezas reales hechas por alumnos de CreArte en Valladolid: cuencos y jarrones a torno, tazas pintadas a mano, platos con esgrafiado y macetas — creadas tanto en clases semanales como en talleres puntuales, sin experiencia previa. Sirve de inspiración antes de reservar tu primera clase.</p>
     </div>
   </header>
 
@@ -547,14 +550,6 @@ footer {
         5. Las clases "tall" y "wide" son opcionales, sirven para variar el tamaño en el mosaico.
       -->
       <div class="galeria-grid" id="galeriaGrid">
-
-        <figure class="pieza tall" data-categoria="semanales">
-          <img alt="Cuenco de cerámica hecho a torno por alumna de clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-01.webp"/>
-          <figcaption class="pieza-overlay">
-            <div class="info">
-              <span class="categoria">Clases semanales</span>
-              <p class="autor">Cuenco a torno</p>
-            </div>
           </figcaption>
         </figure>
 
@@ -564,26 +559,6 @@ footer {
             <div class="info">
               <span class="categoria">Taller puntual</span>
               <p class="autor">Taza pintada a mano</p>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure class="pieza" data-categoria="semanales">
-          <img alt="Jarrón de cerámica con técnica de churros hecho por alumna en Valladolid" loading="lazy" src="imagenes/galeria/semanales-02.webp"/>
-          <figcaption class="pieza-overlay">
-            <div class="info">
-              <span class="categoria">Clases semanales</span>
-              <p class="autor">Jarrón en churros</p>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure class="pieza wide" data-categoria="puntuales">
-          <img alt="Plato decorado a mano en taller puntual de cerámica en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-02.webp"/>
-          <figcaption class="pieza-overlay">
-            <div class="info">
-              <span class="categoria">Taller puntual</span>
-              <p class="autor">Plato decorado</p>
             </div>
           </figcaption>
         </figure>
@@ -609,71 +584,61 @@ footer {
         </figure>
 
         <figure class="pieza tall" data-categoria="puntuales">
-          <img alt="Figura de cerámica modelada a mano en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-03.webp"/>
+          <img alt="Cuenco amarillo y azul de cerámica modelada a mano en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-22.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Taller puntual</span>
-              <p class="autor">Figura modelada</p>
+              <p class="autor">Cuenco limones con borde azul</p>
             </div>
           </figcaption>
         </figure>
 
         <figure class="pieza" data-categoria="semanales">
-          <img alt="Florero de cerámica con técnica de planchas hecho en clases semanales" loading="lazy" src="imagenes/galeria/semanales-04.webp"/>
+          <img alt="Plato Croisan cerámica con técnica de planchas hecho en clases semanales" loading="lazy" src="imagenes/galeria/plato-croisan-semanal.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Florero en planchas</p>
+              <p class="autor">Plato Croisan</p>
             </div>
           </figcaption>
         </figure>
 
         <figure class="pieza" data-categoria="puntuales">
-          <img alt="Cuenco decorado con esgrafiado hecho en taller puntual de cerámica" loading="lazy" src="imagenes/galeria/puntuales-04.webp"/>
+          <img alt="Cuenco decorado con rayas rojas hecho en taller puntual de cerámica" loading="lazy" src="imagenes/galeria/puntuales-21.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Taller puntual</span>
-              <p class="autor">Cuenco esgrafiado</p>
+              <p class="autor">Cuenco con rayas rojas</p>
             </div>
           </figcaption>
         </figure>
 
         <figure class="pieza wide" data-categoria="semanales">
-          <img alt="Set de piezas de cerámica hechas a torno por alumnos de clases semanales" loading="lazy" src="imagenes/galeria/semanales-05.webp"/>
+          <img alt="Paleta pintor de cerámica hechas a torno por alumnos de clases semanales" loading="lazy" src="imagenes/galeria/paleta-pintor-semanal.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Set de piezas a torno</p>
+              <p class="autor">Paleta pintor</p>
             </div>
           </figcaption>
         </figure>
 
         <figure class="pieza" data-categoria="puntuales">
-          <img alt="Portavelas de cerámica hecho en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/puntuales-05.webp"/>
+          <img alt="Cuenco de cerámica con limones hecho en taller puntual en Valladolid" loading="lazy" src="imagenes/galeria/cuenco-limones-puntual.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Taller puntual</span>
-              <p class="autor">Portavelas</p>
+              <p class="autor">Cuenco limones</p>
             </div>
           </figcaption>
         </figure>
-
-        <figure class="pieza" data-categoria="semanales">
-          <img alt="Vasija de cerámica de gran formato hecha en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-06.webp"/>
-          <figcaption class="pieza-overlay">
-            <div class="info">
-              <span class="categoria">Clases semanales</span>
-              <p class="autor">Vasija de gran formato</p>
-            </div>
-          </figcaption>
-        </figure>
-
+        
         <figure class="pieza tall" data-categoria="puntuales">
-          <img alt="Maceta de cerámica pintada a mano en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-06.webp"/>
+          <img alt="Cuenco de cerámica pintado a mano en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/cuenco-azul-puntual.webp"/>
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Taller puntual</span>
-              <p class="autor">Maceta pintada</p>
+              <p class="autor">Cuenco rayas azyles</p>
             </div>
           </figcaption>
         </figure>
@@ -743,7 +708,7 @@ footer {
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Bandeja del coche navideño</p>
+              <p class="autor">Bandeja coche navideño</p>
             </div>
           </figcaption>
         </figure>
@@ -753,7 +718,7 @@ footer {
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Árbol de Navidad calado</p>
+              <p class="autor">Árbol de Navidad</p>
             </div>
           </figcaption>
         </figure>
@@ -827,17 +792,7 @@ footer {
             </div>
           </figcaption>
         </figure>
-
-        <figure class="pieza tall" data-categoria="semanales">
-          <img alt="Ajero de cerámica con tapa y ajo modelado, con texto Quien pica ajos come, hecho en clases semanales de CreArte" loading="lazy" src="imagenes/galeria/semanales-14.webp"/>
-          <figcaption class="pieza-overlay">
-            <div class="info">
-              <span class="categoria">Clases semanales</span>
-              <p class="autor">Ajero con tapa</p>
-            </div>
-          </figcaption>
-        </figure>
-
+       
         <figure class="pieza tall" data-categoria="puntuales">
           <img alt="Bandeja de cerámica con forma de limón y hojas en relieve hecha en taller puntual de CreArte" loading="lazy" src="imagenes/galeria/puntuales-18.webp"/>
           <figcaption class="pieza-overlay">
@@ -863,7 +818,7 @@ footer {
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Jarrón esférico moteado</p>
+              <p class="autor">Jarrón esférico moteado (tecnica churros)</p>
             </div>
           </figcaption>
         </figure>
@@ -873,7 +828,7 @@ footer {
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Jarra de estilo antiguo</p>
+              <p class="autor">Jarra de estilo antiguo (tecnica churros)</p>
             </div>
           </figcaption>
         </figure>
@@ -884,6 +839,24 @@ footer {
             <div class="info">
               <span class="categoria">Clases semanales</span>
               <p class="autor">Plato "Pasta e Basta"</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="pieza tall" data-categoria="puntuales" itemscope itemtype="https://schema.org/CreativeWork">
+          <img
+            src="imagenes/galeria/plato-zorrito-ceramica-ninos-crearte-valladolid.webp"
+            alt="Plato de cerámica artesanal para niños decorado con un zorrito pintado a mano, hecho en taller puntual de CreArte Valladolid"
+            title="Plato infantil con zorrito — Taller puntual CreArte Cerámica Valladolid"
+            loading="lazy"
+            width="985"
+            height="1080"
+            itemprop="image"
+          />
+          <figcaption class="pieza-overlay">
+            <div class="info">
+              <span class="categoria" itemprop="genre">Taller puntual</span>
+              <p class="autor" itemprop="name">Cuenco infantil con zorrito</p>
             </div>
           </figcaption>
         </figure>
@@ -903,7 +876,7 @@ footer {
           <figcaption class="pieza-overlay">
             <div class="info">
               <span class="categoria">Clases semanales</span>
-              <p class="autor">Plato con forma de naranja</p>
+              <p class="autor">Plato con forma de gajos</p>
             </div>
           </figcaption>
         </figure>

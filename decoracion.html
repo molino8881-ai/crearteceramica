@@ -40,6 +40,39 @@
     ]
   }
   </script>
+  <!-- FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Se pueden personalizar el color o el tamaño de las piezas de decoración?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, la mayoría de nuestras piezas de decoración admiten cambios de color de esmalte o de tamaño dentro de lo que permite la técnica. Escríbenos con la idea y te decimos qué es posible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿La cerámica de decoración de CreArte es apta para exterior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de la pieza: trabajamos con gres de alta temperatura, resistente a la intemperie, pero recomendamos consultarnos antes si la pieza va a estar permanentemente al aire libre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda un pedido de decoración personalizado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El proceso de modelado, secado, cocción y esmaltado suele llevar entre 3 y 4 semanas, según la pieza y el volumen de encargos en el taller."
+        }
+      }
+    ]
+  }
+  </script>
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -1177,6 +1210,24 @@
       }
     }
 
+    /* FAQ (acordeón) - mismo formato que mascotas y calendario */
+    .faq-section { padding: 5rem 0 6rem; }
+    .faq-inner { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+    .faq-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: white; border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.3rem 1.6rem; display: flex; justify-content: space-between; align-items: center; text-align: left; font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--text); cursor: pointer; }
+    .faq-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--green); transition: transform 0.3s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer-inner { padding: 0 1.6rem 1.5rem; color: var(--text-light); font-size: 0.96rem; line-height: 1.7; }
+    .faq-answer-inner strong { color: var(--text); }
+    .faq-cta { margin-top: 3rem; text-align: center; background: var(--green); color: white; border-radius: 24px; padding: 2.5rem 2rem; }
+    .faq-cta p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+    .faq-cta p strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 0.4rem; }
+    .faq-cta-btn { display: inline-block; background: white; color: var(--green-dark); padding: 0.9rem 2rem; border-radius: 30px; font-weight: 700; }
+    .faq-cta-btn:hover { transform: scale(1.05); }
+
   </style>
  </head>
  <body>
@@ -1195,10 +1246,12 @@
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
       <a href="vales-regalo">VALES REGALO</a>
       <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
       <a class="btn-nav" href="contacto">CONTACTO</a>
      </div>
@@ -1210,8 +1263,7 @@
     <div class="section-header">
      <span>Piezas Únicas Hechas a Mano</span>
      <h1>Decoración en Cerámica Artesanal</h1>
-     <p>Floreros, lámparas, figuras y piezas decorativas de cerámica artesanal para dar vida a cualquier rincón de tu hogar en Valladolid.</p>
-     <p>Diseños exclusivos y personalizables, pensados para dar un toque único a cada rincón de tu casa.</p>
+     <p>La decoración en cerámica artesanal de CreArte incluye floreros, lámparas, figuras y piezas decorativas hechas a mano en nuestro taller de Valladolid. Cada diseño es exclusivo y se puede personalizar en color o tamaño, pensado para dar un toque único a cualquier rincón del hogar. Piezas de gres resistente, listas para recoger en el taller.</p>
     </div>
 
     <a class="volver-tienda" href="regalos">← Ver toda la tienda</a>
@@ -1387,6 +1439,83 @@
     </div>
    </div>
   </section>
+
+  <section class="faq-section">
+    <div class="faq-inner">
+      <div class="faq-header section-header">
+        <span>Resolvemos tus dudas</span>
+        <h2>Preguntas frecuentes sobre decoración de cerámica artesanal</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Las piezas de decoración son aptas para exterior?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Depende de la pieza. Trabajamos con <strong>gres, resistente a la intemperie</strong>, por lo que maceteros y algunas figuras pueden estar en exterior. Otras piezas, como lámparas o piezas con detalles delicados, están pensadas para interior. Consúltanos el caso concreto y te lo confirmamos.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo personalizar el color o el tamaño de una pieza?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sí, la mayoría de nuestras piezas de decoración se pueden <strong>personalizar en color y tamaño</strong> para adaptarse al espacio que tienes en mente. Cuéntanos tu idea por WhatsApp y te decimos qué es posible.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tarda en estar lista una pieza personalizada?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Al ser piezas hechas a mano, con moldeado, secado, cocción y esmaltado, el plazo suele rondar <strong>varias semanas</strong>. El tiempo exacto depende de la pieza y de la carga de taller en ese momento; te damos una fecha estimada al confirmar el pedido.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se recoge o se envía la pieza una vez terminada?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Puedes recoger tu pieza directamente en <strong>nuestro taller de Valladolid</strong>. Te avisamos por WhatsApp en cuanto esté lista. Si no puedes acercarte, consúltanos disponibilidad de envío para tu caso.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Las piezas de cerámica son delicadas o se rompen con facilidad?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Trabajamos en gres de alta resistencia, cocido a alta temperatura, por lo que son piezas robustas para el uso diario en el hogar. Como toda cerámica, conviene evitar golpes fuertes o caídas, pero <strong>no son piezas frágiles de andar con miedo</strong>.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Tenéis las piezas en stock o se hacen bajo pedido?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Algunas piezas puede que las tengamos ya hechas en el taller, pero la mayoría se elaboran <strong>bajo pedido</strong>, sobre todo si quieres personalizarla. Pregúntanos por la pieza que te interesa y te decimos disponibilidad al momento.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="faq-cta">
+        <p><strong>¿Tienes en mente una pieza especial?</strong> Cuéntanosla y te ayudamos a darle forma en cerámica.</p>
+        <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Tengo%20una%20duda%20sobre%20la%20decoraci%C3%B3n%20de%20cer%C3%A1mica" target="_blank">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
@@ -1455,6 +1584,20 @@
             images[currentIndex].classList.add('active');
           }, 2000);
         }
+      });
+    });
+  </script>
+
+  <script>
+    // Acordeón FAQ decoración
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
       });
     });
   </script>

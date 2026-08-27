@@ -109,8 +109,9 @@ nav .container {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -260,7 +261,7 @@ nav .container {
 .article-body {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 1.5rem;
+  padding: 60px 1.5rem 20px;
   display: grid;
   grid-template-columns: 1fr 250px;
   gap: 3rem;
@@ -363,6 +364,17 @@ nav .container {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.2rem;
+}
+
+.technique-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 
 .clay-card {
@@ -550,7 +562,7 @@ blockquote {
 
 /* RELATED ARTICLES (bottom of an individual article page) */
 .related-articles {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .related-articles h2 {
@@ -572,7 +584,7 @@ blockquote {
   border-radius: 25px;
   padding: 4rem 3rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .cta-block h3 {
@@ -629,7 +641,7 @@ blockquote {
 footer {
   background: #1a1a1a;
   color: white;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   text-align: center;
 }
 
@@ -671,12 +683,14 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
   .article-body .toc {
     grid-column: 1;
+    grid-row: auto;
     position: static;
     margin: 3rem 0;
   }
 }
 
 @media (max-width: 992px) {
+  .logo img { height: 44px; }
   .menu-toggle { display: block; z-index: 1001; }
   .nav-links {
     position: fixed;
@@ -737,6 +751,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 600px) {
+  .logo img { height: 38px; }
   .blog-header { padding: 140px 0 40px; }
   .blog-meta { flex-direction: column; gap: 0.5rem; }
   .cta-block { padding: 3rem 1.5rem; }
@@ -762,10 +777,12 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
       <a href="vales-regalo">VALES REGALO</a>
       <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
       <a class="btn-nav" href="contacto">CONTACTO</a>
     </div>
@@ -787,7 +804,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
   <main class="container">
     <article class="article-body">
-      <p>En CreArte no enseñamos solo una forma de hacer cerámica. Creemos que la creatividad es un camino personal y que cada técnica tiene un ritmo y una voz propia. No hay una técnica mejor que otra; hay la que mejor encaja contigo.</p>
+      <p>En CreArte trabajamos cuatro técnicas de cerámica: pellizco (la más intuitiva, con las manos), churros (rollos de barro apilados, casi meditativo), planchas (piezas geométricas y precisas) y torno alfarero (movimiento y simetría). No hay una mejor que otra: cada una encaja con un ritmo distinto.</p>
 
       <nav class="toc">
         <p class="toc-title">En este artículo</p>
@@ -805,6 +822,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <h2><span>La forma más primaria de conexión</span>Pellizco</h2>
         </div>
         <p>Esta técnica consiste en moldear el barro pellizcando la arcilla con los dedos. Es la forma más antigua y directa de crear cuencos y piezas orgánicas. Es ideal si buscas una experiencia meditativa y no necesitas precisión milimétrica. Las piezas resultantes conservan las huellas dactilares, dándoles una honestidad única.</p>
+        <img alt="Taza de cerámica artesanal hecha a pellizco con esmalte verde azulado y asa decorativa, técnica de modelado a mano en el taller de CreArte Valladolid" class="technique-img" height="750" loading="lazy" src="imagenes/taza-pellizco-ceramica-artesanal.webp" width="1000"/>
       </section>
 
       <hr class="divider" />
@@ -815,6 +833,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <h2><span>Meditando con las manos</span>Churros</h2>
         </div>
         <p>Hacemos churros de barro y los apilamos para construir las paredes de la pieza, fundiendo cada capa. Es un proceso lento, pausado, que requiere paciencia y te permite crear piezas altas y formas curvas. Es perfecto si te gusta disfrutar del proceso de ver crecer tu creación poco a poco.</p>
+        <img alt="Jarrón de cerámica en proceso, construido con la técnica de churros o urdido apilando rollos de arcilla, taller de cerámica CreArte Valladolid" class="technique-img" height="1333" loading="lazy" src="imagenes/jarron-tecnica-churros-ceramica.webp" width="1000"/>
       </section>
 
       <hr class="divider" />
@@ -825,6 +844,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <h2><span>Geometría y precisión artesanal</span>Planchas</h2>
         </div>
         <p>Extendemos planchas de arcilla y las unimos para construir formas geométricas. Es la técnica ideal para cajas, bandejas y piezas con líneas limpias. Da mucho control sobre la forma final y es perfecta si te gusta la planificación y el detalle.</p>
+        <img alt="Manos trabajando arcilla en plancha para modelar piezas de cerámica de líneas geométricas en el taller de CreArte Valladolid" class="technique-img" loading="lazy" src="imagenes/manos.webp"/>
       </section>
 
       <hr class="divider" />
@@ -835,6 +855,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
           <h2><span>La danza con el movimiento</span>Torno alfarero</h2>
         </div>
         <p>El torno es la estrella del taller, y con razón. Requiere un centrado perfecto y una coordinación de manos inexcusable. Es una experiencia hipnótica y desafiante, ideal si buscas un aprendizaje técnico más profundo y la satisfacción de crear formas simétricas con velocidad.</p>
+        <img alt="Bote de cerámica para golosinas realizado a torno alfarero, pieza simétrica hecha a mano en el taller de CreArte Valladolid" class="technique-img" loading="lazy" src="imagenes/bote-golosinas.webp"/>
         <div class="clay-card">
           <strong>¿Quieres profundizar en cada técnica?</strong>
           Tenemos <a href="tecnicas-de-ceramica">un artículo completo</a> donde entramos en detalle en cada una de ellas, incluida la decoración.

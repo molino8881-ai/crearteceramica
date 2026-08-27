@@ -36,6 +36,8 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-08-01",
     "headline": "Técnicas de decoración en cerámica: moca, kintsugi, esgrafiado y más",
     "description": "Guía completa de las principales técnicas de decoración cerámica que usamos en el taller CreArte de Valladolid.",
     "image": "https://crearteceramica.es/imagenes/decoracion-burbujas.webp",
@@ -96,7 +98,7 @@ nav {
 }
 
 nav .container { display: flex; justify-content: space-between; align-items: center; }
-.logo img { height: 50px; width: auto; }
+.logo img { height: 60px; width: auto; max-width: 100%; }
 
 .nav-links { display: flex; gap: 2rem; align-items: center; }
 .nav-links a {
@@ -423,6 +425,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+  .logo img { height: 44px; }
   .menu-toggle { display: flex; }
   .nav-links {
     display: none; position: fixed; top: 0; right: 0; width: 80%; height: 100vh;
@@ -445,10 +448,52 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 480px) {
+  .logo img { height: 38px; }
   .tecnicas-resumen { grid-template-columns: repeat(2, 1fr); }
   .article-meta { gap: 1rem; }
 }
   </style>
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué técnicas de decoración se aprenden en un taller de cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En los talleres de CreArte Valladolid trabajamos con engobe, esgrafiado, técnica moca, decoración con burbujas y esmaltes. Las técnicas más avanzadas como kintsugi o mishima se practican en sesiones específicas."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Qué es la técnica moca en cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La técnica moca consiste en aplicar una solución ácida (hecha con té o tabaco) sobre engobe húmedo. La reacción química crea patrones orgánicos que recuerdan a ramas o helechos. Cada pieza es completamente única e irrepetible."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Qué es el kintsugi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El kintsugi es una técnica japonesa de reparación de piezas rotas con laca y polvo de oro. En lugar de esconder las grietas, las convierte en el elemento más bello de la pieza. En CreArte organizamos talleres específicos de kintsugi en Valladolid."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Se puede aprender decoración cerámica sin experiencia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Técnicas como el engobe, las burbujas o la marmolada son accesibles desde el primer día. No necesitas saber modelar para decorar — en nuestros talleres puntuales puedes centrarte solo en la decoración."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -462,18 +507,20 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
       <span></span><span></span><span></span>
     </div>
     <div class="nav-links">
-      <a href="index.html">Inicio</a>
+      <a href="index.html">INICIO</a>
       <div class="nav-item">
-        <span class="dropdown-toggle">Talleres ▾</span>
+        <div class="dropdown-toggle">TALLERES <span style="font-size: 0.7rem;">▼</span></div>
         <div class="dropdown-menu">
-          <a href="talleres">Todos los talleres</a>
-          <a href="talleres.html#proximos-talleres">Próximas fechas</a>
-          <a href="vales-regalo">Vales regalo</a>
+          <a href="talleres">Tipos de talleres</a>
+          <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
-      <a href="regalos">Regalos</a>
+      <a href="vales-regalo">VALES REGALO</a>
+      <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
-      <a class="btn-nav" href="contacto">Contacto</a>
+      <a class="btn-nav" href="contacto">CONTACTO</a>
     </div>
   </div>
 </nav>
@@ -487,6 +534,12 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
     <span class="article-tag-header">Decoración</span>
     <h1>Técnicas de decoración en cerámica: una guía desde el taller</h1>
     <p class="intro">Moca, kintsugi, esgrafiado, burbujas, engobe… Hay muchas formas de dar vida a una pieza de cerámica una vez sale del horno. Aquí te contamos las que más usamos y amamos en CreArte.</p>
+
+      <!-- BLOQUE RESPUESTA DIRECTA -->
+      <div class="bloque-respuesta" style="background:#f4f9f8;border-left:4px solid #227768;border-radius:0 12px 12px 0;padding:1.2rem 1.5rem;margin:1.5rem 0 2rem;font-size:1rem;line-height:1.6;color:#2d3436;">
+        Las principales técnicas de decoración en cerámica son: moca, kintsugi, esgrafiado, burbujas, engobe, esmalte, mishima, terra sigillata y marmolada. Cada una da acabados distintos y se puede aplicar antes o después de la cocción. En CreArte Valladolid las practicamos en grupos reducidos.
+      </div>
+
     <div class="article-meta">
       <span>✍️ Por Montserrat López</span>
       <span>📅 Julio 2026</span>
@@ -533,6 +586,8 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
     <p>La técnica moca (también llamada <em>mocha diffusion</em>) es una de las más mágicas y sorprendentes que existen. Consiste en aplicar una solución ácida — generalmente hecha con tabaco, té o colorante — sobre un engobe húmedo. La reacción química que se produce crea patrones que recuerdan a ramas de árboles, helechos o paisajes de tundra.</p>
 
     <p>Lo más fascinante de esta técnica es que <strong>nunca sabes exactamente cómo va a quedar</strong>. Puedes guiar el resultado controlando la humedad del engobe, la concentración de la solución y el ángulo de la pieza, pero la naturaleza siempre tiene la última palabra.</p>
+
+    <img src="imagenes/tecnica-moca-antes-despues.webp" alt="Comparativa antes y después de la técnica moca en cerámica: cuenco con engobe en crudo mostrando el patrón ramificado, junto al mismo cuenco ya cocido con la decoración moca en azul cobalto sobre fondo crema — CreArte Valladolid" title="Técnica moca: antes y después de la cocción - CreArte Valladolid" loading="lazy" class="tecnica-img"/>
 
     <div class="tecnica-img-duo">
       <img src="imagenes/decoracion-moca-cruda.webp" alt="Cuenco con técnica moca en crudo antes de la cocción — CreArte Valladolid" loading="lazy"/>

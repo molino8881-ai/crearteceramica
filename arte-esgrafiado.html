@@ -48,6 +48,38 @@
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://crearteceramica.es/arte-esgrafiado" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué materiales necesito para hacer esgrafiado en cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Solo necesitas una pieza con una capa de engobe aplicada y una herramienta de punta fina o media (como una mirette o un palillo) para raspar el dibujo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué momento del secado se hace el esgrafiado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Se hace cuando la pieza está en estado de cuero, ni húmeda ni completamente seca. En ese punto el barro se raspa limpio sin desmoronarse."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El esgrafiado es una técnica adecuada para principiantes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, es una de las técnicas de decoración más accesibles para empezar, ya que no requiere herramientas complejas ni experiencia previa con el torno."
+        }
+      }
+    ]
+  }
+  </script>
   <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="imagenes/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="imagenes/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -109,8 +141,9 @@ nav .container {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -677,6 +710,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 992px) {
+  .logo img { height: 44px; }
   .menu-toggle { display: block; z-index: 1001; }
   .nav-links {
     position: fixed;
@@ -737,6 +771,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 600px) {
+  .logo img { height: 38px; }
   .blog-header { padding: 140px 0 40px; }
   .blog-meta { flex-direction: column; gap: 0.5rem; }
   .cta-block { padding: 3rem 1.5rem; }
@@ -762,10 +797,12 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
       <a href="vales-regalo">VALES REGALO</a>
       <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
       <a class="btn-nav" href="contacto">CONTACTO</a>
     </div>
@@ -788,6 +825,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
   <main class="container">
     <article class="article-body">
       <p>Hay técnicas que construyen. Y otras que revelan. El esgrafiado consiste en descubrir lo que ya está ahí, escondido bajo una capa de color.</p>
+      <p>El esgrafiado es una técnica de decoración cerámica que consiste en aplicar una capa de engobe sobre la pieza y raspar la superficie cuando el barro está en estado de cuero, para revelar dibujos y texturas. En CreArte la enseñamos dentro de nuestros talleres de decoración en Valladolid.</p>
 
       <section class="technique">
         <div class="technique-header">

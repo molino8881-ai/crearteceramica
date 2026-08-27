@@ -1,189 +1,189 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://crearteceramica.es/</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/talleres</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/calendario</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/regalos</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://crearteceramica.es/arte-esgrafiado</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/vales-regalo</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://crearteceramica.es/beneficios-ceramica-despues-del-trabajo</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/blog</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/contacto</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/galeria</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/faq</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/complementos</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/ninos-bebes</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/bodas</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/decoracion</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/menaje-hogar</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/mascotas</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/taller-de-ceramica-valladolid</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://crearteceramica.es/calendario</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/ceramica-principiantes</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/tecnicas-de-ceramica</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/tecnicas-decoracion-ceramica</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/modelado-a-pellizco</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/pellizco-o-churros</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/torno-vs-modelado-a-mano</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/arte-esgrafiado</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crearteceramica.es/errores-comunes-ceramica</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/ceramica-vs-otras-manualidades-regalo</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/complementos</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/guia-regalos-ceramica-ocasiones</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://crearteceramica.es/contacto</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/primera-clase-ceramica-que-esperar</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://crearteceramica.es/decoracion</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/entrevista-montse-lopez-ceramista</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/errores-comunes-ceramica</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/faq</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/beneficios-ceramica-despues-del-trabajo</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://crearteceramica.es/galeria</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/guia-regalos-ceramica-ocasiones</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/mascotas</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/menaje-hogar</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/modelado-a-pellizco</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/ninos-bebes</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/pellizco-o-churros</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/primera-clase-ceramica-que-esperar</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://crearteceramica.es/que-hacer-en-valladolid-sabado</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/regalos</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/taller-de-ceramica-valladolid</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/talleres</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/tecnicas-de-ceramica</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/tecnicas-decoracion-ceramica</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/torno-vs-modelado-a-mano</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crearteceramica.es/vales-regalo</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://crearteceramica.es/privacidad</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://crearteceramica.es/despedida-de-soltera-ceramica</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

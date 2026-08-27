@@ -42,6 +42,39 @@
     ]
   }
   </script>
+  <!-- FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo reservo plaza en un taller puntual de cerámica en Valladolid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eliges la fecha que más te convenga en este calendario y reservas directamente por WhatsApp, indicando el taller y el número de personas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Con cuánta antelación se llenan las plazas de los talleres puntuales?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las plazas son limitadas y suelen llenarse con 1-2 semanas de antelación, sobre todo los fines de semana, así que conviene reservar en cuanto veas hueco en el calendario."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si no hay ninguna fecha disponible que me venga bien?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Escríbenos por WhatsApp: si tienes un grupo de al menos 4 personas, podemos organizar un taller privado en la fecha y horario que mejor os venga."
+        }
+      }
+    ]
+  }
+  </script>
   <!-- LocalBusiness Structured Data -->
   <script type="application/ld+json">
 {
@@ -964,6 +997,13 @@
       transform: translateY(-10px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
+    .taller-agenda-card .agenda-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 0.8rem;
+    }
     .taller-agenda-card .fecha {
       font-size: 0.75rem;
       font-weight: 700;
@@ -1332,7 +1372,56 @@
 
     </style>
   <link as="image" href="imagenes/logo.webp" rel="preload"/>
- </head>
+   <!-- FAQPage Schema — Reservas y cancelaciones -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo se reserva plaza en un taller de cerámica en CreArte Valladolid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La reserva se confirma por WhatsApp. Una vez acordada la fecha, solicitamos una señal del 50% para guardar la plaza. Sin señal, la plaza no queda reservada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se devuelve la señal si cancelo el taller?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La señal no se devuelve en ningún caso. Si no puedes asistir o cancelas con menos de 7 días de antelación, la señal queda como compensación por la reserva."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo cambiar la fecha de mi taller de cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, podemos cambiar la fecha siempre que nos avises con al menos 5 días de antelación. Haremos todo lo posible para encontrar una fecha alternativa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si no asisto al taller sin avisar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si no asistes sin avisar, la señal queda retenida y la plaza se da por perdida. No hay penalización adicional, pero tampoco devolución ni cambio de fecha."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo venir con más personas sin reservar plaza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Trabajamos con grupos reducidos y las plazas son limitadas. Cada persona necesita su propia reserva con señal."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
  <body>
   <nav id="navbar" style="background: white; box-shadow: var(--shadow);">
    <div class="container">
@@ -1351,6 +1440,7 @@
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
       <a href="vales-regalo">VALES REGALO</a>
@@ -1367,8 +1457,7 @@
     <div class="section-header">
      <span>Reserva tu plaza</span>
      <h1>Próximos Talleres de Cerámica en Valladolid</h1>
-     <p>Consulta las próximas fechas de nuestros talleres de cerámica en Valladolid. Talleres puntuales de fin de semana para crear tus propias piezas de cerámica con picoteo incluido.</p>
-     <p>Las plazas son limitadas y se llenan rápido. Echa un vistazo a las próximas fechas y reserva la tuya antes de que se vayan. Si buscas un plan diferente en Valladolid, una tarde creativa o una actividad en grupo, este es tu sitio.</p>
+     <p>Este calendario recoge las próximas fechas de los talleres puntuales de cerámica de CreArte en Valladolid: sesiones de fin de semana para crear tus propias piezas, con picoteo incluido y plazas limitadas. Reserva directamente por WhatsApp desde la fecha que más te convenga.</p>
     </div>
 
     <h2>Calendario de talleres disponibles</h2>
@@ -1413,24 +1502,7 @@
       </h3>
      </div>
      <div class="talleres-agenda-grid">
-      <!-- Taller Septiembre -->
-      <div class="taller-agenda-card" data-fecha="2026-09-05">
-       <div class="fecha">
-        Sábado 05 de Septiembre
-       </div>
-       <div class="tipo-taller">
-        Taller puntual
-       </div>
-       <div class="hora">
-        12:00 a 14:00h
-       </div>
-       <div class="precio">
-        35€
-       </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola%21%20Me%20gustar%C3%ADa%20reservar%20plaza%20para%20el%20Taller%20puntual%20del%20S%C3%A1bado%2005%20de%20Septiembre" target="_blank">
-        Reservar plaza
-       </a>
-      </div>
+
       <!-- Taller Septiembre -->
       <div class="taller-agenda-card" data-fecha="2026-09-05">
        <div class="taller-img-mini" style="margin-bottom: 1rem;"><img src="imagenes/taller-kokedama-ceramica.webp" alt="Taller de kokedama y cerámica en Valladolid - CreArte, bola de musgo con planta sobre plato de cerámica" width="1080" height="1080" loading="lazy" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;"></div>
@@ -1585,11 +1657,12 @@
       </div>
       <!-- Taller Septiembre -->
       <div class="taller-agenda-card" data-fecha="2026-09-19">
+       <img class="agenda-img" src="imagenes/taller-set-3-piezas-sushi-ceramica-crearte.webp" alt="Set de sushi de cerámica artesanal hecho a mano: plato, cuenco y reposapalillos en tono crudo, taller CreArte Valladolid" title="Taller set 3 piezas Sushi - CreArte Cerámica Valladolid" width="800" height="800" loading="lazy">
        <div class="fecha">
         Sábado 19 de Septiembre
        </div>
        <div class="tipo-taller">
-        Taller puntual
+        Taller set 3 piezas Sushi
        </div>
        <div class="hora">
         12:00 a 14:00h
@@ -1597,7 +1670,7 @@
        <div class="precio">
         35€
        </div>
-       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola%21%20Me%20gustar%C3%ADa%20reservar%20plaza%20para%20el%20Taller%20puntual%20del%20S%C3%A1bado%2019%20de%20Septiembre" target="_blank">
+       <a class="btn-reserva-whatsapp" href="https://wa.me/34639096691?text=Hola%21%20Me%20gustar%C3%ADa%20reservar%20plaza%20para%20el%20Taller%20set%203%20piezas%20Sushi%20del%20S%C3%A1bado%2019%20de%20Septiembre" target="_blank">
         Reservar plaza
        </a>
       </div>
@@ -1634,6 +1707,93 @@
     </div>
    </div>
   </section>
+  <!-- SECCIÓN FAQ RESERVAS -->
+  <section class="faq-section" style="margin-top: 2rem;">
+    <div class="faq-inner">
+      <div class="faq-header section-title">
+        <span>Antes de reservar</span>
+        <h2>Preguntas frecuentes sobre reservas y cancelaciones</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se reserva plaza en un taller?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">La reserva se confirma por WhatsApp. Una vez acordada la fecha, te solicitamos una <strong>señal para guardar tu plaza</strong>. Sin señal, la plaza no queda reservada.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto es la señal y cómo se paga?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">La señal corresponde al <strong>aproximadamente el 50% del importe del taller</strong> y se abona por Bizum o en el taller en el momento de la reserva. El resto se paga el día del taller. Te indicaremos los datos al confirmar por WhatsApp.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Se devuelve la señal si cancelo?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner"><strong>La señal no se devuelve en ningún caso.</strong> Al reservar estás bloqueando una plaza que dejamos de ofrecer a otras personas. Si no puedes asistir o cancelas con menos de 7 días de antelación, la señal queda como compensación por esa reserva.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo cambiar la fecha de mi taller?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sí, podemos cambiar la fecha siempre que <strong>nos avises con al menos 7 días de antelación</strong>. Haremos todo lo posible para encontrar una fecha alternativa que te venga bien. Los cambios de última hora o sin aviso no permiten reubicar la plaza y la señal no se traslada.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasa si no aparezco el día del taller?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Si no asistes sin avisar, la señal queda retenida y la plaza se da por perdida. No hay penalización adicional, pero tampoco devolución ni cambio de fecha. Si surge algo de improviso, escríbenos lo antes posible — siempre intentamos ser flexibles cuando nos avisas a tiempo.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo venir con más personas sin reservar?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Trabajamos con grupos reducidos y las plazas son limitadas. Cada persona necesita su propia reserva con señal, pero llamanos por si podemos hacer algo. Si vais en grupo, reservad todas las plazas a la vez para aseguraros de que os sale la misma fecha.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Y si es Crearte quien cancela el taller?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V11M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Si por alguna razón tuviéramos que cancelar el taller desde CreArte, te avisamos con la mayor antelación posible y te ofrecemos una fecha alternativa o la devolución completa de la señal. En ese caso, somos nosotras las que nos hacemos cargo.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="faq-cta">
+        <p><strong>¿Tienes alguna otra duda antes de reservar?</strong> Escríbenos sin compromiso y te respondemos en el acto.</p>
+        <a class="faq-cta-btn" href="https://wa.me/34639096691?text=Hola!%20Tengo%20una%20duda%20sobre%20las%20reservas%20de%20talleres" target="_blank">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
   <footer>
    <p>© 2026 CreArte · Cerámica sin postureo. Valladolid, España.</p>
    <div class="footer-links">
@@ -1725,5 +1885,19 @@
     data-public-bot-id="e61afd3c-9f41-4f2f-9956-4ef65eecd814"
     defer
   ></script>
+
+  <script>
+    // Acordeón FAQ calendario
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+          if (openItem !== item) openItem.classList.remove('open');
+        });
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+  </script>
 </body>
 </html>

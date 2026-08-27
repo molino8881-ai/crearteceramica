@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://crearteceramica.es/#organization",
+      "name": "CreArte Cerámica Valladolid",
+      "url": "https://crearteceramica.es/",
+      "logo": "https://crearteceramica.es/imagenes/logo.webp",
+      "image": "https://crearteceramica.es/imagenes/hero.webp",
+      "email": "creartevalladolid@gmail.com",
+      "telephone": "+34639096691",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Vinos de rueda, 18",
+        "addressLocality": "Valladolid",
+        "addressRegion": "Castilla y León",
+        "postalCode": "47008",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://www.instagram.com/crearteceramicavalladolid",
+        "https://www.facebook.com/crearteceramicavalladolid"
+      ]
+    },
+    {
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://crearteceramica.es/#school",
+      "name": "CreArte Cerámica Valladolid",
+      "description": "Taller de cerámica en Valladolid: clases semanales de modelado y torno alfarero, experiencias creativas, vales regalo y encargos personalizados. Sin experiencia previa.",
+      "url": "https://crearteceramica.es/",
+      "image": "https://crearteceramica.es/imagenes/hero.webp",
+      "logo": "https://crearteceramica.es/imagenes/logo.webp",
+      "telephone": "+34639096691",
+      "email": "creartevalladolid@gmail.com",
+      "currenciesAccepted": "EUR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Vinos de rueda, 18",
+        "addressLocality": "Valladolid",
+        "addressRegion": "Castilla y León",
+        "postalCode": "47008",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6163356,
+        "longitude": -4.7508584
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=CreArte+Ceramica+Valladolid",
+      "areaServed": {
+        "@type": "City",
+        "name": "Valladolid"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "17:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday"],
+          "opens": "17:00",
+          "closes": "21:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/crearteceramicavalladolid",
+        "https://www.facebook.com/crearteceramicavalladolid"
+      ],
+      "priceRange": "3,90€ - 215€",
+      "paymentAccepted": "Bizum, Efectivo, Tarjeta"
+    }
+  ]
+}

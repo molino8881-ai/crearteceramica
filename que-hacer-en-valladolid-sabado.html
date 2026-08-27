@@ -36,6 +36,8 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "datePublished": "2025-10-01",
+    "dateModified": "2026-07-01",
     "headline": "Qué hacer en Valladolid un sábado diferente (y por qué no es solo un hobby)",
     "description": "Un plan diferente en Valladolid para tu fin de semana: descubre la cerámica artesanal.",
     "image": "https://crearteceramica.es/imagenes/tallerprivado.webp",
@@ -109,8 +111,9 @@ nav .container {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -677,6 +680,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 992px) {
+  .logo img { height: 44px; }
   .menu-toggle { display: block; z-index: 1001; }
   .nav-links {
     position: fixed;
@@ -737,6 +741,7 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
 @media (max-width: 600px) {
+  .logo img { height: 38px; }
   .blog-header { padding: 140px 0 40px; }
   .blog-meta { flex-direction: column; gap: 0.5rem; }
   .cta-block { padding: 3rem 1.5rem; }
@@ -745,7 +750,56 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
 }
 
   </style>
- </head>
+   <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué hacer en Valladolid un sábado que sea original?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un taller de cerámica es una opción muy original: dura entre 1,5 y 3 horas, no necesitas experiencia previa, incluye picoteo y te llevas a casa una pieza que has hecho tú mismo. CreArte organiza talleres puntuales los sábados en Parque Alameda, Valladolid."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta un taller de cerámica en Valladolid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los talleres puntuales de CreArte cuestan 35€ (1,5 horas, 1 pieza) o 45€ (3 horas, 2 piezas). Incluyen todos los materiales, cocciones y picoteo."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Se puede ir a un taller de cerámica sin experiencia previa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, completamente. Los talleres puntuales de CreArte están diseñados para personas sin ninguna experiencia. La instructora guía todo el proceso desde cero."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Dónde está el taller de cerámica CreArte en Valladolid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CreArte está en la Calle Vinos de Rueda, 18, en el barrio Parque Alameda de Valladolid (47008). Al reservar te enviamos todos los detalles para llegar."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "¿Se puede ir en pareja o con amigas a un taller de cerámica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, es un plan perfecto para parejas, grupos de amigas o despedidas de soltera. Para grupos de más de 6 personas recomendamos reservar un taller privado con antelación."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
  <body>
   <nav id="navbar">
    <div class="container">
@@ -762,10 +816,12 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
         <div class="dropdown-menu">
           <a href="talleres">Tipos de talleres</a>
           <a href="calendario">Próximos talleres</a>
+          <a href="taller-de-ceramica-valladolid">Nuestro taller</a>
         </div>
       </div>
       <a href="vales-regalo">VALES REGALO</a>
       <a href="regalos">TIENDA</a>
+      <a href="galeria">GALERÍA</a>
       <a href="faq">FAQ</a>
       <a class="btn-nav" href="contacto">CONTACTO</a>
     </div>
@@ -779,6 +835,12 @@ footer p { font-size: 0.9rem; opacity: 0.8; }
       <h1>Qué hacer en Valladolid<br/><em>un sábado diferente</em></h1>
       <div class="blog-meta">
         <p>✍️ CreArte Cerámica</p>
+
+      <!-- BLOQUE RESPUESTA DIRECTA -->
+      <div class="bloque-respuesta" style="background:#f4f9f8;border-left:4px solid #227768;border-radius:0 12px 12px 0;padding:1.2rem 1.5rem;margin:1.5rem 0 2rem;font-size:1rem;line-height:1.6;color:#2d3436;">
+        Un taller de cerámica es una de las mejores opciones para un sábado diferente en Valladolid: duras 1,5 o 3 horas, trabajas con barro, te llevas una pieza hecha por ti y sale por 35-45€. CreArte organiza talleres puntuales casi todos los sábados en el barrio Parque Alameda.
+      </div>
+
         <p>📍 Valladolid</p>
         <p>⏱ 3 min de lectura</p>
       </div>
